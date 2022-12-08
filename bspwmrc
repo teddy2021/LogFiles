@@ -1,0 +1,57 @@
+#! /bin/zsh
+
+
+# Autostarts
+
+# zsh ~/.config/bspwm/dual_monitor.zsh & 
+
+pkill picom
+picom &
+
+polybar & 
+# Monitors
+
+#mapfile -t monitors < <( xrandr -q | grep -w connected | cut -d " " -f 1 )
+i=1
+for monitor in "${monitors[@]}"; do
+
+	start_pt=$(( (i-1)*10+1 ));
+	end_pt=$(( (i-1)*10+10 ));
+	workspaces=$(seq -s " " $start_pt $end_pt);
+	
+	bspc monitor $monitor \
+		-d $workspaces
+
+	i=$(( i+1 ));
+done
+
+
+# Global Settings
+bspc config automatic_scheme	spiral
+bspc config pointer_modifier	shift
+bspc config pointer_action1	move
+bspc config pointer_action2	resize_side
+bspc config pointer_action3	resize_corner
+bspc config click_to_focus	none
+
+
+bspc config focus_follows_pointer true
+bspc config click_to_focus     button1
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+bspc config top_padding			32
+bspc config bottom_padding		0
+bspc config border_width		2
+bspc config window_gap          12
+
+# Rules
+bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a Chromium desktop='^2'
+bspc rule -a mplayer2 state=floating
+bspc rule -a Kupfer.py focus=on
+bspc rule -a Screenkey manage=off
+bspc rule -a kitty:kitty_keys_help state=floating
+bspc rule -a bashrun2 -o state=floating

@@ -1,0 +1,597 @@
+[   329.913] 
+X.Org X Server 1.21.1.4
+X Protocol Version 11, Revision 0
+[   329.913] Current Operating System: Linux teddy2012-arch 5.15.81-1-lts #1 SMP Fri, 02 Dec 2022 21:05:15 +0000 x86_64
+[   329.913] Kernel command line: BOOT_IMAGE=/vmlinuz-linux-lts root=UUID=b55f4c83-14f8-4165-8af0-23821cf092d1 rw loglevel=3 quiet
+[   329.913]  
+[   329.913] Current version of pixman: 0.42.2
+[   329.916] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[   329.916] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[   329.921] (==) Log file: "/var/log/Xorg.1.log", Time: Wed Dec  7 18:18:11 2022
+[   329.922] (==) Using config file: "/etc/X11/xorg.conf"
+[   329.923] (==) Using config directory: "/etc/X11/xorg.conf.d"
+[   329.925] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[   329.925] (==) ServerLayout "X.org Configured"
+[   329.925] (**) |-->Screen "Screen0" (0)
+[   329.925] (**) |   |-->Monitor "Monitor0"
+[   329.925] (**) |   |-->Device "Card0"
+[   329.925] (**) |   |-->GPUDevice "Intel Graphics"
+[   329.925] (**) |-->Input Device "Mouse0"
+[   329.925] (**) |-->Input Device "Keyboard0"
+[   329.925] (==) Automatically adding devices
+[   329.925] (==) Automatically enabling devices
+[   329.925] (==) Automatically adding GPU devices
+[   329.925] (==) Automatically binding GPU devices
+[   329.925] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[   329.925] (WW) The directory "/usr/share/fonts/misc" does not exist.
+[   329.925] 	Entry deleted from font path.
+[   329.925] (WW) The directory "/usr/share/fonts/TTF" does not exist.
+[   329.925] 	Entry deleted from font path.
+[   329.925] (WW) The directory "/usr/share/fonts/OTF" does not exist.
+[   329.925] 	Entry deleted from font path.
+[   329.925] (WW) The directory "/usr/share/fonts/Type1" does not exist.
+[   329.925] 	Entry deleted from font path.
+[   329.925] (WW) The directory "/usr/share/fonts/misc" does not exist.
+[   329.925] 	Entry deleted from font path.
+[   329.925] (WW) The directory "/usr/share/fonts/TTF" does not exist.
+[   329.925] 	Entry deleted from font path.
+[   329.925] (WW) The directory "/usr/share/fonts/OTF" does not exist.
+[   329.925] 	Entry deleted from font path.
+[   329.925] (WW) The directory "/usr/share/fonts/Type1" does not exist.
+[   329.925] 	Entry deleted from font path.
+[   329.925] (**) FontPath set to:
+	/usr/share/fonts/100dpi,
+	/usr/share/fonts/75dpi,
+	/usr/share/fonts/100dpi,
+	/usr/share/fonts/75dpi
+[   329.925] (**) ModulePath set to "/usr/lib/xorg/modules"
+[   329.925] (WW) Hotplugging is on, devices using drivers 'kbd', 'mouse' or 'vmmouse' will be disabled.
+[   329.925] (WW) Disabling Mouse0
+[   329.925] (WW) Disabling Keyboard0
+[   329.925] (II) Module ABI versions:
+[   329.925] 	X.Org ANSI C Emulation: 0.4
+[   329.925] 	X.Org Video Driver: 25.2
+[   329.925] 	X.Org XInput driver : 24.4
+[   329.925] 	X.Org Server Extension : 10.0
+[   329.926] (++) using VT number 1
+
+[   329.929] (II) systemd-logind: took control of session /org/freedesktop/login1/session/_312
+[   329.930] (II) xfree86: Adding drm device (/dev/dri/card0)
+[   329.930] (II) Platform probe for /sys/devices/pci0000:00/0000:00:01.1/0000:01:00.0/drm/card0
+[   329.931] (II) systemd-logind: got fd for /dev/dri/card0 226:0 fd 13 paused 0
+[   329.933] (**) OutputClass "nvidia" ModulePath extended to "/usr/lib/nvidia/xorg,/usr/lib/xorg/modules,/usr/lib/xorg/modules"
+[   329.936] (--) PCI:*(1@0:0:0) 10de:1f95:17aa:3a3e rev 161, Mem @ 0xd0000000/16777216, 0xfce0000000/268435456, 0xfcf0000000/33554432, I/O @ 0x00002000/128, BIOS @ 0x????????/524288
+[   329.936] (WW) Open ACPI failed (/var/run/acpid.socket) (No such file or directory)
+[   329.936] (II) "glx" will be loaded. This was enabled by default and also specified in the config file.
+[   329.936] (II) LoadModule: "glx"
+[   329.936] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[   329.938] (II) Module glx: vendor="X.Org Foundation"
+[   329.938] 	compiled for 1.21.1.4, module version = 1.0.0
+[   329.938] 	ABI class: X.Org Server Extension, version 10.0
+[   329.938] (II) LoadModule: "nvidia"
+[   329.938] (II) Loading /usr/lib/xorg/modules/drivers/nvidia_drv.so
+[   329.939] (II) Module nvidia: vendor="NVIDIA Corporation"
+[   329.939] 	compiled for 1.6.99.901, module version = 1.0.0
+[   329.939] 	Module class: X.Org Video Driver
+[   329.939] (II) LoadModule: "intel"
+[   329.939] (II) Loading /usr/lib/xorg/modules/drivers/intel_drv.so
+[   329.939] (II) Module intel: vendor="X.Org Foundation"
+[   329.939] 	compiled for 1.21.1.1, module version = 2.99.917
+[   329.939] 	Module class: X.Org Video Driver
+[   329.939] 	ABI class: X.Org Video Driver, version 25.2
+[   329.939] (II) NVIDIA dlloader X Driver  525.60.11  Wed Nov 23 22:56:57 UTC 2022
+[   329.939] (II) NVIDIA Unified Driver for all Supported NVIDIA GPUs
+[   329.940] (II) intel: Driver for Intel(R) Integrated Graphics Chipsets:
+	i810, i810-dc100, i810e, i815, i830M, 845G, 854, 852GM/855GM, 865G,
+	915G, E7221 (i915), 915GM, 945G, 945GM, 945GME, Pineview GM,
+	Pineview G, 965G, G35, 965Q, 946GZ, 965GM, 965GME/GLE, G33, Q35, Q33,
+	GM45, 4 Series, G45/G43, Q45/Q43, G41, B43
+[   329.940] (II) intel: Driver for Intel(R) HD Graphics
+[   329.940] (II) intel: Driver for Intel(R) Iris(TM) Graphics
+[   329.940] (II) intel: Driver for Intel(R) Iris(TM) Pro Graphics
+[   329.940] (II) systemd-logind: releasing fd for 226:0
+[   329.942] (II) Loading sub module "fb"
+[   329.942] (II) LoadModule: "fb"
+[   329.942] (II) Module "fb" already built-in
+[   329.942] (II) Loading sub module "wfb"
+[   329.942] (II) LoadModule: "wfb"
+[   329.942] (II) Loading /usr/lib/xorg/modules/libwfb.so
+[   329.944] (II) Module wfb: vendor="X.Org Foundation"
+[   329.944] 	compiled for 1.21.1.4, module version = 1.0.0
+[   329.944] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[   329.944] (II) Loading sub module "ramdac"
+[   329.944] (II) LoadModule: "ramdac"
+[   329.944] (II) Module "ramdac" already built-in
+[   329.946] (**) NVIDIA(0): Depth 24, (--) framebuffer bpp 32
+[   329.946] (==) NVIDIA(0): RGB weight 888
+[   329.946] (==) NVIDIA(0): Default visual is TrueColor
+[   329.946] (==) NVIDIA(0): Using gamma correction (1.0, 1.0, 1.0)
+[   329.947] (II) Applying OutputClass "nvidia" options to /dev/dri/card0
+[   329.947] (**) NVIDIA(0): Option "AllowEmptyInitialConfiguration"
+[   329.947] (**) NVIDIA(0): Enabling 2D acceleration
+[   329.947] (II) Loading sub module "glxserver_nvidia"
+[   329.947] (II) LoadModule: "glxserver_nvidia"
+[   329.947] (II) Loading /usr/lib/nvidia/xorg/libglxserver_nvidia.so
+[   330.264] (II) Module glxserver_nvidia: vendor="NVIDIA Corporation"
+[   330.264] 	compiled for 1.6.99.901, module version = 1.0.0
+[   330.264] 	Module class: X.Org Server Extension
+[   330.264] (II) NVIDIA GLX Module  525.60.11  Wed Nov 23 22:51:25 UTC 2022
+[   330.270] (II) NVIDIA: The X server supports PRIME Render Offload.
+[   331.003] (--) NVIDIA(0): Valid display device(s) on GPU-0 at PCI:1:0:0
+[   331.003] (--) NVIDIA(0):     DFP-0
+[   331.003] (--) NVIDIA(0):     DFP-1
+[   331.003] (--) NVIDIA(0):     DFP-2
+[   331.003] (--) NVIDIA(0):     DFP-3 (boot)
+[   331.005] (II) NVIDIA(0): NVIDIA GPU NVIDIA GeForce GTX 1650 Ti (TU117-A) at PCI:1:0:0
+[   331.005] (II) NVIDIA(0):     (GPU-0)
+[   331.005] (--) NVIDIA(0): Memory: 4194304 kBytes
+[   331.005] (--) NVIDIA(0): VideoBIOS: 90.17.4e.00.1c
+[   331.005] (II) NVIDIA(0): Detected PCI Express Link width: 16X
+[   331.005] (--) NVIDIA(GPU-0): DFP-0: disconnected
+[   331.005] (--) NVIDIA(GPU-0): DFP-0: Internal DisplayPort
+[   331.005] (--) NVIDIA(GPU-0): DFP-0: 2660.0 MHz maximum pixel clock
+[   331.005] (--) NVIDIA(GPU-0): 
+[   331.005] (--) NVIDIA(GPU-0): DFP-1: disconnected
+[   331.005] (--) NVIDIA(GPU-0): DFP-1: Internal TMDS
+[   331.005] (--) NVIDIA(GPU-0): DFP-1: 165.0 MHz maximum pixel clock
+[   331.005] (--) NVIDIA(GPU-0): 
+[   331.005] (--) NVIDIA(GPU-0): DFP-2: disconnected
+[   331.005] (--) NVIDIA(GPU-0): DFP-2: Internal TMDS
+[   331.005] (--) NVIDIA(GPU-0): DFP-2: 165.0 MHz maximum pixel clock
+[   331.005] (--) NVIDIA(GPU-0): 
+[   331.005] (--) NVIDIA(GPU-0): BOE Technology Group Co., Ltd (DFP-3): connected
+[   331.005] (--) NVIDIA(GPU-0): BOE Technology Group Co., Ltd (DFP-3): Internal DisplayPort
+[   331.005] (--) NVIDIA(GPU-0): BOE Technology Group Co., Ltd (DFP-3): 2660.0 MHz maximum pixel clock
+[   331.005] (--) NVIDIA(GPU-0): 
+[   331.007] (==) NVIDIA(0): 
+[   331.007] (==) NVIDIA(0): No modes were requested; the default mode "nvidia-auto-select"
+[   331.007] (==) NVIDIA(0):     will be used as the requested mode.
+[   331.007] (==) NVIDIA(0): 
+[   331.008] (II) NVIDIA(0): Validated MetaModes:
+[   331.008] (II) NVIDIA(0):     "DFP-3:nvidia-auto-select"
+[   331.008] (II) NVIDIA(0): Virtual screen size determined to be 1920 x 1080
+[   331.023] (--) NVIDIA(0): DPI set to (143, 144); computed from "UseEdidDpi" X config
+[   331.023] (--) NVIDIA(0):     option
+[   331.023] (II) UnloadModule: "intel"
+[   331.023] (II) Unloading intel
+[   331.024] (II) NVIDIA: Reserving 24576.00 MB of virtual memory for indirect memory
+[   331.024] (II) NVIDIA:     access.
+[   331.032] (II) NVIDIA(0): ACPI: failed to connect to the ACPI event daemon; the daemon
+[   331.032] (II) NVIDIA(0):     may not be running or the "AcpidSocketPath" X
+[   331.032] (II) NVIDIA(0):     configuration option may not be set correctly.  When the
+[   331.032] (II) NVIDIA(0):     ACPI event daemon is available, the NVIDIA X driver will
+[   331.032] (II) NVIDIA(0):     try to use it to receive ACPI event notifications.  For
+[   331.032] (II) NVIDIA(0):     details, please see the "ConnectToAcpid" and
+[   331.032] (II) NVIDIA(0):     "AcpidSocketPath" X configuration options in Appendix B: X
+[   331.032] (II) NVIDIA(0):     Config Options in the README.
+[   331.057] (II) NVIDIA(0): Setting mode "DFP-3:nvidia-auto-select"
+[   331.939] (==) NVIDIA(0): Disabling shared memory pixmaps
+[   331.939] (==) NVIDIA(0): Backing store enabled
+[   331.939] (==) NVIDIA(0): Silken mouse enabled
+[   331.939] (==) NVIDIA(0): DPMS enabled
+[   331.939] (II) Loading sub module "dri2"
+[   331.939] (II) LoadModule: "dri2"
+[   331.939] (II) Module "dri2" already built-in
+[   331.939] (II) NVIDIA(0): [DRI2] Setup complete
+[   331.939] (II) NVIDIA(0): [DRI2]   VDPAU driver: nvidia
+[   331.940] (II) Initializing extension Generic Event Extension
+[   331.940] (II) Initializing extension SHAPE
+[   331.940] (II) Initializing extension MIT-SHM
+[   331.941] (II) Initializing extension XInputExtension
+[   331.941] (II) Initializing extension XTEST
+[   331.941] (II) Initializing extension BIG-REQUESTS
+[   331.941] (II) Initializing extension SYNC
+[   331.941] (II) Initializing extension XKEYBOARD
+[   331.941] (II) Initializing extension XC-MISC
+[   331.941] (II) Initializing extension SECURITY
+[   331.942] (II) Initializing extension XFIXES
+[   331.942] (II) Initializing extension RENDER
+[   331.942] (II) Initializing extension RANDR
+[   331.942] (II) Initializing extension COMPOSITE
+[   331.942] (II) Initializing extension DAMAGE
+[   331.942] (II) Initializing extension MIT-SCREEN-SAVER
+[   331.942] (II) Initializing extension DOUBLE-BUFFER
+[   331.943] (II) Initializing extension RECORD
+[   331.943] (II) Initializing extension DPMS
+[   331.943] (II) Initializing extension Present
+[   331.943] (II) Initializing extension DRI3
+[   331.943] (II) Initializing extension X-Resource
+[   331.943] (II) Initializing extension XVideo
+[   331.943] (II) Initializing extension XVideo-MotionCompensation
+[   331.943] (II) Initializing extension GLX
+[   331.944] (II) Initializing extension GLX
+[   331.944] (II) Indirect GLX disabled.
+[   331.944] (II) GLX: Another vendor is already registered for screen 0
+[   331.944] (II) Initializing extension XFree86-VidModeExtension
+[   331.944] (II) Initializing extension XFree86-DGA
+[   331.944] (II) Initializing extension XFree86-DRI
+[   331.944] (II) Initializing extension DRI2
+[   331.944] (II) Initializing extension NV-GLX
+[   331.944] (II) Initializing extension NV-CONTROL
+[   331.944] (II) Initializing extension XINERAMA
+[   332.111] (II) config/udev: Adding input device Power Button (/dev/input/event2)
+[   332.111] (**) Power Button: Applying InputClass "evdev keyboard catchall"
+[   332.111] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[   332.111] (II) LoadModule: "libinput"
+[   332.112] (II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
+[   332.117] (II) Module libinput: vendor="X.Org Foundation"
+[   332.117] 	compiled for 1.21.1.3, module version = 1.2.1
+[   332.117] 	Module class: X.Org XInput Driver
+[   332.117] 	ABI class: X.Org XInput driver, version 24.4
+[   332.117] (II) Using input driver 'libinput' for 'Power Button'
+[   332.118] (II) systemd-logind: got fd for /dev/input/event2 13:66 fd 41 paused 0
+[   332.118] (**) Power Button: always reports core events
+[   332.118] (**) Option "Device" "/dev/input/event2"
+[   332.127] (II) event2  - Power Button: is tagged by udev as: Keyboard
+[   332.127] (II) event2  - Power Button: device is a keyboard
+[   332.127] (II) event2  - Power Button: device removed
+[   332.127] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input2/event2"
+[   332.127] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[   332.127] (II) event2  - Power Button: is tagged by udev as: Keyboard
+[   332.127] (II) event2  - Power Button: device is a keyboard
+[   332.128] (II) config/udev: Adding input device Video Bus (/dev/input/event3)
+[   332.128] (**) Video Bus: Applying InputClass "evdev keyboard catchall"
+[   332.128] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[   332.128] (II) Using input driver 'libinput' for 'Video Bus'
+[   332.128] (II) systemd-logind: got fd for /dev/input/event3 13:67 fd 44 paused 0
+[   332.128] (**) Video Bus: always reports core events
+[   332.128] (**) Option "Device" "/dev/input/event3"
+[   332.129] (II) event3  - Video Bus: is tagged by udev as: Keyboard
+[   332.129] (II) event3  - Video Bus: device is a keyboard
+[   332.129] (II) event3  - Video Bus: device removed
+[   332.129] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:00/LNXVIDEO:00/input/input3/event3"
+[   332.129] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 7)
+[   332.129] (II) event3  - Video Bus: is tagged by udev as: Keyboard
+[   332.129] (II) event3  - Video Bus: device is a keyboard
+[   332.130] (II) config/udev: Adding input device Video Bus (/dev/input/event4)
+[   332.130] (**) Video Bus: Applying InputClass "evdev keyboard catchall"
+[   332.130] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[   332.130] (II) Using input driver 'libinput' for 'Video Bus'
+[   332.130] (II) systemd-logind: got fd for /dev/input/event4 13:68 fd 45 paused 0
+[   332.130] (**) Video Bus: always reports core events
+[   332.130] (**) Option "Device" "/dev/input/event4"
+[   332.131] (II) event4  - Video Bus: is tagged by udev as: Keyboard
+[   332.131] (II) event4  - Video Bus: device is a keyboard
+[   332.131] (II) event4  - Video Bus: device removed
+[   332.131] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:0e/LNXVIDEO:01/input/input4/event4"
+[   332.131] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 8)
+[   332.132] (II) event4  - Video Bus: is tagged by udev as: Keyboard
+[   332.132] (II) event4  - Video Bus: device is a keyboard
+[   332.132] (II) config/udev: Adding input device Power Button (/dev/input/event1)
+[   332.132] (**) Power Button: Applying InputClass "evdev keyboard catchall"
+[   332.132] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[   332.132] (II) Using input driver 'libinput' for 'Power Button'
+[   332.132] (II) systemd-logind: got fd for /dev/input/event1 13:65 fd 46 paused 0
+[   332.132] (**) Power Button: always reports core events
+[   332.132] (**) Option "Device" "/dev/input/event1"
+[   332.133] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[   332.133] (II) event1  - Power Button: device is a keyboard
+[   332.133] (II) event1  - Power Button: device removed
+[   332.133] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input1/event1"
+[   332.133] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 9)
+[   332.133] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[   332.134] (II) event1  - Power Button: device is a keyboard
+[   332.134] (II) config/udev: Adding input device Lid Switch (/dev/input/event0)
+[   332.134] (II) No input driver specified, ignoring this device.
+[   332.134] (II) This device may have been added with another device file.
+[   332.134] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=3 (/dev/input/event17)
+[   332.134] (II) No input driver specified, ignoring this device.
+[   332.134] (II) This device may have been added with another device file.
+[   332.134] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=7 (/dev/input/event18)
+[   332.134] (II) No input driver specified, ignoring this device.
+[   332.134] (II) This device may have been added with another device file.
+[   332.134] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=8 (/dev/input/event19)
+[   332.135] (II) No input driver specified, ignoring this device.
+[   332.135] (II) This device may have been added with another device file.
+[   332.135] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=9 (/dev/input/event20)
+[   332.135] (II) No input driver specified, ignoring this device.
+[   332.135] (II) This device may have been added with another device file.
+[   332.135] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=10 (/dev/input/event21)
+[   332.135] (II) No input driver specified, ignoring this device.
+[   332.135] (II) This device may have been added with another device file.
+[   332.135] (II) config/udev: Adding input device Integrated Camera: Integrated C (/dev/input/event22)
+[   332.135] (**) Integrated Camera: Integrated C: Applying InputClass "evdev keyboard catchall"
+[   332.135] (**) Integrated Camera: Integrated C: Applying InputClass "libinput keyboard catchall"
+[   332.135] (II) Using input driver 'libinput' for 'Integrated Camera: Integrated C'
+[   332.136] (II) systemd-logind: got fd for /dev/input/event22 13:86 fd 47 paused 0
+[   332.136] (**) Integrated Camera: Integrated C: always reports core events
+[   332.136] (**) Option "Device" "/dev/input/event22"
+[   332.137] (II) event22 - Integrated Camera: Integrated C: is tagged by udev as: Keyboard
+[   332.137] (II) event22 - Integrated Camera: Integrated C: device is a keyboard
+[   332.137] (II) event22 - Integrated Camera: Integrated C: device removed
+[   332.137] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:05:00.3/usb1/1-3/1-3:1.0/input/input23/event22"
+[   332.137] (II) XINPUT: Adding extended input device "Integrated Camera: Integrated C" (type: KEYBOARD, id 10)
+[   332.137] (II) event22 - Integrated Camera: Integrated C: is tagged by udev as: Keyboard
+[   332.138] (II) event22 - Integrated Camera: Integrated C: device is a keyboard
+[   332.138] (II) config/udev: Adding input device ITE Tech. Inc. ITE Device(8295) Keyboard (/dev/input/event6)
+[   332.138] (**) ITE Tech. Inc. ITE Device(8295) Keyboard: Applying InputClass "evdev keyboard catchall"
+[   332.138] (**) ITE Tech. Inc. ITE Device(8295) Keyboard: Applying InputClass "libinput keyboard catchall"
+[   332.138] (II) Using input driver 'libinput' for 'ITE Tech. Inc. ITE Device(8295) Keyboard'
+[   332.139] (II) systemd-logind: got fd for /dev/input/event6 13:70 fd 48 paused 0
+[   332.139] (**) ITE Tech. Inc. ITE Device(8295) Keyboard: always reports core events
+[   332.139] (**) Option "Device" "/dev/input/event6"
+[   332.140] (II) event6  - ITE Tech. Inc. ITE Device(8295) Keyboard: is tagged by udev as: Keyboard
+[   332.140] (II) event6  - ITE Tech. Inc. ITE Device(8295) Keyboard: device is a keyboard
+[   332.140] (II) event6  - ITE Tech. Inc. ITE Device(8295) Keyboard: device removed
+[   332.140] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:05:00.3/usb1/1-4/1-4:1.0/0003:048D:C955.0001/input/input6/event6"
+[   332.140] (II) XINPUT: Adding extended input device "ITE Tech. Inc. ITE Device(8295) Keyboard" (type: KEYBOARD, id 11)
+[   332.141] (II) event6  - ITE Tech. Inc. ITE Device(8295) Keyboard: is tagged by udev as: Keyboard
+[   332.141] (II) event6  - ITE Tech. Inc. ITE Device(8295) Keyboard: device is a keyboard
+[   332.142] (II) config/udev: Adding input device Razer Razer Basilisk V3 (/dev/input/event7)
+[   332.142] (**) Razer Razer Basilisk V3: Applying InputClass "evdev pointer catchall"
+[   332.142] (**) Razer Razer Basilisk V3: Applying InputClass "libinput pointer catchall"
+[   332.142] (II) Using input driver 'libinput' for 'Razer Razer Basilisk V3'
+[   332.204] (II) systemd-logind: got fd for /dev/input/event7 13:71 fd 49 paused 0
+[   332.204] (**) Razer Razer Basilisk V3: always reports core events
+[   332.204] (**) Option "Device" "/dev/input/event7"
+[   332.205] (II) event7  - Razer Razer Basilisk V3: is tagged by udev as: Mouse
+[   332.205] (II) event7  - Razer Razer Basilisk V3: device is a pointer
+[   332.206] (II) event7  - Razer Razer Basilisk V3: device removed
+[   332.206] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:05:00.4/usb3/3-1/3-1.1/3-1.1:1.0/0003:1532:0099.0003/input/input7/event7"
+[   332.206] (II) XINPUT: Adding extended input device "Razer Razer Basilisk V3" (type: MOUSE, id 12)
+[   332.206] (**) Option "AccelerationScheme" "none"
+[   332.206] (**) Razer Razer Basilisk V3: (accel) selected scheme none/0
+[   332.206] (**) Razer Razer Basilisk V3: (accel) acceleration factor: 2.000
+[   332.206] (**) Razer Razer Basilisk V3: (accel) acceleration threshold: 4
+[   332.207] (II) event7  - Razer Razer Basilisk V3: is tagged by udev as: Mouse
+[   332.207] (II) event7  - Razer Razer Basilisk V3: device is a pointer
+[   332.207] (II) config/udev: Adding input device Razer Razer Basilisk V3 (/dev/input/mouse0)
+[   332.207] (II) No input driver specified, ignoring this device.
+[   332.207] (II) This device may have been added with another device file.
+[   332.208] (II) config/udev: Adding input device Razer Razer Basilisk V3 Keyboard (/dev/input/event8)
+[   332.208] (**) Razer Razer Basilisk V3 Keyboard: Applying InputClass "evdev keyboard catchall"
+[   332.208] (**) Razer Razer Basilisk V3 Keyboard: Applying InputClass "libinput keyboard catchall"
+[   332.208] (II) Using input driver 'libinput' for 'Razer Razer Basilisk V3 Keyboard'
+[   332.209] (II) systemd-logind: got fd for /dev/input/event8 13:72 fd 50 paused 0
+[   332.209] (**) Razer Razer Basilisk V3 Keyboard: always reports core events
+[   332.209] (**) Option "Device" "/dev/input/event8"
+[   332.209] (II) event8  - Razer Razer Basilisk V3 Keyboard: is tagged by udev as: Keyboard
+[   332.210] (II) event8  - Razer Razer Basilisk V3 Keyboard: device is a keyboard
+[   332.210] (II) event8  - Razer Razer Basilisk V3 Keyboard: device removed
+[   332.210] (II) libinput: Razer Razer Basilisk V3 Keyboard: needs a virtual subdevice
+[   332.210] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:05:00.4/usb3/3-1/3-1.1/3-1.1:1.1/0003:1532:0099.0004/input/input8/event8"
+[   332.210] (II) XINPUT: Adding extended input device "Razer Razer Basilisk V3 Keyboard" (type: MOUSE, id 13)
+[   332.210] (**) Option "AccelerationScheme" "none"
+[   332.210] (**) Razer Razer Basilisk V3 Keyboard: (accel) selected scheme none/0
+[   332.210] (**) Razer Razer Basilisk V3 Keyboard: (accel) acceleration factor: 2.000
+[   332.210] (**) Razer Razer Basilisk V3 Keyboard: (accel) acceleration threshold: 4
+[   332.211] (II) event8  - Razer Razer Basilisk V3 Keyboard: is tagged by udev as: Keyboard
+[   332.211] (II) event8  - Razer Razer Basilisk V3 Keyboard: device is a keyboard
+[   332.211] (II) config/udev: Adding input device Razer Razer Basilisk V3 (/dev/input/event9)
+[   332.211] (II) No input driver specified, ignoring this device.
+[   332.211] (II) This device may have been added with another device file.
+[   332.212] (II) config/udev: Adding input device Razer Razer Basilisk V3 (/dev/input/event10)
+[   332.212] (**) Razer Razer Basilisk V3: Applying InputClass "evdev keyboard catchall"
+[   332.212] (**) Razer Razer Basilisk V3: Applying InputClass "libinput keyboard catchall"
+[   332.212] (II) Using input driver 'libinput' for 'Razer Razer Basilisk V3'
+[   332.213] (II) systemd-logind: got fd for /dev/input/event10 13:74 fd 51 paused 0
+[   332.213] (**) Razer Razer Basilisk V3: always reports core events
+[   332.213] (**) Option "Device" "/dev/input/event10"
+[   332.214] (II) event10 - Razer Razer Basilisk V3: is tagged by udev as: Keyboard
+[   332.214] (II) event10 - Razer Razer Basilisk V3: device is a keyboard
+[   332.214] (II) event10 - Razer Razer Basilisk V3: device removed
+[   332.214] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:05:00.4/usb3/3-1/3-1.1/3-1.1:1.2/0003:1532:0099.0005/input/input10/event10"
+[   332.214] (II) XINPUT: Adding extended input device "Razer Razer Basilisk V3" (type: KEYBOARD, id 14)
+[   332.215] (II) event10 - Razer Razer Basilisk V3: is tagged by udev as: Keyboard
+[   332.215] (II) event10 - Razer Razer Basilisk V3: device is a keyboard
+[   332.216] (II) config/udev: Adding input device ITE Tech. Inc. ITE Device(8910) Keyboard (/dev/input/event11)
+[   332.216] (**) ITE Tech. Inc. ITE Device(8910) Keyboard: Applying InputClass "evdev keyboard catchall"
+[   332.216] (**) ITE Tech. Inc. ITE Device(8910) Keyboard: Applying InputClass "libinput keyboard catchall"
+[   332.216] (II) Using input driver 'libinput' for 'ITE Tech. Inc. ITE Device(8910) Keyboard'
+[   332.217] (II) systemd-logind: got fd for /dev/input/event11 13:75 fd 52 paused 0
+[   332.217] (**) ITE Tech. Inc. ITE Device(8910) Keyboard: always reports core events
+[   332.217] (**) Option "Device" "/dev/input/event11"
+[   332.218] (II) event11 - ITE Tech. Inc. ITE Device(8910) Keyboard: is tagged by udev as: Keyboard
+[   332.218] (II) event11 - ITE Tech. Inc. ITE Device(8910) Keyboard: device is a keyboard
+[   332.218] (II) event11 - ITE Tech. Inc. ITE Device(8910) Keyboard: device removed
+[   332.218] (II) libinput: ITE Tech. Inc. ITE Device(8910) Keyboard: needs a virtual subdevice
+[   332.218] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:05:00.4/usb3/3-4/3-4:1.0/0003:048D:C100.0007/input/input11/event11"
+[   332.218] (II) XINPUT: Adding extended input device "ITE Tech. Inc. ITE Device(8910) Keyboard" (type: MOUSE, id 15)
+[   332.219] (**) Option "AccelerationScheme" "none"
+[   332.219] (**) ITE Tech. Inc. ITE Device(8910) Keyboard: (accel) selected scheme none/0
+[   332.219] (**) ITE Tech. Inc. ITE Device(8910) Keyboard: (accel) acceleration factor: 2.000
+[   332.219] (**) ITE Tech. Inc. ITE Device(8910) Keyboard: (accel) acceleration threshold: 4
+[   332.219] (II) event11 - ITE Tech. Inc. ITE Device(8910) Keyboard: is tagged by udev as: Keyboard
+[   332.219] (II) event11 - ITE Tech. Inc. ITE Device(8910) Keyboard: device is a keyboard
+[   332.220] (II) config/udev: Adding input device ITE Tech. Inc. ITE Device(8910) Wireless Radio Control (/dev/input/event12)
+[   332.220] (**) ITE Tech. Inc. ITE Device(8910) Wireless Radio Control: Applying InputClass "evdev keyboard catchall"
+[   332.220] (**) ITE Tech. Inc. ITE Device(8910) Wireless Radio Control: Applying InputClass "libinput keyboard catchall"
+[   332.220] (II) Using input driver 'libinput' for 'ITE Tech. Inc. ITE Device(8910) Wireless Radio Control'
+[   332.221] (II) systemd-logind: got fd for /dev/input/event12 13:76 fd 53 paused 0
+[   332.221] (**) ITE Tech. Inc. ITE Device(8910) Wireless Radio Control: always reports core events
+[   332.221] (**) Option "Device" "/dev/input/event12"
+[   332.222] (II) event12 - ITE Tech. Inc. ITE Device(8910) Wireless Radio Control: is tagged by udev as: Keyboard
+[   332.222] (II) event12 - ITE Tech. Inc. ITE Device(8910) Wireless Radio Control: device is a keyboard
+[   332.222] (II) event12 - ITE Tech. Inc. ITE Device(8910) Wireless Radio Control: device removed
+[   332.222] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:05:00.4/usb3/3-4/3-4:1.0/0003:048D:C100.0007/input/input12/event12"
+[   332.222] (II) XINPUT: Adding extended input device "ITE Tech. Inc. ITE Device(8910) Wireless Radio Control" (type: KEYBOARD, id 16)
+[   332.223] (II) event12 - ITE Tech. Inc. ITE Device(8910) Wireless Radio Control: is tagged by udev as: Keyboard
+[   332.223] (II) event12 - ITE Tech. Inc. ITE Device(8910) Wireless Radio Control: device is a keyboard
+[   332.224] (II) config/udev: Adding input device HD-Audio Generic Mic (/dev/input/event23)
+[   332.224] (II) No input driver specified, ignoring this device.
+[   332.224] (II) This device may have been added with another device file.
+[   332.224] (II) config/udev: Adding input device HD-Audio Generic Headphone (/dev/input/event24)
+[   332.224] (II) No input driver specified, ignoring this device.
+[   332.224] (II) This device may have been added with another device file.
+[   332.224] (II) config/udev: Adding input device Ideapad extra buttons (/dev/input/event15)
+[   332.224] (**) Ideapad extra buttons: Applying InputClass "evdev keyboard catchall"
+[   332.224] (**) Ideapad extra buttons: Applying InputClass "libinput keyboard catchall"
+[   332.224] (II) Using input driver 'libinput' for 'Ideapad extra buttons'
+[   332.225] (II) systemd-logind: got fd for /dev/input/event15 13:79 fd 54 paused 0
+[   332.225] (**) Ideapad extra buttons: always reports core events
+[   332.225] (**) Option "Device" "/dev/input/event15"
+[   332.226] (II) event15 - Ideapad extra buttons: is tagged by udev as: Keyboard
+[   332.226] (II) event15 - Ideapad extra buttons: device is a keyboard
+[   332.226] (II) event15 - Ideapad extra buttons: device removed
+[   332.226] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.3/PNP0C09:00/VPC2004:00/input/input16/event15"
+[   332.226] (II) XINPUT: Adding extended input device "Ideapad extra buttons" (type: KEYBOARD, id 17)
+[   332.227] (II) event15 - Ideapad extra buttons: is tagged by udev as: Keyboard
+[   332.227] (II) event15 - Ideapad extra buttons: device is a keyboard
+[   332.227] (II) config/udev: Adding input device MSFT0001:00 06CB:7F28 Mouse (/dev/input/event13)
+[   332.227] (**) MSFT0001:00 06CB:7F28 Mouse: Applying InputClass "evdev pointer catchall"
+[   332.227] (**) MSFT0001:00 06CB:7F28 Mouse: Applying InputClass "libinput pointer catchall"
+[   332.227] (II) Using input driver 'libinput' for 'MSFT0001:00 06CB:7F28 Mouse'
+[   332.228] (II) systemd-logind: got fd for /dev/input/event13 13:77 fd 55 paused 0
+[   332.228] (**) MSFT0001:00 06CB:7F28 Mouse: always reports core events
+[   332.228] (**) Option "Device" "/dev/input/event13"
+[   332.228] (II) event13 - MSFT0001:00 06CB:7F28 Mouse: is tagged by udev as: Mouse Pointingstick
+[   332.229] (II) event13 - MSFT0001:00 06CB:7F28 Mouse: device is a pointer
+[   332.229] (II) event13 - MSFT0001:00 06CB:7F28 Mouse: device removed
+[   332.230] (**) Option "config_info" "udev:/sys/devices/platform/AMDI0010:03/i2c-0/i2c-MSFT0001:00/0018:06CB:7F28.0008/input/input26/event13"
+[   332.230] (II) XINPUT: Adding extended input device "MSFT0001:00 06CB:7F28 Mouse" (type: MOUSE, id 18)
+[   332.230] (**) Option "AccelerationScheme" "none"
+[   332.230] (**) MSFT0001:00 06CB:7F28 Mouse: (accel) selected scheme none/0
+[   332.230] (**) MSFT0001:00 06CB:7F28 Mouse: (accel) acceleration factor: 2.000
+[   332.230] (**) MSFT0001:00 06CB:7F28 Mouse: (accel) acceleration threshold: 4
+[   332.230] (II) event13 - MSFT0001:00 06CB:7F28 Mouse: is tagged by udev as: Mouse Pointingstick
+[   332.230] (II) event13 - MSFT0001:00 06CB:7F28 Mouse: device is a pointer
+[   332.231] (II) config/udev: Adding input device MSFT0001:00 06CB:7F28 Mouse (/dev/input/mouse1)
+[   332.231] (II) No input driver specified, ignoring this device.
+[   332.231] (II) This device may have been added with another device file.
+[   332.232] (II) config/udev: Adding input device MSFT0001:00 06CB:7F28 Touchpad (/dev/input/event14)
+[   332.232] (**) MSFT0001:00 06CB:7F28 Touchpad: Applying InputClass "evdev touchpad catchall"
+[   332.232] (**) MSFT0001:00 06CB:7F28 Touchpad: Applying InputClass "libinput touchpad catchall"
+[   332.232] (**) MSFT0001:00 06CB:7F28 Touchpad: Applying InputClass "touchpad catchall"
+[   332.232] (**) MSFT0001:00 06CB:7F28 Touchpad: Applying InputClass "Default clickpad buttons"
+[   332.232] (II) LoadModule: "synaptics"
+[   332.232] (II) Loading /usr/lib/xorg/modules/input/synaptics_drv.so
+[   332.233] (II) Module synaptics: vendor="X.Org Foundation"
+[   332.234] 	compiled for 1.21.1.3, module version = 1.9.2
+[   332.234] 	Module class: X.Org XInput Driver
+[   332.234] 	ABI class: X.Org XInput driver, version 24.4
+[   332.234] (II) Using input driver 'synaptics' for 'MSFT0001:00 06CB:7F28 Touchpad'
+[   332.234] (II) systemd-logind: got fd for /dev/input/event14 13:78 fd 56 paused 0
+[   332.235] (**) MSFT0001:00 06CB:7F28 Touchpad: always reports core events
+[   332.235] (**) Option "Device" "/dev/input/event14"
+[   332.235] (II) synaptics: MSFT0001:00 06CB:7F28 Touchpad: found clickpad property
+[   332.235] (--) synaptics: MSFT0001:00 06CB:7F28 Touchpad: x-axis range 0 - 1224 (res 12)
+[   332.235] (--) synaptics: MSFT0001:00 06CB:7F28 Touchpad: y-axis range 0 - 804 (res 12)
+[   332.235] (II) synaptics: MSFT0001:00 06CB:7F28 Touchpad: device does not report pressure, will use touch data.
+[   332.235] (II) synaptics: MSFT0001:00 06CB:7F28 Touchpad: device does not report finger width.
+[   332.235] (--) synaptics: MSFT0001:00 06CB:7F28 Touchpad: buttons: left double triple
+[   332.235] (--) synaptics: MSFT0001:00 06CB:7F28 Touchpad: Vendor 0x6cb Product 0x7f28
+[   332.235] (--) synaptics: MSFT0001:00 06CB:7F28 Touchpad: invalid pressure range.  defaulting to 0 - 255
+[   332.235] (--) synaptics: MSFT0001:00 06CB:7F28 Touchpad: invalid finger width range.  defaulting to 0 - 15
+[   332.235] (**) Option "SoftButtonAreas" "50% 0 82% 0 0 0 0 0"
+[   332.235] (--) synaptics: MSFT0001:00 06CB:7F28 Touchpad: touchpad found
+[   332.235] (**) MSFT0001:00 06CB:7F28 Touchpad: always reports core events
+[   332.235] (**) Option "config_info" "udev:/sys/devices/platform/AMDI0010:03/i2c-0/i2c-MSFT0001:00/0018:06CB:7F28.0008/input/input27/event14"
+[   332.235] (II) XINPUT: Adding extended input device "MSFT0001:00 06CB:7F28 Touchpad" (type: TOUCHPAD, id 19)
+[   332.235] (**) synaptics: MSFT0001:00 06CB:7F28 Touchpad: (accel) MinSpeed is now constant deceleration 2.5
+[   332.235] (**) synaptics: MSFT0001:00 06CB:7F28 Touchpad: (accel) MaxSpeed is now 1.75
+[   332.235] (**) synaptics: MSFT0001:00 06CB:7F28 Touchpad: (accel) AccelFactor is now 0.137
+[   332.235] (**) MSFT0001:00 06CB:7F28 Touchpad: (accel) keeping acceleration scheme 1
+[   332.235] (**) MSFT0001:00 06CB:7F28 Touchpad: (accel) acceleration profile 1
+[   332.235] (**) MSFT0001:00 06CB:7F28 Touchpad: (accel) acceleration factor: 2.000
+[   332.235] (**) MSFT0001:00 06CB:7F28 Touchpad: (accel) acceleration threshold: 4
+[   332.235] (--) synaptics: MSFT0001:00 06CB:7F28 Touchpad: touchpad found
+[   332.235] (II) config/udev: Adding input device MSFT0001:00 06CB:7F28 Touchpad (/dev/input/mouse2)
+[   332.235] (**) MSFT0001:00 06CB:7F28 Touchpad: Ignoring device from InputClass "touchpad ignore duplicates"
+[   332.235] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event5)
+[   332.235] (**) AT Translated Set 2 keyboard: Applying InputClass "evdev keyboard catchall"
+[   332.235] (**) AT Translated Set 2 keyboard: Applying InputClass "libinput keyboard catchall"
+[   332.235] (II) Using input driver 'libinput' for 'AT Translated Set 2 keyboard'
+[   332.236] (II) systemd-logind: got fd for /dev/input/event5 13:69 fd 57 paused 0
+[   332.236] (**) AT Translated Set 2 keyboard: always reports core events
+[   332.236] (**) Option "Device" "/dev/input/event5"
+[   332.237] (II) event5  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[   332.237] (II) event5  - AT Translated Set 2 keyboard: device is a keyboard
+[   332.238] (II) event5  - AT Translated Set 2 keyboard: device removed
+[   332.238] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio0/input/input5/event5"
+[   332.238] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 20)
+[   332.238] (II) event5  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[   332.238] (II) event5  - AT Translated Set 2 keyboard: device is a keyboard
+[   332.239] (II) config/udev: Adding input device PC Speaker (/dev/input/event16)
+[   332.239] (II) No input driver specified, ignoring this device.
+[   332.239] (II) This device may have been added with another device file.
+[   332.242] (**) Razer Razer Basilisk V3 Keyboard: Applying InputClass "evdev keyboard catchall"
+[   332.242] (**) Razer Razer Basilisk V3 Keyboard: Applying InputClass "libinput keyboard catchall"
+[   332.242] (II) Using input driver 'libinput' for 'Razer Razer Basilisk V3 Keyboard'
+[   332.242] (II) systemd-logind: returning pre-existing fd for /dev/input/event8 13:72
+[   332.242] (**) Razer Razer Basilisk V3 Keyboard: always reports core events
+[   332.242] (**) Option "Device" "/dev/input/event8"
+[   332.242] (II) libinput: Razer Razer Basilisk V3 Keyboard: is a virtual subdevice
+[   332.242] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:05:00.4/usb3/3-1/3-1.1/3-1.1:1.1/0003:1532:0099.0004/input/input8/event8"
+[   332.242] (II) XINPUT: Adding extended input device "Razer Razer Basilisk V3 Keyboard" (type: KEYBOARD, id 21)
+[   332.242] (**) ITE Tech. Inc. ITE Device(8910) Keyboard: Applying InputClass "evdev keyboard catchall"
+[   332.242] (**) ITE Tech. Inc. ITE Device(8910) Keyboard: Applying InputClass "libinput keyboard catchall"
+[   332.242] (II) Using input driver 'libinput' for 'ITE Tech. Inc. ITE Device(8910) Keyboard'
+[   332.242] (II) systemd-logind: returning pre-existing fd for /dev/input/event11 13:75
+[   332.242] (**) ITE Tech. Inc. ITE Device(8910) Keyboard: always reports core events
+[   332.242] (**) Option "Device" "/dev/input/event11"
+[   332.242] (II) libinput: ITE Tech. Inc. ITE Device(8910) Keyboard: is a virtual subdevice
+[   332.242] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:05:00.4/usb3/3-4/3-4:1.0/0003:048D:C100.0007/input/input11/event11"
+[   332.242] (II) XINPUT: Adding extended input device "ITE Tech. Inc. ITE Device(8910) Keyboard" (type: KEYBOARD, id 22)
+[   332.275] (--) NVIDIA(GPU-0): DFP-0: disconnected
+[   332.275] (--) NVIDIA(GPU-0): DFP-0: Internal DisplayPort
+[   332.275] (--) NVIDIA(GPU-0): DFP-0: 2660.0 MHz maximum pixel clock
+[   332.275] (--) NVIDIA(GPU-0): 
+[   332.275] (--) NVIDIA(GPU-0): DFP-1: disconnected
+[   332.275] (--) NVIDIA(GPU-0): DFP-1: Internal TMDS
+[   332.275] (--) NVIDIA(GPU-0): DFP-1: 165.0 MHz maximum pixel clock
+[   332.275] (--) NVIDIA(GPU-0): 
+[   332.275] (--) NVIDIA(GPU-0): DFP-2: disconnected
+[   332.275] (--) NVIDIA(GPU-0): DFP-2: Internal TMDS
+[   332.275] (--) NVIDIA(GPU-0): DFP-2: 165.0 MHz maximum pixel clock
+[   332.275] (--) NVIDIA(GPU-0): 
+[   332.276] (--) NVIDIA(GPU-0): BOE Technology Group Co., Ltd (DFP-3): connected
+[   332.276] (--) NVIDIA(GPU-0): BOE Technology Group Co., Ltd (DFP-3): Internal DisplayPort
+[   332.276] (--) NVIDIA(GPU-0): BOE Technology Group Co., Ltd (DFP-3): 2660.0 MHz maximum pixel clock
+[   332.276] (--) NVIDIA(GPU-0): 
+[   332.356] (--) NVIDIA(GPU-0): DFP-0: disconnected
+[   332.356] (--) NVIDIA(GPU-0): DFP-0: Internal DisplayPort
+[   332.356] (--) NVIDIA(GPU-0): DFP-0: 2660.0 MHz maximum pixel clock
+[   332.356] (--) NVIDIA(GPU-0): 
+[   332.356] (--) NVIDIA(GPU-0): DFP-1: disconnected
+[   332.356] (--) NVIDIA(GPU-0): DFP-1: Internal TMDS
+[   332.356] (--) NVIDIA(GPU-0): DFP-1: 165.0 MHz maximum pixel clock
+[   332.356] (--) NVIDIA(GPU-0): 
+[   332.356] (--) NVIDIA(GPU-0): DFP-2: disconnected
+[   332.356] (--) NVIDIA(GPU-0): DFP-2: Internal TMDS
+[   332.356] (--) NVIDIA(GPU-0): DFP-2: 165.0 MHz maximum pixel clock
+[   332.356] (--) NVIDIA(GPU-0): 
+[   332.357] (--) NVIDIA(GPU-0): BOE Technology Group Co., Ltd (DFP-3): connected
+[   332.357] (--) NVIDIA(GPU-0): BOE Technology Group Co., Ltd (DFP-3): Internal DisplayPort
+[   332.357] (--) NVIDIA(GPU-0): BOE Technology Group Co., Ltd (DFP-3): 2660.0 MHz maximum pixel clock
+[   332.357] (--) NVIDIA(GPU-0): 
+[   332.358] (--) NVIDIA(GPU-0): DFP-0: disconnected
+[   332.358] (--) NVIDIA(GPU-0): DFP-0: Internal DisplayPort
+[   332.358] (--) NVIDIA(GPU-0): DFP-0: 2660.0 MHz maximum pixel clock
+[   332.358] (--) NVIDIA(GPU-0): 
+[   332.358] (--) NVIDIA(GPU-0): DFP-1: disconnected
+[   332.358] (--) NVIDIA(GPU-0): DFP-1: Internal TMDS
+[   332.358] (--) NVIDIA(GPU-0): DFP-1: 165.0 MHz maximum pixel clock
+[   332.359] (--) NVIDIA(GPU-0): 
+[   332.359] (--) NVIDIA(GPU-0): DFP-2: disconnected
+[   332.359] (--) NVIDIA(GPU-0): DFP-2: Internal TMDS
+[   332.359] (--) NVIDIA(GPU-0): DFP-2: 165.0 MHz maximum pixel clock
+[   332.359] (--) NVIDIA(GPU-0): 
+[   332.359] (--) NVIDIA(GPU-0): BOE Technology Group Co., Ltd (DFP-3): connected
+[   332.359] (--) NVIDIA(GPU-0): BOE Technology Group Co., Ltd (DFP-3): Internal DisplayPort
+[   332.359] (--) NVIDIA(GPU-0): BOE Technology Group Co., Ltd (DFP-3): 2660.0 MHz maximum pixel clock
+[   332.359] (--) NVIDIA(GPU-0): 
+[   332.359] (--) NVIDIA(GPU-0): DFP-0: disconnected
+[   332.359] (--) NVIDIA(GPU-0): DFP-0: Internal DisplayPort
+[   332.359] (--) NVIDIA(GPU-0): DFP-0: 2660.0 MHz maximum pixel clock
+[   332.359] (--) NVIDIA(GPU-0): 
+[   332.359] (--) NVIDIA(GPU-0): DFP-1: disconnected
+[   332.359] (--) NVIDIA(GPU-0): DFP-1: Internal TMDS
+[   332.359] (--) NVIDIA(GPU-0): DFP-1: 165.0 MHz maximum pixel clock
+[   332.359] (--) NVIDIA(GPU-0): 
+[   332.359] (--) NVIDIA(GPU-0): DFP-2: disconnected
+[   332.359] (--) NVIDIA(GPU-0): DFP-2: Internal TMDS
+[   332.359] (--) NVIDIA(GPU-0): DFP-2: 165.0 MHz maximum pixel clock
+[   332.359] (--) NVIDIA(GPU-0): 
+[   332.359] (--) NVIDIA(GPU-0): BOE Technology Group Co., Ltd (DFP-3): connected
+[   332.359] (--) NVIDIA(GPU-0): BOE Technology Group Co., Ltd (DFP-3): Internal DisplayPort
+[   332.359] (--) NVIDIA(GPU-0): BOE Technology Group Co., Ltd (DFP-3): 2660.0 MHz maximum pixel clock
+[   332.359] (--) NVIDIA(GPU-0): 
+[   482.621] (EE) event11 - ITE Tech. Inc. ITE Device(8910) Keyboard: client bug: event processing lagging behind by 37ms, your system is too slow
+[   850.689] (EE) client bug: timer event7 wheel scroll: scheduled expiry is in the past (-1378ms), your system is too slow
+[   860.749] (EE) client bug: timer event7 wheel scroll: scheduled expiry is in the past (-11878ms), your system is too slow
+[   898.920] (II) event7  - Razer Razer Basilisk V3: SYN_DROPPED event - some input events have been lost.
+[   986.294] (II) event7  - Razer Razer Basilisk V3: SYN_DROPPED event - some input events have been lost.
+[   991.231] (II) event11 - ITE Tech. Inc. ITE Device(8910) Keyboard: SYN_DROPPED event - some input events have been lost.

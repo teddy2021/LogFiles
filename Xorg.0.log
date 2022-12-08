@@ -1,0 +1,556 @@
+[  8366.798] 
+X.Org X Server 1.21.1.4
+X Protocol Version 11, Revision 0
+[  8366.798] Current Operating System: Linux teddy2012-arch 6.0.11-arch1-1 #1 SMP PREEMPT_DYNAMIC Fri, 02 Dec 2022 17:25:31 +0000 x86_64
+[  8366.798] Kernel command line: BOOT_IMAGE=/vmlinuz-linux root=UUID=b55f4c83-14f8-4165-8af0-23821cf092d1 rw loglevel=3 quiet
+[  8366.798]  
+[  8366.798] Current version of pixman: 0.42.2
+[  8366.798] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[  8366.798] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[  8366.799] (==) Log file: "/home/kody/.local/share/xorg/Xorg.0.log", Time: Wed Dec  7 17:01:24 2022
+[  8366.799] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[  8366.799] (==) No Layout section.  Using the first Screen section.
+[  8366.799] (==) No screen section available. Using defaults.
+[  8366.799] (**) |-->Screen "Default Screen Section" (0)
+[  8366.799] (**) |   |-->Monitor "<default monitor>"
+[  8366.799] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[  8366.799] (==) Automatically adding devices
+[  8366.799] (==) Automatically enabling devices
+[  8366.799] (==) Automatically adding GPU devices
+[  8366.799] (==) Automatically binding GPU devices
+[  8366.799] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[  8366.799] (WW) The directory "/usr/share/fonts/misc" does not exist.
+[  8366.799] 	Entry deleted from font path.
+[  8366.799] (WW) The directory "/usr/share/fonts/TTF" does not exist.
+[  8366.799] 	Entry deleted from font path.
+[  8366.799] (WW) The directory "/usr/share/fonts/OTF" does not exist.
+[  8366.799] 	Entry deleted from font path.
+[  8366.799] (WW) The directory "/usr/share/fonts/Type1" does not exist.
+[  8366.799] 	Entry deleted from font path.
+[  8366.799] (==) FontPath set to:
+	/usr/share/fonts/100dpi,
+	/usr/share/fonts/75dpi
+[  8366.799] (==) ModulePath set to "/usr/lib/xorg/modules"
+[  8366.799] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[  8366.799] (II) Module ABI versions:
+[  8366.799] 	X.Org ANSI C Emulation: 0.4
+[  8366.799] 	X.Org Video Driver: 25.2
+[  8366.799] 	X.Org XInput driver : 24.4
+[  8366.799] 	X.Org Server Extension : 10.0
+[  8366.800] (++) using VT number 1
+
+[  8366.801] (II) systemd-logind: took control of session /org/freedesktop/login1/session/_310
+[  8366.802] (II) xfree86: Adding drm device (/dev/dri/card0)
+[  8366.802] (II) Platform probe for /sys/devices/pci0000:00/0000:00:01.0/0000:01:00.0/drm/card0
+[  8366.802] (II) systemd-logind: got fd for /dev/dri/card0 226:0 fd 13 paused 0
+[  8366.802] (II) xfree86: Adding drm device (/dev/dri/card1)
+[  8366.802] (II) Platform probe for /sys/devices/pci0000:00/0000:00:02.0/drm/card1
+[  8366.803] (II) systemd-logind: got fd for /dev/dri/card1 226:1 fd 14 paused 0
+[  8366.805] (--) PCI:*(0@0:2:0) 8086:0416:1462:1109 rev 6, Mem @ 0xf7400000/4194304, 0xd0000000/268435456, I/O @ 0x0000f000/64, BIOS @ 0x????????/131072
+[  8366.805] (--) PCI: (1@0:0:0) 10de:139b:1462:1109 rev 162, Mem @ 0xf6000000/16777216, 0xe0000000/268435456, 0xf0000000/33554432, I/O @ 0x0000e000/128, BIOS @ 0x????????/524288
+[  8366.805] (WW) Open ACPI failed (/var/run/acpid.socket) (No such file or directory)
+[  8366.805] (II) LoadModule: "glx"
+[  8366.805] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[  8366.806] (II) Module glx: vendor="X.Org Foundation"
+[  8366.806] 	compiled for 1.21.1.4, module version = 1.0.0
+[  8366.806] 	ABI class: X.Org Server Extension, version 10.0
+[  8366.806] (==) Matched intel as autoconfigured driver 0
+[  8366.806] (==) Matched nouveau as autoconfigured driver 1
+[  8366.806] (==) Matched nv as autoconfigured driver 2
+[  8366.806] (==) Matched modesetting as autoconfigured driver 3
+[  8366.806] (==) Matched fbdev as autoconfigured driver 4
+[  8366.806] (==) Matched vesa as autoconfigured driver 5
+[  8366.806] (==) Assigned the driver to the xf86ConfigLayout
+[  8366.806] (II) LoadModule: "intel"
+[  8366.806] (II) Loading /usr/lib/xorg/modules/drivers/intel_drv.so
+[  8366.806] (II) Module intel: vendor="X.Org Foundation"
+[  8366.806] 	compiled for 1.21.1.1, module version = 2.99.917
+[  8366.806] 	Module class: X.Org Video Driver
+[  8366.806] 	ABI class: X.Org Video Driver, version 25.2
+[  8366.806] (II) LoadModule: "nouveau"
+[  8366.806] (II) Loading /usr/lib/xorg/modules/drivers/nouveau_drv.so
+[  8366.806] (II) Module nouveau: vendor="X.Org Foundation"
+[  8366.806] 	compiled for 1.21.1.1, module version = 1.0.17
+[  8366.806] 	Module class: X.Org Video Driver
+[  8366.806] 	ABI class: X.Org Video Driver, version 25.2
+[  8366.806] (II) LoadModule: "nv"
+[  8366.806] (WW) Warning, couldn't open module nv
+[  8366.806] (EE) Failed to load module "nv" (module does not exist, 0)
+[  8366.806] (II) LoadModule: "modesetting"
+[  8366.806] (II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+[  8366.807] (II) Module modesetting: vendor="X.Org Foundation"
+[  8366.807] 	compiled for 1.21.1.4, module version = 1.21.1
+[  8366.807] 	Module class: X.Org Video Driver
+[  8366.807] 	ABI class: X.Org Video Driver, version 25.2
+[  8366.807] (II) LoadModule: "fbdev"
+[  8366.807] (II) Loading /usr/lib/xorg/modules/drivers/fbdev_drv.so
+[  8366.807] (II) Module fbdev: vendor="X.Org Foundation"
+[  8366.807] 	compiled for 1.21.1.1, module version = 0.5.0
+[  8366.807] 	Module class: X.Org Video Driver
+[  8366.807] 	ABI class: X.Org Video Driver, version 25.2
+[  8366.807] (II) LoadModule: "vesa"
+[  8366.807] (II) Loading /usr/lib/xorg/modules/drivers/vesa_drv.so
+[  8366.807] (II) Module vesa: vendor="X.Org Foundation"
+[  8366.807] 	compiled for 1.21.1.3, module version = 2.5.0
+[  8366.807] 	Module class: X.Org Video Driver
+[  8366.807] 	ABI class: X.Org Video Driver, version 25.2
+[  8366.807] (II) intel: Driver for Intel(R) Integrated Graphics Chipsets:
+	i810, i810-dc100, i810e, i815, i830M, 845G, 854, 852GM/855GM, 865G,
+	915G, E7221 (i915), 915GM, 945G, 945GM, 945GME, Pineview GM,
+	Pineview G, 965G, G35, 965Q, 946GZ, 965GM, 965GME/GLE, G33, Q35, Q33,
+	GM45, 4 Series, G45/G43, Q45/Q43, G41, B43
+[  8366.807] (II) intel: Driver for Intel(R) HD Graphics
+[  8366.807] (II) intel: Driver for Intel(R) Iris(TM) Graphics
+[  8366.807] (II) intel: Driver for Intel(R) Iris(TM) Pro Graphics
+[  8366.807] (II) NOUVEAU driver 
+[  8366.807] (II) NOUVEAU driver for NVIDIA chipset families :
+[  8366.807] 	RIVA TNT            (NV04)
+[  8366.807] 	RIVA TNT2           (NV05)
+[  8366.807] 	GeForce 256         (NV10)
+[  8366.807] 	GeForce 2           (NV11, NV15)
+[  8366.807] 	GeForce 4MX         (NV17, NV18)
+[  8366.807] 	GeForce 3           (NV20)
+[  8366.807] 	GeForce 4Ti         (NV25, NV28)
+[  8366.807] 	GeForce FX          (NV3x)
+[  8366.807] 	GeForce 6           (NV4x)
+[  8366.807] 	GeForce 7           (G7x)
+[  8366.807] 	GeForce 8           (G8x)
+[  8366.807] 	GeForce 9           (G9x)
+[  8366.807] 	GeForce GTX 2xx/3xx (GT2xx)
+[  8366.807] 	GeForce GTX 4xx/5xx (GFxxx)
+[  8366.807] 	GeForce GTX 6xx/7xx (GKxxx)
+[  8366.807] 	GeForce GTX 9xx     (GMxxx)
+[  8366.807] 	GeForce GTX 10xx    (GPxxx)
+[  8366.807] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[  8366.807] (II) FBDEV: driver for framebuffer: fbdev
+[  8366.807] (II) VESA: driver for VESA chipsets: vesa
+[  8366.807] xf86EnableIO: failed to enable I/O ports 0000-03ff (Operation not permitted)
+[  8366.807] (II) intel(0): Using Kernel Mode Setting driver: i915, version 1.6.0 20201103
+[  8366.807] (II) intel(0): SNA compiled from 2.99.917-916-g31486f40
+[  8366.808] (WW) Falling back to old probe method for modesetting
+[  8366.808] (WW) Falling back to old probe method for fbdev
+[  8366.808] (II) Loading sub module "fbdevhw"
+[  8366.808] (II) LoadModule: "fbdevhw"
+[  8366.808] (II) Loading /usr/lib/xorg/modules/libfbdevhw.so
+[  8366.808] (II) Module fbdevhw: vendor="X.Org Foundation"
+[  8366.808] 	compiled for 1.21.1.4, module version = 0.0.2
+[  8366.808] 	ABI class: X.Org Video Driver, version 25.2
+[  8366.808] (EE) open /dev/fb0: Permission denied
+[  8366.808] (II) [drm] nouveau interface version: 1.3.1
+[  8366.808] (WW) VGA arbiter: cannot open kernel arbiter, no multi-card support
+[  8366.808] (--) intel(0): Integrated Graphics Chipset: Intel(R) HD Graphics 4600
+[  8366.808] (--) intel(0): CPU: x86-64, sse2, sse3, ssse3, sse4.1, sse4.2, avx, avx2; using a maximum of 4 threads
+[  8366.808] (II) intel(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[  8366.808] (==) intel(0): Depth 24, (--) framebuffer bpp 32
+[  8366.808] (==) intel(0): RGB weight 888
+[  8366.808] (==) intel(0): Default visual is TrueColor
+[  8366.808] (II) intel(0): Output eDP1 has no monitor section
+[  8366.809] (**) intel(0): Found backlight control interface intel_backlight (type 'raw') for output eDP1
+[  8366.809] (II) intel(0): Enabled output eDP1
+[  8366.809] (II) intel(0): Output VGA1 has no monitor section
+[  8366.809] (II) intel(0): Enabled output VGA1
+[  8366.809] (II) intel(0): Output HDMI1 has no monitor section
+[  8366.809] (II) intel(0): Enabled output HDMI1
+[  8366.809] (--) intel(0): Using a maximum size of 256x256 for hardware cursors
+[  8366.809] (II) intel(0): Output VIRTUAL1 has no monitor section
+[  8366.809] (II) intel(0): Enabled output VIRTUAL1
+[  8366.809] (--) intel(0): Output eDP1 using initial mode 1920x1080 on pipe 0
+[  8366.809] (==) intel(0): TearFree disabled
+[  8366.809] (==) intel(0): Using gamma correction (1.0, 1.0, 1.0)
+[  8366.809] (==) intel(0): DPI set to (96, 96)
+[  8366.809] (II) Loading sub module "dri3"
+[  8366.809] (II) LoadModule: "dri3"
+[  8366.809] (II) Module "dri3" already built-in
+[  8366.809] (II) Loading sub module "dri2"
+[  8366.809] (II) LoadModule: "dri2"
+[  8366.809] (II) Module "dri2" already built-in
+[  8366.809] (II) Loading sub module "present"
+[  8366.809] (II) LoadModule: "present"
+[  8366.809] (II) Module "present" already built-in
+[  8366.809] (II) Loading sub module "dri2"
+[  8366.809] (II) LoadModule: "dri2"
+[  8366.809] (II) Module "dri2" already built-in
+[  8366.809] (--) NOUVEAU(G0): Chipset: "NVIDIA NV117"
+[  8366.809] (==) NOUVEAU(G0): Depth 24, (--) framebuffer bpp 32
+[  8366.809] (==) NOUVEAU(G0): RGB weight 888
+[  8366.809] (==) NOUVEAU(G0): Default visual is TrueColor
+[  8366.809] (==) NOUVEAU(G0): Using HW cursor
+[  8366.809] (==) NOUVEAU(G0): Allowed maximum DRI level 2.
+[  8366.809] (==) NOUVEAU(G0): GLX sync to VBlank enabled.
+[  8366.809] (==) NOUVEAU(G0): Page flipping enabled
+[  8366.809] (==) NOUVEAU(G0): Swap limit set to 1 [Max allowed 2]
+[  8366.809] (==) NOUVEAU(G0): Page flipping synced to vblank by kernel.
+[  8366.809] (==) NOUVEAU(G0): Using gamma correction (1.0, 1.0, 1.0)
+[  8366.809] (II) NOUVEAU(G0): Virtual size is 1024x768 (pitch 0)
+[  8366.809] (**) NOUVEAU(G0):  Mode "(null)": 173.0 MHz (scaled from 0.0 MHz), 67.2 kHz, 60.0 Hz
+[  8366.809] (II) NOUVEAU(G0): Modeline "(null)"x60.0  173.00  1920 2048 2248 2576  1080 1083 1088 1120 -hsync +vsync (67.2 kHz)
+[  8366.809] (==) NOUVEAU(G0): DPI set to (96, 96)
+[  8366.809] (II) Loading sub module "fb"
+[  8366.809] (II) LoadModule: "fb"
+[  8366.809] (II) Module "fb" already built-in
+[  8366.809] (II) Loading sub module "shadowfb"
+[  8366.809] (II) LoadModule: "shadowfb"
+[  8366.809] (II) Loading /usr/lib/xorg/modules/libshadowfb.so
+[  8366.809] (II) Module shadowfb: vendor="X.Org Foundation"
+[  8366.809] 	compiled for 1.21.1.4, module version = 1.0.0
+[  8366.810] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[  8366.810] (II) UnloadModule: "modesetting"
+[  8366.810] (II) Unloading modesetting
+[  8366.810] (II) UnloadModule: "fbdev"
+[  8366.810] (II) Unloading fbdev
+[  8366.810] (II) UnloadSubModule: "fbdevhw"
+[  8366.810] (II) Unloading fbdevhw
+[  8366.810] (II) UnloadModule: "vesa"
+[  8366.810] (II) Unloading vesa
+[  8366.810] (II) intel(0): SNA initialized with Haswell (gen7.5, gt2) backend
+[  8366.810] (==) intel(0): Backing store enabled
+[  8366.810] (==) intel(0): Silken mouse enabled
+[  8366.810] (II) intel(0): HW Cursor enabled
+[  8366.810] (==) intel(0): DPMS enabled
+[  8366.810] (==) intel(0): Display hotplug detection enabled
+[  8366.810] (II) intel(0): [DRI2] Setup complete
+[  8366.810] (II) intel(0): [DRI2]   DRI driver: i965
+[  8366.810] (II) intel(0): [DRI2]   VDPAU driver: va_gl
+[  8366.810] (II) intel(0): direct rendering: DRI2 DRI3 enabled
+[  8366.810] (II) intel(0): hardware support for Present enabled
+[  8366.811] (II) NOUVEAU(G0): Channel setup complete.
+[  8366.811] (II) NOUVEAU(G0): [COPY] async initialised.
+[  8366.811] (II) NOUVEAU(G0): Hardware support for Present enabled
+[  8366.811] (II) NOUVEAU(G0): [DRI2] Setup complete
+[  8366.811] (II) NOUVEAU(G0): [DRI2]   DRI driver: nouveau
+[  8366.811] (II) NOUVEAU(G0): [DRI2]   VDPAU driver: nouveau
+[  8366.811] (II) Loading sub module "exa"
+[  8366.811] (II) LoadModule: "exa"
+[  8366.811] (II) Loading /usr/lib/xorg/modules/libexa.so
+[  8366.812] (II) Module exa: vendor="X.Org Foundation"
+[  8366.812] 	compiled for 1.21.1.4, module version = 2.6.0
+[  8366.812] 	ABI class: X.Org Video Driver, version 25.2
+[  8366.812] (II) EXA(256): Driver allocated offscreen pixmaps
+[  8366.812] (II) EXA(256): Driver registered support for the following operations:
+[  8366.812] (II)         Solid
+[  8366.812] (II)         Copy
+[  8366.812] (II)         Composite (RENDER acceleration)
+[  8366.812] (II)         UploadToScreen
+[  8366.812] (II)         DownloadFromScreen
+[  8366.812] (==) NOUVEAU(G0): Backing store enabled
+[  8366.812] (==) NOUVEAU(G0): Silken mouse enabled
+[  8366.812] (II) NOUVEAU(G0): [XvMC] Associated with Nouveau GeForce 8/9 Textured Video.
+[  8366.812] (II) NOUVEAU(G0): [XvMC] Extension initialized.
+[  8366.812] (==) NOUVEAU(G0): DPMS enabled
+[  8366.812] (II) Initializing extension Generic Event Extension
+[  8366.812] (II) Initializing extension SHAPE
+[  8366.812] (II) Initializing extension MIT-SHM
+[  8366.812] (II) Initializing extension XInputExtension
+[  8366.812] (II) Initializing extension XTEST
+[  8366.812] (II) Initializing extension BIG-REQUESTS
+[  8366.812] (II) Initializing extension SYNC
+[  8366.812] (II) Initializing extension XKEYBOARD
+[  8366.812] (II) Initializing extension XC-MISC
+[  8366.812] (II) Initializing extension SECURITY
+[  8366.812] (II) Initializing extension XFIXES
+[  8366.812] (II) Initializing extension RENDER
+[  8366.813] (II) Initializing extension RANDR
+[  8366.813] (II) Initializing extension COMPOSITE
+[  8366.813] (II) Initializing extension DAMAGE
+[  8366.813] (II) Initializing extension MIT-SCREEN-SAVER
+[  8366.813] (II) Initializing extension DOUBLE-BUFFER
+[  8366.813] (II) Initializing extension RECORD
+[  8366.813] (II) Initializing extension DPMS
+[  8366.813] (II) Initializing extension Present
+[  8366.813] (II) Initializing extension DRI3
+[  8366.813] (II) Initializing extension X-Resource
+[  8366.813] (II) Initializing extension XVideo
+[  8366.813] (II) Initializing extension XVideo-MotionCompensation
+[  8366.813] (II) Initializing extension GLX
+[  8366.813] (EE) AIGLX error: dlopen of /usr/lib/dri/i965_dri.so failed (/usr/lib/dri/i965_dri.so: cannot open shared object file: No such file or directory)
+[  8366.813] (EE) AIGLX error: unable to load driver i965
+[  8366.834] (II) IGLX: Loaded and initialized swrast
+[  8366.834] (II) GLX: Initialized DRISWRAST GL provider for screen 0
+[  8366.834] (II) Initializing extension XFree86-VidModeExtension
+[  8366.834] (II) Initializing extension XFree86-DGA
+[  8366.834] (II) Initializing extension XFree86-DRI
+[  8366.834] (II) Initializing extension DRI2
+[  8366.835] (II) NOUVEAU(G0): NVEnterVT is called.
+[  8366.841] (II) intel(0): switch to mode 1920x1080@60.0 on eDP1 using pipe 0, position (0, 0), rotation normal, reflection none
+[  8366.844] (II) intel(0): Setting screen physical size to 508 x 285
+[  8366.896] (II) config/udev: Adding input device Power Button (/dev/input/event2)
+[  8366.922] (**) Power Button: Applying InputClass "evdev keyboard catchall"
+[  8366.922] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[  8366.922] (II) LoadModule: "libinput"
+[  8366.922] (II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
+[  8366.923] (II) Module libinput: vendor="X.Org Foundation"
+[  8366.923] 	compiled for 1.21.1.3, module version = 1.2.1
+[  8366.923] 	Module class: X.Org XInput Driver
+[  8366.923] 	ABI class: X.Org XInput driver, version 24.4
+[  8366.923] (II) Using input driver 'libinput' for 'Power Button'
+[  8366.924] (II) systemd-logind: got fd for /dev/input/event2 13:66 fd 24 paused 0
+[  8366.924] (**) Power Button: always reports core events
+[  8366.924] (**) Option "Device" "/dev/input/event2"
+[  8366.925] (II) event2  - Power Button: is tagged by udev as: Keyboard
+[  8366.925] (II) event2  - Power Button: device is a keyboard
+[  8366.925] (II) event2  - Power Button: device removed
+[  8366.925] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input2/event2"
+[  8366.925] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[  8366.926] (II) event2  - Power Button: is tagged by udev as: Keyboard
+[  8366.926] (II) event2  - Power Button: device is a keyboard
+[  8366.926] (II) config/udev: Adding input device Video Bus (/dev/input/event5)
+[  8366.926] (**) Video Bus: Applying InputClass "evdev keyboard catchall"
+[  8366.926] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[  8366.926] (II) Using input driver 'libinput' for 'Video Bus'
+[  8366.927] (II) systemd-logind: got fd for /dev/input/event5 13:69 fd 27 paused 0
+[  8366.927] (**) Video Bus: always reports core events
+[  8366.927] (**) Option "Device" "/dev/input/event5"
+[  8366.927] (II) event5  - Video Bus: is tagged by udev as: Keyboard
+[  8366.927] (II) event5  - Video Bus: device is a keyboard
+[  8366.928] (II) event5  - Video Bus: device removed
+[  8366.928] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:01/input/input6/event5"
+[  8366.928] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 7)
+[  8366.928] (II) event5  - Video Bus: is tagged by udev as: Keyboard
+[  8366.928] (II) event5  - Video Bus: device is a keyboard
+[  8366.929] (II) config/udev: Adding input device Lid Switch (/dev/input/event0)
+[  8366.929] (II) No input driver specified, ignoring this device.
+[  8366.929] (II) This device may have been added with another device file.
+[  8366.929] (II) config/udev: Adding input device Video Bus (/dev/input/event4)
+[  8366.929] (**) Video Bus: Applying InputClass "evdev keyboard catchall"
+[  8366.929] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[  8366.929] (II) Using input driver 'libinput' for 'Video Bus'
+[  8366.930] (II) systemd-logind: got fd for /dev/input/event4 13:68 fd 28 paused 0
+[  8366.930] (**) Video Bus: always reports core events
+[  8366.930] (**) Option "Device" "/dev/input/event4"
+[  8366.930] (II) event4  - Video Bus: is tagged by udev as: Keyboard
+[  8366.930] (II) event4  - Video Bus: device is a keyboard
+[  8366.930] (II) event4  - Video Bus: device removed
+[  8366.930] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:44/LNXVIDEO:00/input/input5/event4"
+[  8366.930] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 8)
+[  8366.931] (II) event4  - Video Bus: is tagged by udev as: Keyboard
+[  8366.931] (II) event4  - Video Bus: device is a keyboard
+[  8366.932] (II) config/udev: Adding input device Power Button (/dev/input/event1)
+[  8366.932] (**) Power Button: Applying InputClass "evdev keyboard catchall"
+[  8366.932] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[  8366.932] (II) Using input driver 'libinput' for 'Power Button'
+[  8366.932] (II) systemd-logind: got fd for /dev/input/event1 13:65 fd 29 paused 0
+[  8366.932] (**) Power Button: always reports core events
+[  8366.932] (**) Option "Device" "/dev/input/event1"
+[  8366.933] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[  8366.933] (II) event1  - Power Button: device is a keyboard
+[  8366.933] (II) event1  - Power Button: device removed
+[  8366.933] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input1/event1"
+[  8366.933] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 9)
+[  8366.934] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[  8366.934] (II) event1  - Power Button: device is a keyboard
+[  8366.934] (II) config/udev: Adding input device HDA Intel HDMI HDMI/DP,pcm=3 (/dev/input/event16)
+[  8366.934] (II) No input driver specified, ignoring this device.
+[  8366.934] (II) This device may have been added with another device file.
+[  8366.935] (II) config/udev: Adding input device HDA Intel HDMI HDMI/DP,pcm=7 (/dev/input/event17)
+[  8366.935] (II) No input driver specified, ignoring this device.
+[  8366.935] (II) This device may have been added with another device file.
+[  8366.935] (II) config/udev: Adding input device HDA Intel HDMI HDMI/DP,pcm=8 (/dev/input/event18)
+[  8366.935] (II) No input driver specified, ignoring this device.
+[  8366.935] (II) This device may have been added with another device file.
+[  8366.935] (II) config/udev: Adding input device HDA Intel HDMI HDMI/DP,pcm=9 (/dev/input/event19)
+[  8366.935] (II) No input driver specified, ignoring this device.
+[  8366.935] (II) This device may have been added with another device file.
+[  8366.935] (II) config/udev: Adding input device HDA Intel HDMI HDMI/DP,pcm=10 (/dev/input/event20)
+[  8366.935] (II) No input driver specified, ignoring this device.
+[  8366.935] (II) This device may have been added with another device file.
+[  8366.936] (II) config/udev: Adding input device Kingston HyperX Alloy Origins (/dev/input/event6)
+[  8366.936] (**) Kingston HyperX Alloy Origins: Applying InputClass "evdev keyboard catchall"
+[  8366.936] (**) Kingston HyperX Alloy Origins: Applying InputClass "libinput keyboard catchall"
+[  8366.936] (II) Using input driver 'libinput' for 'Kingston HyperX Alloy Origins'
+[  8366.936] (II) systemd-logind: got fd for /dev/input/event6 13:70 fd 30 paused 0
+[  8366.936] (**) Kingston HyperX Alloy Origins: always reports core events
+[  8366.936] (**) Option "Device" "/dev/input/event6"
+[  8366.937] (II) event6  - Kingston HyperX Alloy Origins: is tagged by udev as: Keyboard
+[  8366.937] (II) event6  - Kingston HyperX Alloy Origins: device is a keyboard
+[  8366.938] (II) event6  - Kingston HyperX Alloy Origins: device removed
+[  8366.938] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb3/3-1/3-1.1/3-1.1:1.0/0003:0951:16E5.0002/input/input7/event6"
+[  8366.938] (II) XINPUT: Adding extended input device "Kingston HyperX Alloy Origins" (type: KEYBOARD, id 10)
+[  8366.939] (II) event6  - Kingston HyperX Alloy Origins: is tagged by udev as: Keyboard
+[  8366.939] (II) event6  - Kingston HyperX Alloy Origins: device is a keyboard
+[  8366.939] (II) config/udev: Adding input device Kingston HyperX Alloy Origins Consumer Control (/dev/input/event9)
+[  8366.939] (**) Kingston HyperX Alloy Origins Consumer Control: Applying InputClass "evdev keyboard catchall"
+[  8366.939] (**) Kingston HyperX Alloy Origins Consumer Control: Applying InputClass "libinput keyboard catchall"
+[  8366.939] (II) Using input driver 'libinput' for 'Kingston HyperX Alloy Origins Consumer Control'
+[  8366.940] (II) systemd-logind: got fd for /dev/input/event9 13:73 fd 31 paused 0
+[  8366.940] (**) Kingston HyperX Alloy Origins Consumer Control: always reports core events
+[  8366.940] (**) Option "Device" "/dev/input/event9"
+[  8366.941] (II) event9  - Kingston HyperX Alloy Origins Consumer Control: is tagged by udev as: Keyboard
+[  8366.941] (II) event9  - Kingston HyperX Alloy Origins Consumer Control: device is a keyboard
+[  8366.941] (II) event9  - Kingston HyperX Alloy Origins Consumer Control: device removed
+[  8366.941] (II) libinput: Kingston HyperX Alloy Origins Consumer Control: needs a virtual subdevice
+[  8366.941] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb3/3-1/3-1.1/3-1.1:1.1/0003:0951:16E5.0003/input/input10/event9"
+[  8366.941] (II) XINPUT: Adding extended input device "Kingston HyperX Alloy Origins Consumer Control" (type: MOUSE, id 11)
+[  8366.941] (**) Option "AccelerationScheme" "none"
+[  8366.941] (**) Kingston HyperX Alloy Origins Consumer Control: (accel) selected scheme none/0
+[  8366.941] (**) Kingston HyperX Alloy Origins Consumer Control: (accel) acceleration factor: 2.000
+[  8366.941] (**) Kingston HyperX Alloy Origins Consumer Control: (accel) acceleration threshold: 4
+[  8366.942] (II) event9  - Kingston HyperX Alloy Origins Consumer Control: is tagged by udev as: Keyboard
+[  8366.942] (II) event9  - Kingston HyperX Alloy Origins Consumer Control: device is a keyboard
+[  8366.943] (II) config/udev: Adding input device Kingston HyperX Alloy Origins (/dev/input/event10)
+[  8366.943] (II) No input driver specified, ignoring this device.
+[  8366.943] (II) This device may have been added with another device file.
+[  8366.943] (II) config/udev: Adding input device Kingston HyperX Alloy Origins Mouse (/dev/input/event7)
+[  8366.943] (**) Kingston HyperX Alloy Origins Mouse: Applying InputClass "evdev pointer catchall"
+[  8366.943] (**) Kingston HyperX Alloy Origins Mouse: Applying InputClass "libinput pointer catchall"
+[  8366.943] (II) Using input driver 'libinput' for 'Kingston HyperX Alloy Origins Mouse'
+[  8366.944] (II) systemd-logind: got fd for /dev/input/event7 13:71 fd 32 paused 0
+[  8366.944] (**) Kingston HyperX Alloy Origins Mouse: always reports core events
+[  8366.944] (**) Option "Device" "/dev/input/event7"
+[  8366.945] (II) event7  - Kingston HyperX Alloy Origins Mouse: is tagged by udev as: Mouse
+[  8366.945] (II) event7  - Kingston HyperX Alloy Origins Mouse: device is a pointer
+[  8366.945] (II) event7  - Kingston HyperX Alloy Origins Mouse: device removed
+[  8366.945] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb3/3-1/3-1.1/3-1.1:1.1/0003:0951:16E5.0003/input/input8/event7"
+[  8366.945] (II) XINPUT: Adding extended input device "Kingston HyperX Alloy Origins Mouse" (type: MOUSE, id 12)
+[  8366.945] (**) Option "AccelerationScheme" "none"
+[  8366.945] (**) Kingston HyperX Alloy Origins Mouse: (accel) selected scheme none/0
+[  8366.945] (**) Kingston HyperX Alloy Origins Mouse: (accel) acceleration factor: 2.000
+[  8366.945] (**) Kingston HyperX Alloy Origins Mouse: (accel) acceleration threshold: 4
+[  8366.946] (II) event7  - Kingston HyperX Alloy Origins Mouse: is tagged by udev as: Mouse
+[  8366.946] (II) event7  - Kingston HyperX Alloy Origins Mouse: device is a pointer
+[  8366.947] (II) config/udev: Adding input device Kingston HyperX Alloy Origins Mouse (/dev/input/mouse0)
+[  8366.947] (II) No input driver specified, ignoring this device.
+[  8366.947] (II) This device may have been added with another device file.
+[  8366.947] (II) config/udev: Adding input device Kingston HyperX Alloy Origins System Control (/dev/input/event8)
+[  8366.947] (**) Kingston HyperX Alloy Origins System Control: Applying InputClass "evdev keyboard catchall"
+[  8366.947] (**) Kingston HyperX Alloy Origins System Control: Applying InputClass "libinput keyboard catchall"
+[  8366.947] (II) Using input driver 'libinput' for 'Kingston HyperX Alloy Origins System Control'
+[  8366.948] (II) systemd-logind: got fd for /dev/input/event8 13:72 fd 33 paused 0
+[  8366.948] (**) Kingston HyperX Alloy Origins System Control: always reports core events
+[  8366.948] (**) Option "Device" "/dev/input/event8"
+[  8366.949] (II) event8  - Kingston HyperX Alloy Origins System Control: is tagged by udev as: Keyboard
+[  8366.949] (II) event8  - Kingston HyperX Alloy Origins System Control: device is a keyboard
+[  8366.949] (II) event8  - Kingston HyperX Alloy Origins System Control: device removed
+[  8366.949] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb3/3-1/3-1.1/3-1.1:1.1/0003:0951:16E5.0003/input/input9/event8"
+[  8366.949] (II) XINPUT: Adding extended input device "Kingston HyperX Alloy Origins System Control" (type: KEYBOARD, id 13)
+[  8366.950] (II) event8  - Kingston HyperX Alloy Origins System Control: is tagged by udev as: Keyboard
+[  8366.950] (II) event8  - Kingston HyperX Alloy Origins System Control: device is a keyboard
+[  8366.951] (II) config/udev: Adding input device Kingston HyperX Alloy Origins (/dev/input/event11)
+[  8366.951] (**) Kingston HyperX Alloy Origins: Applying InputClass "evdev keyboard catchall"
+[  8366.951] (**) Kingston HyperX Alloy Origins: Applying InputClass "libinput keyboard catchall"
+[  8366.951] (II) Using input driver 'libinput' for 'Kingston HyperX Alloy Origins'
+[  8366.951] (II) systemd-logind: got fd for /dev/input/event11 13:75 fd 34 paused 0
+[  8366.951] (**) Kingston HyperX Alloy Origins: always reports core events
+[  8366.951] (**) Option "Device" "/dev/input/event11"
+[  8366.953] (II) event11 - Kingston HyperX Alloy Origins: is tagged by udev as: Keyboard
+[  8366.953] (II) event11 - Kingston HyperX Alloy Origins: device is a keyboard
+[  8366.953] (II) event11 - Kingston HyperX Alloy Origins: device removed
+[  8366.953] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb3/3-1/3-1.1/3-1.1:1.2/0003:0951:16E5.0004/input/input12/event11"
+[  8366.953] (II) XINPUT: Adding extended input device "Kingston HyperX Alloy Origins" (type: KEYBOARD, id 14)
+[  8366.954] (II) event11 - Kingston HyperX Alloy Origins: is tagged by udev as: Keyboard
+[  8366.954] (II) event11 - Kingston HyperX Alloy Origins: device is a keyboard
+[  8366.954] (II) config/udev: Adding input device Saitek Cyborg R.A.T.5 Mouse (/dev/input/event12)
+[  8366.954] (**) Saitek Cyborg R.A.T.5 Mouse: Applying InputClass "evdev pointer catchall"
+[  8366.954] (**) Saitek Cyborg R.A.T.5 Mouse: Applying InputClass "libinput pointer catchall"
+[  8366.955] (II) Using input driver 'libinput' for 'Saitek Cyborg R.A.T.5 Mouse'
+[  8367.011] (II) systemd-logind: got fd for /dev/input/event12 13:76 fd 35 paused 0
+[  8367.012] (**) Saitek Cyborg R.A.T.5 Mouse: always reports core events
+[  8367.012] (**) Option "Device" "/dev/input/event12"
+[  8367.013] (II) event12 - Saitek Cyborg R.A.T.5 Mouse: is tagged by udev as: Mouse
+[  8367.013] (II) event12 - Saitek Cyborg R.A.T.5 Mouse: device is a pointer
+[  8367.013] (II) event12 - Saitek Cyborg R.A.T.5 Mouse: device removed
+[  8367.013] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb3/3-1/3-1.2/3-1.2:1.0/0003:06A3:0CD5.0005/input/input13/event12"
+[  8367.013] (II) XINPUT: Adding extended input device "Saitek Cyborg R.A.T.5 Mouse" (type: MOUSE, id 15)
+[  8367.013] (**) Option "AccelerationScheme" "none"
+[  8367.013] (**) Saitek Cyborg R.A.T.5 Mouse: (accel) selected scheme none/0
+[  8367.013] (**) Saitek Cyborg R.A.T.5 Mouse: (accel) acceleration factor: 2.000
+[  8367.013] (**) Saitek Cyborg R.A.T.5 Mouse: (accel) acceleration threshold: 4
+[  8367.014] (II) event12 - Saitek Cyborg R.A.T.5 Mouse: is tagged by udev as: Mouse
+[  8367.014] (II) event12 - Saitek Cyborg R.A.T.5 Mouse: device is a pointer
+[  8367.015] (II) config/udev: Adding input device Saitek Cyborg R.A.T.5 Mouse (/dev/input/mouse1)
+[  8367.015] (II) No input driver specified, ignoring this device.
+[  8367.015] (II) This device may have been added with another device file.
+[  8367.015] (II) config/udev: Adding input device HDA Intel PCH Mic (/dev/input/event21)
+[  8367.015] (II) No input driver specified, ignoring this device.
+[  8367.015] (II) This device may have been added with another device file.
+[  8367.015] (II) config/udev: Adding input device HDA Intel PCH Headphone (/dev/input/event22)
+[  8367.015] (II) No input driver specified, ignoring this device.
+[  8367.015] (II) This device may have been added with another device file.
+[  8367.016] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event3)
+[  8367.016] (**) AT Translated Set 2 keyboard: Applying InputClass "evdev keyboard catchall"
+[  8367.016] (**) AT Translated Set 2 keyboard: Applying InputClass "libinput keyboard catchall"
+[  8367.016] (II) Using input driver 'libinput' for 'AT Translated Set 2 keyboard'
+[  8367.016] (II) systemd-logind: got fd for /dev/input/event3 13:67 fd 36 paused 0
+[  8367.016] (**) AT Translated Set 2 keyboard: always reports core events
+[  8367.016] (**) Option "Device" "/dev/input/event3"
+[  8367.017] (II) event3  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[  8367.017] (II) event3  - AT Translated Set 2 keyboard: device is a keyboard
+[  8367.017] (II) event3  - AT Translated Set 2 keyboard: device removed
+[  8367.017] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio0/input/input3/event3"
+[  8367.017] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 16)
+[  8367.018] (II) event3  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[  8367.018] (II) event3  - AT Translated Set 2 keyboard: device is a keyboard
+[  8367.019] (II) config/udev: Adding input device ETPS/2 Elantech Touchpad (/dev/input/event14)
+[  8367.019] (**) ETPS/2 Elantech Touchpad: Applying InputClass "evdev touchpad catchall"
+[  8367.019] (**) ETPS/2 Elantech Touchpad: Applying InputClass "libinput touchpad catchall"
+[  8367.019] (**) ETPS/2 Elantech Touchpad: Applying InputClass "touchpad catchall"
+[  8367.019] (**) ETPS/2 Elantech Touchpad: Applying InputClass "Default clickpad buttons"
+[  8367.019] (II) LoadModule: "synaptics"
+[  8367.019] (II) Loading /usr/lib/xorg/modules/input/synaptics_drv.so
+[  8367.019] (II) Module synaptics: vendor="X.Org Foundation"
+[  8367.019] 	compiled for 1.21.1.3, module version = 1.9.2
+[  8367.019] 	Module class: X.Org XInput Driver
+[  8367.019] 	ABI class: X.Org XInput driver, version 24.4
+[  8367.019] (II) Using input driver 'synaptics' for 'ETPS/2 Elantech Touchpad'
+[  8367.020] (II) systemd-logind: got fd for /dev/input/event14 13:78 fd 37 paused 0
+[  8367.020] (**) ETPS/2 Elantech Touchpad: always reports core events
+[  8367.020] (**) Option "Device" "/dev/input/event14"
+[  8367.020] (II) synaptics: ETPS/2 Elantech Touchpad: found clickpad property
+[  8367.020] (--) synaptics: ETPS/2 Elantech Touchpad: x-axis range 0 - 3260 (res 33)
+[  8367.020] (--) synaptics: ETPS/2 Elantech Touchpad: y-axis range 0 - 2119 (res 32)
+[  8367.020] (--) synaptics: ETPS/2 Elantech Touchpad: pressure range 0 - 255
+[  8367.020] (--) synaptics: ETPS/2 Elantech Touchpad: finger width range 0 - 15
+[  8367.020] (--) synaptics: ETPS/2 Elantech Touchpad: buttons: left double triple
+[  8367.020] (--) synaptics: ETPS/2 Elantech Touchpad: Vendor 0x2 Product 0xe
+[  8367.020] (**) Option "SoftButtonAreas" "50% 0 82% 0 0 0 0 0"
+[  8367.020] (--) synaptics: ETPS/2 Elantech Touchpad: touchpad found
+[  8367.020] (**) ETPS/2 Elantech Touchpad: always reports core events
+[  8367.020] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio1/input/input15/event14"
+[  8367.020] (II) XINPUT: Adding extended input device "ETPS/2 Elantech Touchpad" (type: TOUCHPAD, id 17)
+[  8367.020] (**) synaptics: ETPS/2 Elantech Touchpad: (accel) MinSpeed is now constant deceleration 2.5
+[  8367.020] (**) synaptics: ETPS/2 Elantech Touchpad: (accel) MaxSpeed is now 1.75
+[  8367.020] (**) synaptics: ETPS/2 Elantech Touchpad: (accel) AccelFactor is now 0.051
+[  8367.020] (**) ETPS/2 Elantech Touchpad: (accel) keeping acceleration scheme 1
+[  8367.020] (**) ETPS/2 Elantech Touchpad: (accel) acceleration profile 1
+[  8367.020] (**) ETPS/2 Elantech Touchpad: (accel) acceleration factor: 2.000
+[  8367.020] (**) ETPS/2 Elantech Touchpad: (accel) acceleration threshold: 4
+[  8367.020] (--) synaptics: ETPS/2 Elantech Touchpad: touchpad found
+[  8367.020] (II) config/udev: Adding input device ETPS/2 Elantech Touchpad (/dev/input/mouse2)
+[  8367.020] (**) ETPS/2 Elantech Touchpad: Ignoring device from InputClass "touchpad ignore duplicates"
+[  8367.021] (II) config/udev: Adding input device PC Speaker (/dev/input/event13)
+[  8367.021] (II) No input driver specified, ignoring this device.
+[  8367.021] (II) This device may have been added with another device file.
+[  8367.022] (II) config/udev: Adding input device MSI WMI hotkeys (/dev/input/event15)
+[  8367.022] (**) MSI WMI hotkeys: Applying InputClass "evdev keyboard catchall"
+[  8367.022] (**) MSI WMI hotkeys: Applying InputClass "libinput keyboard catchall"
+[  8367.022] (II) Using input driver 'libinput' for 'MSI WMI hotkeys'
+[  8367.023] (II) systemd-logind: got fd for /dev/input/event15 13:79 fd 38 paused 0
+[  8367.023] (**) MSI WMI hotkeys: always reports core events
+[  8367.023] (**) Option "Device" "/dev/input/event15"
+[  8367.023] (II) event15 - MSI WMI hotkeys: is tagged by udev as: Keyboard
+[  8367.023] (II) event15 - MSI WMI hotkeys: device is a keyboard
+[  8367.023] (II) event15 - MSI WMI hotkeys: device removed
+[  8367.023] (**) Option "config_info" "udev:/sys/devices/virtual/input/input16/event15"
+[  8367.023] (II) XINPUT: Adding extended input device "MSI WMI hotkeys" (type: KEYBOARD, id 18)
+[  8367.024] (II) event15 - MSI WMI hotkeys: is tagged by udev as: Keyboard
+[  8367.024] (II) event15 - MSI WMI hotkeys: device is a keyboard
+[  8367.044] (**) Kingston HyperX Alloy Origins Consumer Control: Applying InputClass "evdev keyboard catchall"
+[  8367.044] (**) Kingston HyperX Alloy Origins Consumer Control: Applying InputClass "libinput keyboard catchall"
+[  8367.044] (II) Using input driver 'libinput' for 'Kingston HyperX Alloy Origins Consumer Control'
+[  8367.044] (II) systemd-logind: returning pre-existing fd for /dev/input/event9 13:73
+[  8367.044] (**) Kingston HyperX Alloy Origins Consumer Control: always reports core events
+[  8367.044] (**) Option "Device" "/dev/input/event9"
+[  8367.044] (II) libinput: Kingston HyperX Alloy Origins Consumer Control: is a virtual subdevice
+[  8367.044] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb3/3-1/3-1.1/3-1.1:1.1/0003:0951:16E5.0003/input/input10/event9"
+[  8367.044] (II) XINPUT: Adding extended input device "Kingston HyperX Alloy Origins Consumer Control" (type: KEYBOARD, id 19)
+[  8367.059] (II) intel(0): EDID vendor "CMN", prod id 5941
+[  8367.059] (II) intel(0): Printing DDC gathered Modelines:
+[  8367.059] (II) intel(0): Modeline "1920x1080"x0.0  152.84  1920 1968 2000 2250  1080 1083 1088 1132 -hsync -vsync (67.9 kHz eP)
+[  8776.080] (EE) event6  - Kingston HyperX Alloy Origins: client bug: event processing lagging behind by 517ms, your system is too slow
+[  8783.391] (II) event6  - Kingston HyperX Alloy Origins: SYN_DROPPED event - some input events have been lost.
+[  8880.963] (II) event3  - AT Translated Set 2 keyboard: SYN_DROPPED event - some input events have been lost.

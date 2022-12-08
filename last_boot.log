@@ -1,0 +1,1613 @@
+Dec 08 00:00:48 teddy2012-arch kernel: Linux version 5.15.81-1-lts (linux-lts@archlinux) (gcc (GCC) 12.2.0, GNU ld (GNU Binutils) 2.39.0) #1 SMP Fri, 02 Dec 2022 21:05:15 +0000
+Dec 08 00:00:48 teddy2012-arch kernel: Command line: BOOT_IMAGE=/vmlinuz-linux-lts root=UUID=b55f4c83-14f8-4165-8af0-23821cf092d1 rw loglevel=3 quiet
+Dec 08 00:00:48 teddy2012-arch kernel: x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+Dec 08 00:00:48 teddy2012-arch kernel: x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+Dec 08 00:00:48 teddy2012-arch kernel: x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+Dec 08 00:00:48 teddy2012-arch kernel: x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+Dec 08 00:00:48 teddy2012-arch kernel: x86/fpu: Enabled xstate features 0x7, context size is 832 bytes, using 'standard' format.
+Dec 08 00:00:48 teddy2012-arch kernel: signal: max sigframe size: 1776
+Dec 08 00:00:48 teddy2012-arch kernel: BIOS-provided physical RAM map:
+Dec 08 00:00:48 teddy2012-arch kernel: BIOS-e820: [mem 0x0000000000000000-0x0000000000057fff] usable
+Dec 08 00:00:48 teddy2012-arch kernel: BIOS-e820: [mem 0x0000000000058000-0x0000000000058fff] reserved
+Dec 08 00:00:48 teddy2012-arch kernel: BIOS-e820: [mem 0x0000000000059000-0x000000000009dfff] usable
+Dec 08 00:00:48 teddy2012-arch kernel: BIOS-e820: [mem 0x000000000009e000-0x000000000009ffff] reserved
+Dec 08 00:00:48 teddy2012-arch kernel: BIOS-e820: [mem 0x0000000000100000-0x00000000c6f1efff] usable
+Dec 08 00:00:48 teddy2012-arch kernel: BIOS-e820: [mem 0x00000000c6f1f000-0x00000000c6f25fff] ACPI NVS
+Dec 08 00:00:48 teddy2012-arch kernel: BIOS-e820: [mem 0x00000000c6f26000-0x00000000c7721fff] usable
+Dec 08 00:00:48 teddy2012-arch kernel: BIOS-e820: [mem 0x00000000c7722000-0x00000000c7989fff] reserved
+Dec 08 00:00:48 teddy2012-arch kernel: BIOS-e820: [mem 0x00000000c798a000-0x00000000cb2bafff] usable
+Dec 08 00:00:48 teddy2012-arch kernel: BIOS-e820: [mem 0x00000000cb2bb000-0x00000000cb33ffff] reserved
+Dec 08 00:00:48 teddy2012-arch kernel: BIOS-e820: [mem 0x00000000cb340000-0x00000000cb359fff] ACPI data
+Dec 08 00:00:48 teddy2012-arch kernel: BIOS-e820: [mem 0x00000000cb35a000-0x00000000cb9e0fff] ACPI NVS
+Dec 08 00:00:48 teddy2012-arch kernel: BIOS-e820: [mem 0x00000000cb9e1000-0x00000000cbf6afff] reserved
+Dec 08 00:00:48 teddy2012-arch kernel: BIOS-e820: [mem 0x00000000cbf6b000-0x00000000cbffefff] type 20
+Dec 08 00:00:48 teddy2012-arch kernel: BIOS-e820: [mem 0x00000000cbfff000-0x00000000cbffffff] usable
+Dec 08 00:00:48 teddy2012-arch kernel: BIOS-e820: [mem 0x00000000cd000000-0x00000000cf1fffff] reserved
+Dec 08 00:00:48 teddy2012-arch kernel: BIOS-e820: [mem 0x00000000f8000000-0x00000000fbffffff] reserved
+Dec 08 00:00:48 teddy2012-arch kernel: BIOS-e820: [mem 0x00000000fec00000-0x00000000fec00fff] reserved
+Dec 08 00:00:48 teddy2012-arch kernel: BIOS-e820: [mem 0x00000000fed00000-0x00000000fed03fff] reserved
+Dec 08 00:00:48 teddy2012-arch kernel: BIOS-e820: [mem 0x00000000fed1c000-0x00000000fed1ffff] reserved
+Dec 08 00:00:48 teddy2012-arch kernel: BIOS-e820: [mem 0x00000000fee00000-0x00000000fee00fff] reserved
+Dec 08 00:00:48 teddy2012-arch kernel: BIOS-e820: [mem 0x00000000ff000000-0x00000000ffffffff] reserved
+Dec 08 00:00:48 teddy2012-arch kernel: BIOS-e820: [mem 0x0000000100000000-0x000000032fdfffff] usable
+Dec 08 00:00:48 teddy2012-arch kernel: NX (Execute Disable) protection: active
+Dec 08 00:00:48 teddy2012-arch kernel: efi: EFI v2.31 by American Megatrends
+Dec 08 00:00:48 teddy2012-arch kernel: efi: ESRT=0xcbf69918 ACPI=0xcb345000 ACPI 2.0=0xcb345000 SMBIOS=0xcbf69318 
+Dec 08 00:00:48 teddy2012-arch kernel: SMBIOS 2.8 present.
+Dec 08 00:00:48 teddy2012-arch kernel: DMI: Micro-Star International Co., Ltd. GE70 2QE/MS-1759, BIOS E1759IMS.80C 09/21/2015
+Dec 08 00:00:48 teddy2012-arch kernel: tsc: Fast TSC calibration using PIT
+Dec 08 00:00:48 teddy2012-arch kernel: tsc: Detected 2593.908 MHz processor
+Dec 08 00:00:48 teddy2012-arch kernel: e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+Dec 08 00:00:48 teddy2012-arch kernel: e820: remove [mem 0x000a0000-0x000fffff] usable
+Dec 08 00:00:48 teddy2012-arch kernel: last_pfn = 0x32fe00 max_arch_pfn = 0x400000000
+Dec 08 00:00:48 teddy2012-arch kernel: x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+Dec 08 00:00:48 teddy2012-arch kernel: total RAM covered: 12238M
+Dec 08 00:00:48 teddy2012-arch kernel: Found optimal setting for mtrr clean up
+Dec 08 00:00:48 teddy2012-arch kernel:  gran_size: 64K         chunk_size: 4M         num_reg: 10          lose cover RAM: 0G
+Dec 08 00:00:48 teddy2012-arch kernel: e820: update [mem 0xcd000000-0xffffffff] usable ==> reserved
+Dec 08 00:00:48 teddy2012-arch kernel: last_pfn = 0xcc000 max_arch_pfn = 0x400000000
+Dec 08 00:00:48 teddy2012-arch kernel: esrt: Reserving ESRT space from 0x00000000cbf69918 to 0x00000000cbf69950.
+Dec 08 00:00:48 teddy2012-arch kernel: Using GB pages for direct mapping
+Dec 08 00:00:48 teddy2012-arch kernel: Secure boot disabled
+Dec 08 00:00:48 teddy2012-arch kernel: RAMDISK: [mem 0x3492f000-0x3648efff]
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: Early table checksum verification disabled
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: RSDP 0x00000000CB345000 000024 (v02 MSI_NB)
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: XSDT 0x00000000CB3450A0 0000C4 (v01 MSI_NB MEGABOOK 01072009 AMI  00010013)
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: FACP 0x00000000CB352230 00010C (v05 MSI_NB MEGABOOK 01072009 AMI  00010013)
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: DSDT 0x00000000CB3451F8 00D031 (v02 MSI_NB MEGABOOK 00000037 INTL 20120711)
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: FACS 0x00000000CB9E0F80 000040
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: APIC 0x00000000CB352340 000092 (v03 MSI_NB MEGABOOK 01072009 AMI  00010013)
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: FPDT 0x00000000CB3523D8 000044 (v01 MSI_NB MEGABOOK 01072009 AMI  00010013)
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: FIDT 0x00000000CB352420 00009C (v01 MSI_NB MEGABOOK 01072009 AMI  00010013)
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: ASF! 0x00000000CB3524C0 0000A5 (v32 INTEL   HCG     00000001 TFSM 000F4240)
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: MSDM 0x00000000CB352568 000055 (v03 MSI_NB MEGABOOK 01072009 AMI  00010013)
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: SSDT 0x00000000CB3525C0 000228 (v01 INTEL  sensrhub 00000000 INTL 20120711)
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: SSDT 0x00000000CB3527E8 00018F (v01 Intel  zpodd    00001000 INTL 20120711)
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: SLIC 0x00000000CB352978 000176 (v01 MSI_NB MEGABOOK 01072009 AMI  00010013)
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: SSDT 0x00000000CB352AF0 000575 (v01 PmRef  Cpu0Ist  00003000 INTL 20120711)
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: SSDT 0x00000000CB353068 000AD8 (v01 PmRef  CpuPm    00003000 INTL 20120711)
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: MCFG 0x00000000CB353B40 00003C (v01 MSI_NB MEGABOOK 01072009 MSFT 00000097)
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: HPET 0x00000000CB353B80 000038 (v01 MSI_NB MEGABOOK 01072009 AMI. 00000005)
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: SSDT 0x00000000CB353BB8 000315 (v01 SataRe SataTabl 00001000 INTL 20120711)
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: SSDT 0x00000000CB353ED0 003550 (v01 SaSsdt SaSsdt   00003000 INTL 20091112)
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: SSDT 0x00000000CB357420 00159D (v01 SgRef  SgPeg    00001000 INTL 20120711)
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: MSFF 0x00000000CB3589C0 000029 (v01 MSI_NB MEGABOOK 00000010 AMI  00010013)
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: BGRT 0x00000000CB3589F0 000038 (v01 MSI_NB MEGABOOK 01072009 AMI  00010013)
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: DMAR 0x00000000CB358A28 0000B8 (v01 INTEL  HSW      00000001 INTL 00000001)
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: SSDT 0x00000000CB358AE0 001447 (v01 OptRef OptTabl  00001000 INTL 20120711)
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: Reserving FACP table memory at [mem 0xcb352230-0xcb35233b]
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: Reserving DSDT table memory at [mem 0xcb3451f8-0xcb352228]
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: Reserving FACS table memory at [mem 0xcb9e0f80-0xcb9e0fbf]
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: Reserving APIC table memory at [mem 0xcb352340-0xcb3523d1]
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: Reserving FPDT table memory at [mem 0xcb3523d8-0xcb35241b]
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: Reserving FIDT table memory at [mem 0xcb352420-0xcb3524bb]
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: Reserving ASF! table memory at [mem 0xcb3524c0-0xcb352564]
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: Reserving MSDM table memory at [mem 0xcb352568-0xcb3525bc]
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: Reserving SSDT table memory at [mem 0xcb3525c0-0xcb3527e7]
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: Reserving SSDT table memory at [mem 0xcb3527e8-0xcb352976]
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: Reserving SLIC table memory at [mem 0xcb352978-0xcb352aed]
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: Reserving SSDT table memory at [mem 0xcb352af0-0xcb353064]
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: Reserving SSDT table memory at [mem 0xcb353068-0xcb353b3f]
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: Reserving MCFG table memory at [mem 0xcb353b40-0xcb353b7b]
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: Reserving HPET table memory at [mem 0xcb353b80-0xcb353bb7]
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: Reserving SSDT table memory at [mem 0xcb353bb8-0xcb353ecc]
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: Reserving SSDT table memory at [mem 0xcb353ed0-0xcb35741f]
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: Reserving SSDT table memory at [mem 0xcb357420-0xcb3589bc]
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: Reserving MSFF table memory at [mem 0xcb3589c0-0xcb3589e8]
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: Reserving BGRT table memory at [mem 0xcb3589f0-0xcb358a27]
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: Reserving DMAR table memory at [mem 0xcb358a28-0xcb358adf]
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: Reserving SSDT table memory at [mem 0xcb358ae0-0xcb359f26]
+Dec 08 00:00:48 teddy2012-arch kernel: No NUMA configuration found
+Dec 08 00:00:48 teddy2012-arch kernel: Faking a node at [mem 0x0000000000000000-0x000000032fdfffff]
+Dec 08 00:00:48 teddy2012-arch kernel: NODE_DATA(0) allocated [mem 0x32fdfc000-0x32fdfffff]
+Dec 08 00:00:48 teddy2012-arch kernel: Zone ranges:
+Dec 08 00:00:48 teddy2012-arch kernel:   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+Dec 08 00:00:48 teddy2012-arch kernel:   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+Dec 08 00:00:48 teddy2012-arch kernel:   Normal   [mem 0x0000000100000000-0x000000032fdfffff]
+Dec 08 00:00:48 teddy2012-arch kernel:   Device   empty
+Dec 08 00:00:48 teddy2012-arch kernel: Movable zone start for each node
+Dec 08 00:00:48 teddy2012-arch kernel: Early memory node ranges
+Dec 08 00:00:48 teddy2012-arch kernel:   node   0: [mem 0x0000000000001000-0x0000000000057fff]
+Dec 08 00:00:48 teddy2012-arch kernel:   node   0: [mem 0x0000000000059000-0x000000000009dfff]
+Dec 08 00:00:48 teddy2012-arch kernel:   node   0: [mem 0x0000000000100000-0x00000000c6f1efff]
+Dec 08 00:00:48 teddy2012-arch kernel:   node   0: [mem 0x00000000c6f26000-0x00000000c7721fff]
+Dec 08 00:00:48 teddy2012-arch kernel:   node   0: [mem 0x00000000c798a000-0x00000000cb2bafff]
+Dec 08 00:00:48 teddy2012-arch kernel:   node   0: [mem 0x00000000cbfff000-0x00000000cbffffff]
+Dec 08 00:00:48 teddy2012-arch kernel:   node   0: [mem 0x0000000100000000-0x000000032fdfffff]
+Dec 08 00:00:48 teddy2012-arch kernel: Initmem setup node 0 [mem 0x0000000000001000-0x000000032fdfffff]
+Dec 08 00:00:48 teddy2012-arch kernel: On node 0, zone DMA: 1 pages in unavailable ranges
+Dec 08 00:00:48 teddy2012-arch kernel: On node 0, zone DMA: 1 pages in unavailable ranges
+Dec 08 00:00:48 teddy2012-arch kernel: On node 0, zone DMA: 98 pages in unavailable ranges
+Dec 08 00:00:48 teddy2012-arch kernel: On node 0, zone DMA32: 7 pages in unavailable ranges
+Dec 08 00:00:48 teddy2012-arch kernel: On node 0, zone DMA32: 616 pages in unavailable ranges
+Dec 08 00:00:48 teddy2012-arch kernel: On node 0, zone DMA32: 3396 pages in unavailable ranges
+Dec 08 00:00:48 teddy2012-arch kernel: On node 0, zone Normal: 16384 pages in unavailable ranges
+Dec 08 00:00:48 teddy2012-arch kernel: On node 0, zone Normal: 512 pages in unavailable ranges
+Dec 08 00:00:48 teddy2012-arch kernel: Reserving Intel graphics memory at [mem 0xcd200000-0xcf1fffff]
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: PM-Timer IO Port: 0x1808
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: LAPIC_NMI (acpi_id[0xff] high edge lint[0x1])
+Dec 08 00:00:48 teddy2012-arch kernel: IOAPIC[0]: apic_id 8, version 32, address 0xfec00000, GSI 0-23
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: Using ACPI (MADT) for SMP configuration information
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: HPET id: 0x8086a701 base: 0xfed00000
+Dec 08 00:00:48 teddy2012-arch kernel: e820: update [mem 0xc8d34000-0xc8daffff] usable ==> reserved
+Dec 08 00:00:48 teddy2012-arch kernel: [Firmware Bug]: TSC_DEADLINE disabled due to Errata; please update microcode to version: 0x22 (or later)
+Dec 08 00:00:48 teddy2012-arch kernel: smpboot: Allowing 8 CPUs, 0 hotplug CPUs
+Dec 08 00:00:48 teddy2012-arch kernel: PM: hibernation: Registered nosave memory: [mem 0x00000000-0x00000fff]
+Dec 08 00:00:48 teddy2012-arch kernel: PM: hibernation: Registered nosave memory: [mem 0x00058000-0x00058fff]
+Dec 08 00:00:48 teddy2012-arch kernel: PM: hibernation: Registered nosave memory: [mem 0x0009e000-0x0009ffff]
+Dec 08 00:00:48 teddy2012-arch kernel: PM: hibernation: Registered nosave memory: [mem 0x000a0000-0x000fffff]
+Dec 08 00:00:48 teddy2012-arch kernel: PM: hibernation: Registered nosave memory: [mem 0xc6f1f000-0xc6f25fff]
+Dec 08 00:00:48 teddy2012-arch kernel: PM: hibernation: Registered nosave memory: [mem 0xc7722000-0xc7989fff]
+Dec 08 00:00:48 teddy2012-arch kernel: PM: hibernation: Registered nosave memory: [mem 0xc8d34000-0xc8daffff]
+Dec 08 00:00:48 teddy2012-arch kernel: PM: hibernation: Registered nosave memory: [mem 0xcb2bb000-0xcb33ffff]
+Dec 08 00:00:48 teddy2012-arch kernel: PM: hibernation: Registered nosave memory: [mem 0xcb340000-0xcb359fff]
+Dec 08 00:00:48 teddy2012-arch kernel: PM: hibernation: Registered nosave memory: [mem 0xcb35a000-0xcb9e0fff]
+Dec 08 00:00:48 teddy2012-arch kernel: PM: hibernation: Registered nosave memory: [mem 0xcb9e1000-0xcbf6afff]
+Dec 08 00:00:48 teddy2012-arch kernel: PM: hibernation: Registered nosave memory: [mem 0xcbf6b000-0xcbffefff]
+Dec 08 00:00:48 teddy2012-arch kernel: PM: hibernation: Registered nosave memory: [mem 0xcc000000-0xccffffff]
+Dec 08 00:00:48 teddy2012-arch kernel: PM: hibernation: Registered nosave memory: [mem 0xcd000000-0xcf1fffff]
+Dec 08 00:00:48 teddy2012-arch kernel: PM: hibernation: Registered nosave memory: [mem 0xcf200000-0xf7ffffff]
+Dec 08 00:00:48 teddy2012-arch kernel: PM: hibernation: Registered nosave memory: [mem 0xf8000000-0xfbffffff]
+Dec 08 00:00:48 teddy2012-arch kernel: PM: hibernation: Registered nosave memory: [mem 0xfc000000-0xfebfffff]
+Dec 08 00:00:48 teddy2012-arch kernel: PM: hibernation: Registered nosave memory: [mem 0xfec00000-0xfec00fff]
+Dec 08 00:00:48 teddy2012-arch kernel: PM: hibernation: Registered nosave memory: [mem 0xfec01000-0xfecfffff]
+Dec 08 00:00:48 teddy2012-arch kernel: PM: hibernation: Registered nosave memory: [mem 0xfed00000-0xfed03fff]
+Dec 08 00:00:48 teddy2012-arch kernel: PM: hibernation: Registered nosave memory: [mem 0xfed04000-0xfed1bfff]
+Dec 08 00:00:48 teddy2012-arch kernel: PM: hibernation: Registered nosave memory: [mem 0xfed1c000-0xfed1ffff]
+Dec 08 00:00:48 teddy2012-arch kernel: PM: hibernation: Registered nosave memory: [mem 0xfed20000-0xfedfffff]
+Dec 08 00:00:48 teddy2012-arch kernel: PM: hibernation: Registered nosave memory: [mem 0xfee00000-0xfee00fff]
+Dec 08 00:00:48 teddy2012-arch kernel: PM: hibernation: Registered nosave memory: [mem 0xfee01000-0xfeffffff]
+Dec 08 00:00:48 teddy2012-arch kernel: PM: hibernation: Registered nosave memory: [mem 0xff000000-0xffffffff]
+Dec 08 00:00:48 teddy2012-arch kernel: [mem 0xcf200000-0xf7ffffff] available for PCI devices
+Dec 08 00:00:48 teddy2012-arch kernel: Booting paravirtualized kernel on bare hardware
+Dec 08 00:00:48 teddy2012-arch kernel: clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+Dec 08 00:00:48 teddy2012-arch kernel: setup_percpu: NR_CPUS:320 nr_cpumask_bits:320 nr_cpu_ids:8 nr_node_ids:1
+Dec 08 00:00:48 teddy2012-arch kernel: percpu: Embedded 61 pages/cpu s212992 r8192 d28672 u262144
+Dec 08 00:00:48 teddy2012-arch kernel: pcpu-alloc: s212992 r8192 d28672 u262144 alloc=1*2097152
+Dec 08 00:00:48 teddy2012-arch kernel: pcpu-alloc: [0] 0 1 2 3 4 5 6 7 
+Dec 08 00:00:48 teddy2012-arch kernel: Built 1 zonelists, mobility grouping on.  Total pages: 3075731
+Dec 08 00:00:48 teddy2012-arch kernel: Policy zone: Normal
+Dec 08 00:00:48 teddy2012-arch kernel: Kernel command line: BOOT_IMAGE=/vmlinuz-linux-lts root=UUID=b55f4c83-14f8-4165-8af0-23821cf092d1 rw loglevel=3 quiet
+Dec 08 00:00:48 teddy2012-arch kernel: Unknown kernel command line parameters "BOOT_IMAGE=/vmlinuz-linux-lts", will be passed to user space.
+Dec 08 00:00:48 teddy2012-arch kernel: Dentry cache hash table entries: 2097152 (order: 12, 16777216 bytes, linear)
+Dec 08 00:00:48 teddy2012-arch kernel: Inode-cache hash table entries: 1048576 (order: 11, 8388608 bytes, linear)
+Dec 08 00:00:48 teddy2012-arch kernel: mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+Dec 08 00:00:48 teddy2012-arch kernel: Memory: 12095104K/12498852K available (14344K kernel code, 2069K rwdata, 10856K rodata, 2148K init, 3580K bss, 403488K reserved, 0K cma-reserved)
+Dec 08 00:00:48 teddy2012-arch kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=8, Nodes=1
+Dec 08 00:00:48 teddy2012-arch kernel: Kernel/User page tables isolation: enabled
+Dec 08 00:00:48 teddy2012-arch kernel: ftrace: allocating 44494 entries in 174 pages
+Dec 08 00:00:48 teddy2012-arch kernel: ftrace: allocated 174 pages with 5 groups
+Dec 08 00:00:48 teddy2012-arch kernel: rcu: Hierarchical RCU implementation.
+Dec 08 00:00:48 teddy2012-arch kernel: rcu:         RCU restricting CPUs from NR_CPUS=320 to nr_cpu_ids=8.
+Dec 08 00:00:48 teddy2012-arch kernel:         Rude variant of Tasks RCU enabled.
+Dec 08 00:00:48 teddy2012-arch kernel:         Tracing variant of Tasks RCU enabled.
+Dec 08 00:00:48 teddy2012-arch kernel: rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+Dec 08 00:00:48 teddy2012-arch kernel: rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=8
+Dec 08 00:00:48 teddy2012-arch kernel: NR_IRQS: 20736, nr_irqs: 488, preallocated irqs: 16
+Dec 08 00:00:48 teddy2012-arch kernel: kfence: initialized - using 2097152 bytes for 255 objects at 0x(____ptrval____)-0x(____ptrval____)
+Dec 08 00:00:48 teddy2012-arch kernel: random: crng init done
+Dec 08 00:00:48 teddy2012-arch kernel: Console: colour dummy device 80x25
+Dec 08 00:00:48 teddy2012-arch kernel: printk: console [tty0] enabled
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: Core revision 20210730
+Dec 08 00:00:48 teddy2012-arch kernel: clocksource: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 133484882848 ns
+Dec 08 00:00:48 teddy2012-arch kernel: APIC: Switch to symmetric I/O mode setup
+Dec 08 00:00:48 teddy2012-arch kernel: DMAR: Host address width 39
+Dec 08 00:00:48 teddy2012-arch kernel: DMAR: DRHD base: 0x000000fed90000 flags: 0x0
+Dec 08 00:00:48 teddy2012-arch kernel: DMAR: dmar0: reg_base_addr fed90000 ver 1:0 cap c0000020660462 ecap f0101a
+Dec 08 00:00:48 teddy2012-arch kernel: DMAR: DRHD base: 0x000000fed91000 flags: 0x1
+Dec 08 00:00:48 teddy2012-arch kernel: DMAR: dmar1: reg_base_addr fed91000 ver 1:0 cap d2008020660462 ecap f010da
+Dec 08 00:00:48 teddy2012-arch kernel: DMAR: RMRR base: 0x000000cbe8d000 end: 0x000000cbe9bfff
+Dec 08 00:00:48 teddy2012-arch kernel: DMAR: RMRR base: 0x000000cd000000 end: 0x000000cf1fffff
+Dec 08 00:00:48 teddy2012-arch kernel: DMAR-IR: IOAPIC id 8 under DRHD base  0xfed91000 IOMMU 1
+Dec 08 00:00:48 teddy2012-arch kernel: DMAR-IR: HPET id 0 under DRHD base 0xfed91000
+Dec 08 00:00:48 teddy2012-arch kernel: DMAR-IR: Queued invalidation will be enabled to support x2apic and Intr-remapping.
+Dec 08 00:00:48 teddy2012-arch kernel: DMAR-IR: Enabled IRQ remapping in x2apic mode
+Dec 08 00:00:48 teddy2012-arch kernel: x2apic enabled
+Dec 08 00:00:48 teddy2012-arch kernel: Switched APIC routing to cluster x2apic.
+Dec 08 00:00:48 teddy2012-arch kernel: ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+Dec 08 00:00:48 teddy2012-arch kernel: clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x2563c1455b5, max_idle_ns: 440795243517 ns
+Dec 08 00:00:48 teddy2012-arch kernel: Calibrating delay loop (skipped), value calculated using timer frequency.. 5187.81 BogoMIPS (lpj=25939080)
+Dec 08 00:00:48 teddy2012-arch kernel: pid_max: default: 32768 minimum: 301
+Dec 08 00:00:48 teddy2012-arch kernel: LSM: Security Framework initializing
+Dec 08 00:00:48 teddy2012-arch kernel: landlock: Up and running.
+Dec 08 00:00:48 teddy2012-arch kernel: Yama: becoming mindful.
+Dec 08 00:00:48 teddy2012-arch kernel: LSM support for eBPF active
+Dec 08 00:00:48 teddy2012-arch kernel: Mount-cache hash table entries: 32768 (order: 6, 262144 bytes, linear)
+Dec 08 00:00:48 teddy2012-arch kernel: Mountpoint-cache hash table entries: 32768 (order: 6, 262144 bytes, linear)
+Dec 08 00:00:48 teddy2012-arch kernel: CPU0: Thermal monitoring enabled (TM1)
+Dec 08 00:00:48 teddy2012-arch kernel: process: using mwait in idle threads
+Dec 08 00:00:48 teddy2012-arch kernel: Last level iTLB entries: 4KB 1024, 2MB 1024, 4MB 1024
+Dec 08 00:00:48 teddy2012-arch kernel: Last level dTLB entries: 4KB 1024, 2MB 1024, 4MB 1024, 1GB 4
+Dec 08 00:00:48 teddy2012-arch kernel: Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+Dec 08 00:00:48 teddy2012-arch kernel: Spectre V2 : Mitigation: Retpolines
+Dec 08 00:00:48 teddy2012-arch kernel: Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+Dec 08 00:00:48 teddy2012-arch kernel: Spectre V2 : Spectre v2 / SpectreRSB : Filling RSB on VMEXIT
+Dec 08 00:00:48 teddy2012-arch kernel: Speculative Store Bypass: Vulnerable
+Dec 08 00:00:48 teddy2012-arch kernel: MDS: Vulnerable: Clear CPU buffers attempted, no microcode
+Dec 08 00:00:48 teddy2012-arch kernel: MMIO Stale Data: Unknown: No mitigations
+Dec 08 00:00:48 teddy2012-arch kernel: SRBDS: Vulnerable: No microcode
+Dec 08 00:00:48 teddy2012-arch kernel: Freeing SMP alternatives memory: 36K
+Dec 08 00:00:48 teddy2012-arch kernel: smpboot: Estimated ratio of average max frequency by base frequency (times 1024): 1339
+Dec 08 00:00:48 teddy2012-arch kernel: smpboot: CPU0: Intel(R) Core(TM) i7-4720HQ CPU @ 2.60GHz (family: 0x6, model: 0x3c, stepping: 0x3)
+Dec 08 00:00:48 teddy2012-arch kernel: Performance Events: PEBS fmt2+, Haswell events, 16-deep LBR, full-width counters, Intel PMU driver.
+Dec 08 00:00:48 teddy2012-arch kernel: ... version:                3
+Dec 08 00:00:48 teddy2012-arch kernel: ... bit width:              48
+Dec 08 00:00:48 teddy2012-arch kernel: ... generic registers:      4
+Dec 08 00:00:48 teddy2012-arch kernel: ... value mask:             0000ffffffffffff
+Dec 08 00:00:48 teddy2012-arch kernel: ... max period:             00007fffffffffff
+Dec 08 00:00:48 teddy2012-arch kernel: ... fixed-purpose events:   3
+Dec 08 00:00:48 teddy2012-arch kernel: ... event mask:             000000070000000f
+Dec 08 00:00:48 teddy2012-arch kernel: rcu: Hierarchical SRCU implementation.
+Dec 08 00:00:48 teddy2012-arch kernel: NMI watchdog: Enabled. Permanently consumes one hw-PMU counter.
+Dec 08 00:00:48 teddy2012-arch kernel: smp: Bringing up secondary CPUs ...
+Dec 08 00:00:48 teddy2012-arch kernel: x86: Booting SMP configuration:
+Dec 08 00:00:48 teddy2012-arch kernel: .... node  #0, CPUs:      #1 #2 #3 #4
+Dec 08 00:00:48 teddy2012-arch kernel: MDS CPU bug present and SMT on, data leak possible. See https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/mds.html for more details.
+Dec 08 00:00:48 teddy2012-arch kernel:  #5 #6 #7
+Dec 08 00:00:48 teddy2012-arch kernel: smp: Brought up 1 node, 8 CPUs
+Dec 08 00:00:48 teddy2012-arch kernel: smpboot: Max logical packages: 1
+Dec 08 00:00:48 teddy2012-arch kernel: smpboot: Total of 8 processors activated (41502.52 BogoMIPS)
+Dec 08 00:00:48 teddy2012-arch kernel: devtmpfs: initialized
+Dec 08 00:00:48 teddy2012-arch kernel: x86/mm: Memory block size: 128MB
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: PM: Registering ACPI NVS region [mem 0xc6f1f000-0xc6f25fff] (28672 bytes)
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: PM: Registering ACPI NVS region [mem 0xcb35a000-0xcb9e0fff] (6844416 bytes)
+Dec 08 00:00:48 teddy2012-arch kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+Dec 08 00:00:48 teddy2012-arch kernel: futex hash table entries: 2048 (order: 5, 131072 bytes, linear)
+Dec 08 00:00:48 teddy2012-arch kernel: pinctrl core: initialized pinctrl subsystem
+Dec 08 00:00:48 teddy2012-arch kernel: PM: RTC time: 05:00:40, date: 2022-12-08
+Dec 08 00:00:48 teddy2012-arch kernel: NET: Registered PF_NETLINK/PF_ROUTE protocol family
+Dec 08 00:00:48 teddy2012-arch kernel: DMA: preallocated 2048 KiB GFP_KERNEL pool for atomic allocations
+Dec 08 00:00:48 teddy2012-arch kernel: DMA: preallocated 2048 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+Dec 08 00:00:48 teddy2012-arch kernel: DMA: preallocated 2048 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+Dec 08 00:00:48 teddy2012-arch kernel: audit: initializing netlink subsys (disabled)
+Dec 08 00:00:48 teddy2012-arch kernel: audit: type=2000 audit(1670475640.190:1): state=initialized audit_enabled=0 res=1
+Dec 08 00:00:48 teddy2012-arch kernel: thermal_sys: Registered thermal governor 'fair_share'
+Dec 08 00:00:48 teddy2012-arch kernel: thermal_sys: Registered thermal governor 'bang_bang'
+Dec 08 00:00:48 teddy2012-arch kernel: thermal_sys: Registered thermal governor 'step_wise'
+Dec 08 00:00:48 teddy2012-arch kernel: thermal_sys: Registered thermal governor 'user_space'
+Dec 08 00:00:48 teddy2012-arch kernel: thermal_sys: Registered thermal governor 'power_allocator'
+Dec 08 00:00:48 teddy2012-arch kernel: cpuidle: using governor ladder
+Dec 08 00:00:48 teddy2012-arch kernel: cpuidle: using governor menu
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI FADT declares the system doesn't support PCIe ASPM, so disable it
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: bus type PCI registered
+Dec 08 00:00:48 teddy2012-arch kernel: acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+Dec 08 00:00:48 teddy2012-arch kernel: PCI: MMCONFIG for domain 0000 [bus 00-3f] at [mem 0xf8000000-0xfbffffff] (base 0xf8000000)
+Dec 08 00:00:48 teddy2012-arch kernel: PCI: MMCONFIG at [mem 0xf8000000-0xfbffffff] reserved in E820
+Dec 08 00:00:48 teddy2012-arch kernel: PCI: Using configuration type 1 for base access
+Dec 08 00:00:48 teddy2012-arch kernel: core: PMU erratum BJ122, BV98, HSD29 worked around, HT is on
+Dec 08 00:00:48 teddy2012-arch kernel: ENERGY_PERF_BIAS: Set to 'normal', was 'performance'
+Dec 08 00:00:48 teddy2012-arch kernel: Kprobes globally optimized
+Dec 08 00:00:48 teddy2012-arch kernel: HugeTLB registered 1.00 GiB page size, pre-allocated 0 pages
+Dec 08 00:00:48 teddy2012-arch kernel: HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: Added _OSI(Module Device)
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: Added _OSI(Processor Device)
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: Added _OSI(3.0 _SCP Extensions)
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: Added _OSI(Processor Aggregator Device)
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: Added _OSI(Linux-Dell-Video)
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: Added _OSI(Linux-Lenovo-NV-HDMI-Audio)
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: Added _OSI(Linux-HPI-Hybrid-Graphics)
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: 9 ACPI AML tables successfully acquired and loaded
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: [Firmware Bug]: BIOS _OSI(Linux) query ignored
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: Dynamic OEM Table Load:
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: SSDT 0xFFFF8E54C12C5C00 0003D3 (v01 PmRef  Cpu0Cst  00003001 INTL 20120711)
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: Dynamic OEM Table Load:
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: SSDT 0xFFFF8E54C1841000 0005AA (v01 PmRef  ApIst    00003000 INTL 20120711)
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: Dynamic OEM Table Load:
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: SSDT 0xFFFF8E54C0B2BC00 000119 (v01 PmRef  ApCst    00003000 INTL 20120711)
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: EC: EC started
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: EC: interrupt blocked
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: EC: EC_CMD/EC_SC=0x66, EC_DATA=0x62
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: \_SB_.PCI0.LPCB.EC__: Boot DSDT EC used to handle transactions
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: Interpreter enabled
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: PM: (supports S0 S3 S4 S5)
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: Using IOAPIC for interrupt routing
+Dec 08 00:00:48 teddy2012-arch kernel: PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: Enabled 7 GPEs in block 00 to 3F
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: PM: Power Resource [NVP3]
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: PM: Power Resource [NVP2]
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: PM: Power Resource [FN00]
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: PM: Power Resource [FN01]
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: PM: Power Resource [FN02]
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: PM: Power Resource [FN03]
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: PM: Power Resource [FN04]
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-3e])
+Dec 08 00:00:48 teddy2012-arch kernel: acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI EDR HPX-Type3]
+Dec 08 00:00:48 teddy2012-arch kernel: acpi PNP0A08:00: _OSC: platform does not support [PCIeHotplug SHPCHotplug PME]
+Dec 08 00:00:48 teddy2012-arch kernel: acpi PNP0A08:00: _OSC: OS now controls [AER PCIeCapability LTR DPC]
+Dec 08 00:00:48 teddy2012-arch kernel: acpi PNP0A08:00: FADT indicates ASPM is unsupported, using BIOS configuration
+Dec 08 00:00:48 teddy2012-arch kernel: PCI host bridge to bus 0000:00
+Dec 08 00:00:48 teddy2012-arch kernel: pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+Dec 08 00:00:48 teddy2012-arch kernel: pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+Dec 08 00:00:48 teddy2012-arch kernel: pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+Dec 08 00:00:48 teddy2012-arch kernel: pci_bus 0000:00: root bus resource [mem 0x000c0000-0x000c3fff window]
+Dec 08 00:00:48 teddy2012-arch kernel: pci_bus 0000:00: root bus resource [mem 0x000c4000-0x000c7fff window]
+Dec 08 00:00:48 teddy2012-arch kernel: pci_bus 0000:00: root bus resource [mem 0x000c8000-0x000cbfff window]
+Dec 08 00:00:48 teddy2012-arch kernel: pci_bus 0000:00: root bus resource [mem 0x000cc000-0x000cffff window]
+Dec 08 00:00:48 teddy2012-arch kernel: pci_bus 0000:00: root bus resource [mem 0x000d0000-0x000d3fff window]
+Dec 08 00:00:48 teddy2012-arch kernel: pci_bus 0000:00: root bus resource [mem 0x000d4000-0x000d7fff window]
+Dec 08 00:00:48 teddy2012-arch kernel: pci_bus 0000:00: root bus resource [mem 0x000d8000-0x000dbfff window]
+Dec 08 00:00:48 teddy2012-arch kernel: pci_bus 0000:00: root bus resource [mem 0x000dc000-0x000dffff window]
+Dec 08 00:00:48 teddy2012-arch kernel: pci_bus 0000:00: root bus resource [mem 0xcf200000-0xfeafffff window]
+Dec 08 00:00:48 teddy2012-arch kernel: pci_bus 0000:00: root bus resource [bus 00-3e]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:00.0: [8086:0c04] type 00 class 0x060000
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:01.0: [8086:0c01] type 01 class 0x060400
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:01.0: PME# supported from D0 D3hot D3cold
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:02.0: [8086:0416] type 00 class 0x030000
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:02.0: reg 0x10: [mem 0xf7400000-0xf77fffff 64bit]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:02.0: reg 0x18: [mem 0xd0000000-0xdfffffff 64bit pref]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:02.0: reg 0x20: [io  0xf000-0xf03f]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:02.0: BAR 2: assigned to efifb
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:03.0: [8086:0c0c] type 00 class 0x040300
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:03.0: reg 0x10: [mem 0xf7b14000-0xf7b17fff 64bit]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:14.0: [8086:8c31] type 00 class 0x0c0330
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:14.0: reg 0x10: [mem 0xf7b00000-0xf7b0ffff 64bit]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:14.0: PME# supported from D3hot D3cold
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:16.0: [8086:8c3a] type 00 class 0x078000
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:16.0: reg 0x10: [mem 0xf7b1e000-0xf7b1e00f 64bit]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:16.0: PME# supported from D0 D3hot D3cold
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1a.0: [8086:8c2d] type 00 class 0x0c0320
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1a.0: reg 0x10: [mem 0xf7b1c000-0xf7b1c3ff]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1a.0: PME# supported from D0 D3hot D3cold
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1b.0: [8086:8c20] type 00 class 0x040300
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1b.0: reg 0x10: [mem 0xf7b10000-0xf7b13fff 64bit]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1b.0: PME# supported from D0 D3hot D3cold
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1c.0: [8086:8c10] type 01 class 0x060400
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1c.0: PME# supported from D0 D3hot D3cold
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1c.2: [8086:8c14] type 01 class 0x060400
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1c.2: PME# supported from D0 D3hot D3cold
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1c.3: [8086:8c16] type 01 class 0x060400
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1c.3: PME# supported from D0 D3hot D3cold
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1c.5: [8086:8c1a] type 01 class 0x060400
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1c.5: PME# supported from D0 D3hot D3cold
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1d.0: [8086:8c26] type 00 class 0x0c0320
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1d.0: reg 0x10: [mem 0xf7b1b000-0xf7b1b3ff]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1d.0: PME# supported from D0 D3hot D3cold
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1f.0: [8086:8c49] type 00 class 0x060100
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1f.2: [8086:8c03] type 00 class 0x010601
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1f.2: reg 0x10: [io  0xf0b0-0xf0b7]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1f.2: reg 0x14: [io  0xf0a0-0xf0a3]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1f.2: reg 0x18: [io  0xf090-0xf097]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1f.2: reg 0x1c: [io  0xf080-0xf083]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1f.2: reg 0x20: [io  0xf060-0xf07f]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1f.2: reg 0x24: [mem 0xf7b1a000-0xf7b1a7ff]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1f.2: PME# supported from D3hot
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1f.3: [8086:8c22] type 00 class 0x0c0500
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1f.3: reg 0x10: [mem 0xf7b19000-0xf7b190ff 64bit]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1f.3: reg 0x20: [io  0xf040-0xf05f]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:01:00.0: [10de:139b] type 00 class 0x030200
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:01:00.0: reg 0x10: [mem 0xf6000000-0xf6ffffff]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:01:00.0: reg 0x14: [mem 0xe0000000-0xefffffff 64bit pref]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:01:00.0: reg 0x1c: [mem 0xf0000000-0xf1ffffff 64bit pref]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:01:00.0: reg 0x24: [io  0xe000-0xe07f]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:01:00.0: reg 0x30: [mem 0xf7000000-0xf707ffff pref]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:01:00.0: Enabling HDA controller
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:01.0: PCI bridge to [bus 01]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:01.0:   bridge window [io  0xe000-0xefff]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:01.0:   bridge window [mem 0xf6000000-0xf70fffff]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:01.0:   bridge window [mem 0xe0000000-0xf1ffffff 64bit pref]
+Dec 08 00:00:48 teddy2012-arch kernel: acpiphp: Slot [1] registered
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1c.0: PCI bridge to [bus 02]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:03:00.0: [10ec:5249] type 00 class 0xff0000
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:03:00.0: reg 0x10: [mem 0xf7a00000-0xf7a00fff]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:03:00.0: supports D1 D2
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:03:00.0: PME# supported from D1 D2 D3hot D3cold
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1c.2: PCI bridge to [bus 03]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1c.2:   bridge window [mem 0xf7a00000-0xf7afffff]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:04:00.0: [1969:e091] type 00 class 0x020000
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:04:00.0: reg 0x10: [mem 0xf7900000-0xf793ffff 64bit]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:04:00.0: reg 0x18: [io  0xd000-0xd07f]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:04:00.0: [Firmware Bug]: disabling VPD access (can't determine size of non-standard VPD format)
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:04:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1c.3: PCI bridge to [bus 04]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1c.3:   bridge window [io  0xd000-0xdfff]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1c.3:   bridge window [mem 0xf7900000-0xf79fffff]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:05:00.0: [8086:08b3] type 00 class 0x028000
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:05:00.0: reg 0x10: [mem 0xf7800000-0xf7801fff 64bit]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:05:00.0: PME# supported from D0 D3hot D3cold
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1c.5: PCI bridge to [bus 05]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1c.5:   bridge window [mem 0xf7800000-0xf78fffff]
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: PCI: Interrupt link LNKA configured for IRQ 0
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: PCI: Interrupt link LNKA disabled
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: PCI: Interrupt link LNKB configured for IRQ 0
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: PCI: Interrupt link LNKB disabled
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: PCI: Interrupt link LNKC configured for IRQ 0
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: PCI: Interrupt link LNKC disabled
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: PCI: Interrupt link LNKD configured for IRQ 0
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: PCI: Interrupt link LNKD disabled
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: PCI: Interrupt link LNKE configured for IRQ 0
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: PCI: Interrupt link LNKE disabled
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: PCI: Interrupt link LNKF configured for IRQ 0
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: PCI: Interrupt link LNKF disabled
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: PCI: Interrupt link LNKG configured for IRQ 0
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: PCI: Interrupt link LNKG disabled
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: PCI: Interrupt link LNKH configured for IRQ 0
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: PCI: Interrupt link LNKH disabled
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: EC: interrupt unblocked
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: EC: event unblocked
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: EC: EC_CMD/EC_SC=0x66, EC_DATA=0x62
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: EC: GPE=0x17
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: \_SB_.PCI0.LPCB.EC__: Boot DSDT EC initialization complete
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: \_SB_.PCI0.LPCB.EC__: EC: Used to handle transactions and events
+Dec 08 00:00:48 teddy2012-arch kernel: iommu: Default domain type: Translated 
+Dec 08 00:00:48 teddy2012-arch kernel: iommu: DMA domain TLB invalidation policy: lazy mode 
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:02.0: vgaarb: setting as boot VGA device
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:02.0: vgaarb: bridge control possible
+Dec 08 00:00:48 teddy2012-arch kernel: vgaarb: loaded
+Dec 08 00:00:48 teddy2012-arch kernel: SCSI subsystem initialized
+Dec 08 00:00:48 teddy2012-arch kernel: libata version 3.00 loaded.
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: bus type USB registered
+Dec 08 00:00:48 teddy2012-arch kernel: usbcore: registered new interface driver usbfs
+Dec 08 00:00:48 teddy2012-arch kernel: usbcore: registered new interface driver hub
+Dec 08 00:00:48 teddy2012-arch kernel: usbcore: registered new device driver usb
+Dec 08 00:00:48 teddy2012-arch kernel: pps_core: LinuxPPS API ver. 1 registered
+Dec 08 00:00:48 teddy2012-arch kernel: pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+Dec 08 00:00:48 teddy2012-arch kernel: PTP clock support registered
+Dec 08 00:00:48 teddy2012-arch kernel: EDAC MC: Ver: 3.0.0
+Dec 08 00:00:48 teddy2012-arch kernel: Registered efivars operations
+Dec 08 00:00:48 teddy2012-arch kernel: NetLabel: Initializing
+Dec 08 00:00:48 teddy2012-arch kernel: NetLabel:  domain hash size = 128
+Dec 08 00:00:48 teddy2012-arch kernel: NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+Dec 08 00:00:48 teddy2012-arch kernel: NetLabel:  unlabeled traffic allowed by default
+Dec 08 00:00:48 teddy2012-arch kernel: PCI: Using ACPI for IRQ routing
+Dec 08 00:00:48 teddy2012-arch kernel: PCI: pci_cache_line_size set to 64 bytes
+Dec 08 00:00:48 teddy2012-arch kernel: e820: reserve RAM buffer [mem 0x00058000-0x0005ffff]
+Dec 08 00:00:48 teddy2012-arch kernel: e820: reserve RAM buffer [mem 0x0009e000-0x0009ffff]
+Dec 08 00:00:48 teddy2012-arch kernel: e820: reserve RAM buffer [mem 0xc6f1f000-0xc7ffffff]
+Dec 08 00:00:48 teddy2012-arch kernel: e820: reserve RAM buffer [mem 0xc7722000-0xc7ffffff]
+Dec 08 00:00:48 teddy2012-arch kernel: e820: reserve RAM buffer [mem 0xc8d34000-0xcbffffff]
+Dec 08 00:00:48 teddy2012-arch kernel: e820: reserve RAM buffer [mem 0xcb2bb000-0xcbffffff]
+Dec 08 00:00:48 teddy2012-arch kernel: e820: reserve RAM buffer [mem 0x32fe00000-0x32fffffff]
+Dec 08 00:00:48 teddy2012-arch kernel: hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0, 0, 0, 0, 0, 0
+Dec 08 00:00:48 teddy2012-arch kernel: hpet0: 8 comparators, 64-bit 14.318180 MHz counter
+Dec 08 00:00:48 teddy2012-arch kernel: clocksource: Switched to clocksource tsc-early
+Dec 08 00:00:48 teddy2012-arch kernel: VFS: Disk quotas dquot_6.6.0
+Dec 08 00:00:48 teddy2012-arch kernel: VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+Dec 08 00:00:48 teddy2012-arch kernel: pnp: PnP ACPI init
+Dec 08 00:00:48 teddy2012-arch kernel: system 00:00: [mem 0xfed40000-0xfed44fff] has been reserved
+Dec 08 00:00:48 teddy2012-arch kernel: system 00:01: [io  0x0680-0x069f] has been reserved
+Dec 08 00:00:48 teddy2012-arch kernel: system 00:01: [io  0xffff] has been reserved
+Dec 08 00:00:48 teddy2012-arch kernel: system 00:01: [io  0xffff] has been reserved
+Dec 08 00:00:48 teddy2012-arch kernel: system 00:01: [io  0xffff] has been reserved
+Dec 08 00:00:48 teddy2012-arch kernel: system 00:01: [io  0x1c00-0x1cfe] has been reserved
+Dec 08 00:00:48 teddy2012-arch kernel: system 00:01: [io  0x1d00-0x1dfe] has been reserved
+Dec 08 00:00:48 teddy2012-arch kernel: system 00:01: [io  0x1e00-0x1efe] has been reserved
+Dec 08 00:00:48 teddy2012-arch kernel: system 00:01: [io  0x1f00-0x1ffe] has been reserved
+Dec 08 00:00:48 teddy2012-arch kernel: system 00:01: [io  0x1800-0x18fe] has been reserved
+Dec 08 00:00:48 teddy2012-arch kernel: system 00:01: [io  0x164e-0x164f] has been reserved
+Dec 08 00:00:48 teddy2012-arch kernel: system 00:03: [io  0x1854-0x1857] has been reserved
+Dec 08 00:00:48 teddy2012-arch kernel: system 00:04: [io  0x04d0-0x04d1] has been reserved
+Dec 08 00:00:48 teddy2012-arch kernel: system 00:07: [mem 0xfed1c000-0xfed1ffff] has been reserved
+Dec 08 00:00:48 teddy2012-arch kernel: system 00:07: [mem 0xfed10000-0xfed17fff] has been reserved
+Dec 08 00:00:48 teddy2012-arch kernel: system 00:07: [mem 0xfed18000-0xfed18fff] has been reserved
+Dec 08 00:00:48 teddy2012-arch kernel: system 00:07: [mem 0xfed19000-0xfed19fff] has been reserved
+Dec 08 00:00:48 teddy2012-arch kernel: system 00:07: [mem 0xf8000000-0xfbffffff] has been reserved
+Dec 08 00:00:48 teddy2012-arch kernel: system 00:07: [mem 0xfed20000-0xfed3ffff] has been reserved
+Dec 08 00:00:48 teddy2012-arch kernel: system 00:07: [mem 0xfed90000-0xfed93fff] could not be reserved
+Dec 08 00:00:48 teddy2012-arch kernel: system 00:07: [mem 0xfed45000-0xfed8ffff] has been reserved
+Dec 08 00:00:48 teddy2012-arch kernel: system 00:07: [mem 0xff000000-0xffffffff] has been reserved
+Dec 08 00:00:48 teddy2012-arch kernel: system 00:07: [mem 0xfee00000-0xfeefffff] could not be reserved
+Dec 08 00:00:48 teddy2012-arch kernel: system 00:07: [mem 0xf7fdf000-0xf7fdffff] has been reserved
+Dec 08 00:00:48 teddy2012-arch kernel: system 00:07: [mem 0xf7fe0000-0xf7feffff] has been reserved
+Dec 08 00:00:48 teddy2012-arch kernel: pnp: PnP ACPI: found 8 devices
+Dec 08 00:00:48 teddy2012-arch kernel: clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+Dec 08 00:00:48 teddy2012-arch kernel: NET: Registered PF_INET protocol family
+Dec 08 00:00:48 teddy2012-arch kernel: IP idents hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+Dec 08 00:00:48 teddy2012-arch kernel: tcp_listen_portaddr_hash hash table entries: 8192 (order: 5, 131072 bytes, linear)
+Dec 08 00:00:48 teddy2012-arch kernel: Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+Dec 08 00:00:48 teddy2012-arch kernel: TCP established hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+Dec 08 00:00:48 teddy2012-arch kernel: TCP bind hash table entries: 65536 (order: 8, 1048576 bytes, linear)
+Dec 08 00:00:48 teddy2012-arch kernel: TCP: Hash tables configured (established 131072 bind 65536)
+Dec 08 00:00:48 teddy2012-arch kernel: MPTCP token hash table entries: 16384 (order: 6, 393216 bytes, linear)
+Dec 08 00:00:48 teddy2012-arch kernel: UDP hash table entries: 8192 (order: 6, 262144 bytes, linear)
+Dec 08 00:00:48 teddy2012-arch kernel: UDP-Lite hash table entries: 8192 (order: 6, 262144 bytes, linear)
+Dec 08 00:00:48 teddy2012-arch kernel: NET: Registered PF_UNIX/PF_LOCAL protocol family
+Dec 08 00:00:48 teddy2012-arch kernel: NET: Registered PF_XDP protocol family
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1c.0: bridge window [io  0x1000-0x0fff] to [bus 02] add_size 1000
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1c.0: bridge window [mem 0x00100000-0x000fffff 64bit pref] to [bus 02] add_size 200000 add_align 100000
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1c.0: bridge window [mem 0x00100000-0x000fffff] to [bus 02] add_size 200000 add_align 100000
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1c.0: BAR 14: assigned [mem 0xcf200000-0xcf3fffff]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1c.0: BAR 15: assigned [mem 0xcf400000-0xcf5fffff 64bit pref]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1c.0: BAR 13: assigned [io  0x2000-0x2fff]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:01.0: PCI bridge to [bus 01]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:01.0:   bridge window [io  0xe000-0xefff]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:01.0:   bridge window [mem 0xf6000000-0xf70fffff]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:01.0:   bridge window [mem 0xe0000000-0xf1ffffff 64bit pref]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1c.0: PCI bridge to [bus 02]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1c.0:   bridge window [io  0x2000-0x2fff]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1c.0:   bridge window [mem 0xcf200000-0xcf3fffff]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1c.0:   bridge window [mem 0xcf400000-0xcf5fffff 64bit pref]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1c.2: PCI bridge to [bus 03]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1c.2:   bridge window [mem 0xf7a00000-0xf7afffff]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1c.3: PCI bridge to [bus 04]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1c.3:   bridge window [io  0xd000-0xdfff]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1c.3:   bridge window [mem 0xf7900000-0xf79fffff]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1c.5: PCI bridge to [bus 05]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:00:1c.5:   bridge window [mem 0xf7800000-0xf78fffff]
+Dec 08 00:00:48 teddy2012-arch kernel: pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+Dec 08 00:00:48 teddy2012-arch kernel: pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+Dec 08 00:00:48 teddy2012-arch kernel: pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+Dec 08 00:00:48 teddy2012-arch kernel: pci_bus 0000:00: resource 7 [mem 0x000c0000-0x000c3fff window]
+Dec 08 00:00:48 teddy2012-arch kernel: pci_bus 0000:00: resource 8 [mem 0x000c4000-0x000c7fff window]
+Dec 08 00:00:48 teddy2012-arch kernel: pci_bus 0000:00: resource 9 [mem 0x000c8000-0x000cbfff window]
+Dec 08 00:00:48 teddy2012-arch kernel: pci_bus 0000:00: resource 10 [mem 0x000cc000-0x000cffff window]
+Dec 08 00:00:48 teddy2012-arch kernel: pci_bus 0000:00: resource 11 [mem 0x000d0000-0x000d3fff window]
+Dec 08 00:00:48 teddy2012-arch kernel: pci_bus 0000:00: resource 12 [mem 0x000d4000-0x000d7fff window]
+Dec 08 00:00:48 teddy2012-arch kernel: pci_bus 0000:00: resource 13 [mem 0x000d8000-0x000dbfff window]
+Dec 08 00:00:48 teddy2012-arch kernel: pci_bus 0000:00: resource 14 [mem 0x000dc000-0x000dffff window]
+Dec 08 00:00:48 teddy2012-arch kernel: pci_bus 0000:00: resource 15 [mem 0xcf200000-0xfeafffff window]
+Dec 08 00:00:48 teddy2012-arch kernel: pci_bus 0000:01: resource 0 [io  0xe000-0xefff]
+Dec 08 00:00:48 teddy2012-arch kernel: pci_bus 0000:01: resource 1 [mem 0xf6000000-0xf70fffff]
+Dec 08 00:00:48 teddy2012-arch kernel: pci_bus 0000:01: resource 2 [mem 0xe0000000-0xf1ffffff 64bit pref]
+Dec 08 00:00:48 teddy2012-arch kernel: pci_bus 0000:02: resource 0 [io  0x2000-0x2fff]
+Dec 08 00:00:48 teddy2012-arch kernel: pci_bus 0000:02: resource 1 [mem 0xcf200000-0xcf3fffff]
+Dec 08 00:00:48 teddy2012-arch kernel: pci_bus 0000:02: resource 2 [mem 0xcf400000-0xcf5fffff 64bit pref]
+Dec 08 00:00:48 teddy2012-arch kernel: pci_bus 0000:03: resource 1 [mem 0xf7a00000-0xf7afffff]
+Dec 08 00:00:48 teddy2012-arch kernel: pci_bus 0000:04: resource 0 [io  0xd000-0xdfff]
+Dec 08 00:00:48 teddy2012-arch kernel: pci_bus 0000:04: resource 1 [mem 0xf7900000-0xf79fffff]
+Dec 08 00:00:48 teddy2012-arch kernel: pci_bus 0000:05: resource 1 [mem 0xf7800000-0xf78fffff]
+Dec 08 00:00:48 teddy2012-arch kernel: pci 0000:04:00.0: set MSI_INTX_DISABLE_BUG flag
+Dec 08 00:00:48 teddy2012-arch kernel: PCI: CLS 64 bytes, default 64
+Dec 08 00:00:48 teddy2012-arch kernel: PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+Dec 08 00:00:48 teddy2012-arch kernel: software IO TLB: mapped [mem 0x00000000c2f1f000-0x00000000c6f1f000] (64MB)
+Dec 08 00:00:48 teddy2012-arch kernel: Trying to unpack rootfs image as initramfs...
+Dec 08 00:00:48 teddy2012-arch kernel: Initialise system trusted keyrings
+Dec 08 00:00:48 teddy2012-arch kernel: Key type blacklist registered
+Dec 08 00:00:48 teddy2012-arch kernel: workingset: timestamp_bits=41 max_order=22 bucket_order=0
+Dec 08 00:00:48 teddy2012-arch kernel: zbud: loaded
+Dec 08 00:00:48 teddy2012-arch kernel: integrity: Platform Keyring initialized
+Dec 08 00:00:48 teddy2012-arch kernel: Key type asymmetric registered
+Dec 08 00:00:48 teddy2012-arch kernel: Asymmetric key parser 'x509' registered
+Dec 08 00:00:48 teddy2012-arch kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 241)
+Dec 08 00:00:48 teddy2012-arch kernel: io scheduler mq-deadline registered
+Dec 08 00:00:48 teddy2012-arch kernel: io scheduler kyber registered
+Dec 08 00:00:48 teddy2012-arch kernel: io scheduler bfq registered
+Dec 08 00:00:48 teddy2012-arch kernel: shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: AC: AC Adapter [ADP1] (on-line)
+Dec 08 00:00:48 teddy2012-arch kernel: input: Lid Switch as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:00/PNP0C09:00/PNP0C0D:00/input/input0
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: button: Lid Switch [LID0]
+Dec 08 00:00:48 teddy2012-arch kernel: input: Power Button as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input1
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: button: Power Button [PWRB]
+Dec 08 00:00:48 teddy2012-arch kernel: input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input2
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: button: Power Button [PWRF]
+Dec 08 00:00:48 teddy2012-arch kernel: thermal LNXTHERM:00: registered as thermal_zone0
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: thermal: Thermal Zone [TZ00] (28 C)
+Dec 08 00:00:48 teddy2012-arch kernel: thermal LNXTHERM:01: registered as thermal_zone1
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: thermal: Thermal Zone [TZ01] (30 C)
+Dec 08 00:00:48 teddy2012-arch kernel: thermal LNXTHERM:02: registered as thermal_zone2
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: thermal: Thermal Zone [THRM] (69 C)
+Dec 08 00:00:48 teddy2012-arch kernel: Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+Dec 08 00:00:48 teddy2012-arch kernel: Non-volatile memory driver v1.3
+Dec 08 00:00:48 teddy2012-arch kernel: Linux agpgart interface v0.103
+Dec 08 00:00:48 teddy2012-arch kernel: AMD-Vi: AMD IOMMUv2 functionality not available on this system - This is not a bug.
+Dec 08 00:00:48 teddy2012-arch kernel: ahci 0000:00:1f.2: version 3.0
+Dec 08 00:00:48 teddy2012-arch kernel: ahci 0000:00:1f.2: AHCI 0001.0300 32 slots 4 ports 6 Gbps 0x11 impl SATA mode
+Dec 08 00:00:48 teddy2012-arch kernel: ahci 0000:00:1f.2: flags: 64bit ncq pm led clo pio slum part ems apst 
+Dec 08 00:00:48 teddy2012-arch kernel: scsi host0: ahci
+Dec 08 00:00:48 teddy2012-arch kernel: scsi host1: ahci
+Dec 08 00:00:48 teddy2012-arch kernel: scsi host2: ahci
+Dec 08 00:00:48 teddy2012-arch kernel: scsi host3: ahci
+Dec 08 00:00:48 teddy2012-arch kernel: scsi host4: ahci
+Dec 08 00:00:48 teddy2012-arch kernel: ata1: SATA max UDMA/133 abar m2048@0xf7b1a000 port 0xf7b1a100 irq 31
+Dec 08 00:00:48 teddy2012-arch kernel: ata2: DUMMY
+Dec 08 00:00:48 teddy2012-arch kernel: ata3: DUMMY
+Dec 08 00:00:48 teddy2012-arch kernel: ata4: DUMMY
+Dec 08 00:00:48 teddy2012-arch kernel: ata5: SATA max UDMA/133 abar m2048@0xf7b1a000 port 0xf7b1a300 irq 31
+Dec 08 00:00:48 teddy2012-arch kernel: ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+Dec 08 00:00:48 teddy2012-arch kernel: ehci-pci: EHCI PCI platform driver
+Dec 08 00:00:48 teddy2012-arch kernel: ehci-pci 0000:00:1a.0: EHCI Host Controller
+Dec 08 00:00:48 teddy2012-arch kernel: ehci-pci 0000:00:1a.0: new USB bus registered, assigned bus number 1
+Dec 08 00:00:48 teddy2012-arch kernel: ehci-pci 0000:00:1a.0: debug port 2
+Dec 08 00:00:48 teddy2012-arch kernel: ehci-pci 0000:00:1a.0: irq 16, io mem 0xf7b1c000
+Dec 08 00:00:48 teddy2012-arch kernel: ehci-pci 0000:00:1a.0: USB 2.0 started, EHCI 1.00
+Dec 08 00:00:48 teddy2012-arch kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.15
+Dec 08 00:00:48 teddy2012-arch kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Dec 08 00:00:48 teddy2012-arch kernel: usb usb1: Product: EHCI Host Controller
+Dec 08 00:00:48 teddy2012-arch kernel: usb usb1: Manufacturer: Linux 5.15.81-1-lts ehci_hcd
+Dec 08 00:00:48 teddy2012-arch kernel: usb usb1: SerialNumber: 0000:00:1a.0
+Dec 08 00:00:48 teddy2012-arch kernel: hub 1-0:1.0: USB hub found
+Dec 08 00:00:48 teddy2012-arch kernel: hub 1-0:1.0: 2 ports detected
+Dec 08 00:00:48 teddy2012-arch kernel: ehci-pci 0000:00:1d.0: EHCI Host Controller
+Dec 08 00:00:48 teddy2012-arch kernel: ehci-pci 0000:00:1d.0: new USB bus registered, assigned bus number 2
+Dec 08 00:00:48 teddy2012-arch kernel: ehci-pci 0000:00:1d.0: debug port 2
+Dec 08 00:00:48 teddy2012-arch kernel: ehci-pci 0000:00:1d.0: irq 23, io mem 0xf7b1b000
+Dec 08 00:00:48 teddy2012-arch kernel: ehci-pci 0000:00:1d.0: USB 2.0 started, EHCI 1.00
+Dec 08 00:00:48 teddy2012-arch kernel: usb usb2: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.15
+Dec 08 00:00:48 teddy2012-arch kernel: usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Dec 08 00:00:48 teddy2012-arch kernel: usb usb2: Product: EHCI Host Controller
+Dec 08 00:00:48 teddy2012-arch kernel: usb usb2: Manufacturer: Linux 5.15.81-1-lts ehci_hcd
+Dec 08 00:00:48 teddy2012-arch kernel: usb usb2: SerialNumber: 0000:00:1d.0
+Dec 08 00:00:48 teddy2012-arch kernel: hub 2-0:1.0: USB hub found
+Dec 08 00:00:48 teddy2012-arch kernel: hub 2-0:1.0: 2 ports detected
+Dec 08 00:00:48 teddy2012-arch kernel: ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+Dec 08 00:00:48 teddy2012-arch kernel: ohci-pci: OHCI PCI platform driver
+Dec 08 00:00:48 teddy2012-arch kernel: uhci_hcd: USB Universal Host Controller Interface driver
+Dec 08 00:00:48 teddy2012-arch kernel: usbcore: registered new interface driver usbserial_generic
+Dec 08 00:00:48 teddy2012-arch kernel: usbserial: USB Serial support registered for generic
+Dec 08 00:00:48 teddy2012-arch kernel: rtc_cmos 00:02: RTC can wake from S4
+Dec 08 00:00:48 teddy2012-arch kernel: rtc_cmos 00:02: registered as rtc0
+Dec 08 00:00:48 teddy2012-arch kernel: rtc_cmos 00:02: setting system clock to 2022-12-08T05:00:40 UTC (1670475640)
+Dec 08 00:00:48 teddy2012-arch kernel: rtc_cmos 00:02: alarms up to one month, y3k, 242 bytes nvram, hpet irqs
+Dec 08 00:00:48 teddy2012-arch kernel: intel_pstate: Intel P-state driver initializing
+Dec 08 00:00:48 teddy2012-arch kernel: ledtrig-cpu: registered to indicate activity on CPUs
+Dec 08 00:00:48 teddy2012-arch kernel: efifb: probing for efifb
+Dec 08 00:00:48 teddy2012-arch kernel: efifb: showing boot graphics
+Dec 08 00:00:48 teddy2012-arch kernel: efifb: framebuffer at 0xd0000000, using 8128k, total 8128k
+Dec 08 00:00:48 teddy2012-arch kernel: efifb: mode is 1920x1080x32, linelength=7680, pages=1
+Dec 08 00:00:48 teddy2012-arch kernel: efifb: scrolling: redraw
+Dec 08 00:00:48 teddy2012-arch kernel: efifb: Truecolor: size=8:8:8:8, shift=24:16:8:0
+Dec 08 00:00:48 teddy2012-arch kernel: fbcon: Deferring console take-over
+Dec 08 00:00:48 teddy2012-arch kernel: fb0: EFI VGA frame buffer device
+Dec 08 00:00:48 teddy2012-arch kernel: hid: raw HID events driver (C) Jiri Kosina
+Dec 08 00:00:48 teddy2012-arch kernel: drop_monitor: Initializing network drop monitor service
+Dec 08 00:00:48 teddy2012-arch kernel: Initializing XFRM netlink socket
+Dec 08 00:00:48 teddy2012-arch kernel: NET: Registered PF_INET6 protocol family
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: battery: Slot [BAT1] (battery present)
+Dec 08 00:00:48 teddy2012-arch kernel: Freeing initrd memory: 28032K
+Dec 08 00:00:48 teddy2012-arch kernel: Segment Routing with IPv6
+Dec 08 00:00:48 teddy2012-arch kernel: RPL Segment Routing with IPv6
+Dec 08 00:00:48 teddy2012-arch kernel: In-situ OAM (IOAM) with IPv6
+Dec 08 00:00:48 teddy2012-arch kernel: NET: Registered PF_PACKET protocol family
+Dec 08 00:00:48 teddy2012-arch kernel: microcode: sig=0x306c3, pf=0x20, revision=0x1c
+Dec 08 00:00:48 teddy2012-arch kernel: microcode: Microcode Update Driver: v2.2.
+Dec 08 00:00:48 teddy2012-arch kernel: IPI shorthand broadcast: enabled
+Dec 08 00:00:48 teddy2012-arch kernel: sched_clock: Marking stable (518970652, 240527)->(532917469, -13706290)
+Dec 08 00:00:48 teddy2012-arch kernel: registered taskstats version 1
+Dec 08 00:00:48 teddy2012-arch kernel: Loading compiled-in X.509 certificates
+Dec 08 00:00:48 teddy2012-arch kernel: Loaded X.509 cert 'Build time autogenerated kernel key: f35e6e6171ec2faf034012580795e40b757be8e4'
+Dec 08 00:00:48 teddy2012-arch kernel: zswap: loaded using pool lz4/z3fold
+Dec 08 00:00:48 teddy2012-arch kernel: Key type .fscrypt registered
+Dec 08 00:00:48 teddy2012-arch kernel: Key type fscrypt-provisioning registered
+Dec 08 00:00:48 teddy2012-arch kernel: integrity: Loading X.509 certificate: UEFI:db
+Dec 08 00:00:48 teddy2012-arch kernel: integrity: Loaded X.509 cert 'Microsoft Windows Production PCA 2011: a92902398e16c49778cd90f99e4f9ae17c55af53'
+Dec 08 00:00:48 teddy2012-arch kernel: integrity: Loading X.509 certificate: UEFI:db
+Dec 08 00:00:48 teddy2012-arch kernel: integrity: Loaded X.509 cert 'Microsoft Corporation UEFI CA 2011: 13adbf4309bd82709c8cd54f316ed522988a1bd4'
+Dec 08 00:00:48 teddy2012-arch kernel: PM:   Magic number: 2:128:11
+Dec 08 00:00:48 teddy2012-arch kernel: memory memory55: hash matches
+Dec 08 00:00:48 teddy2012-arch kernel: RAS: Correctable Errors collector initialized.
+Dec 08 00:00:48 teddy2012-arch kernel: usb 1-1: new high-speed USB device number 2 using ehci-pci
+Dec 08 00:00:48 teddy2012-arch kernel: ata1: SATA link up 1.5 Gbps (SStatus 113 SControl 300)
+Dec 08 00:00:48 teddy2012-arch kernel: ata5: SATA link up 6.0 Gbps (SStatus 133 SControl 300)
+Dec 08 00:00:48 teddy2012-arch kernel: ata5.00: ACPI cmd ef/10:06:00:00:00:00 (SET FEATURES) succeeded
+Dec 08 00:00:48 teddy2012-arch kernel: ata5.00: ACPI cmd f5/00:00:00:00:00:00 (SECURITY FREEZE LOCK) filtered out
+Dec 08 00:00:48 teddy2012-arch kernel: ata5.00: ACPI cmd b1/c1:00:00:00:00:00 (DEVICE CONFIGURATION OVERLAY) filtered out
+Dec 08 00:00:48 teddy2012-arch kernel: ata5.00: ATA-8: HGST HTS721010A9E630, JB0OA3J0, max UDMA/133
+Dec 08 00:00:48 teddy2012-arch kernel: ata5.00: ATA Identify Device Log not supported
+Dec 08 00:00:48 teddy2012-arch kernel: ata5.00: 1953525168 sectors, multi 16: LBA48 NCQ (depth 32), AA
+Dec 08 00:00:48 teddy2012-arch kernel: ata1.00: ATAPI: TSSTcorp CDDVDW SN-208FB, TM00, max UDMA/100
+Dec 08 00:00:48 teddy2012-arch kernel: ata5.00: ACPI cmd ef/10:06:00:00:00:00 (SET FEATURES) succeeded
+Dec 08 00:00:48 teddy2012-arch kernel: ata5.00: ACPI cmd f5/00:00:00:00:00:00 (SECURITY FREEZE LOCK) filtered out
+Dec 08 00:00:48 teddy2012-arch kernel: ata5.00: ACPI cmd b1/c1:00:00:00:00:00 (DEVICE CONFIGURATION OVERLAY) filtered out
+Dec 08 00:00:48 teddy2012-arch kernel: ata5.00: ATA Identify Device Log not supported
+Dec 08 00:00:48 teddy2012-arch kernel: ata5.00: configured for UDMA/133
+Dec 08 00:00:48 teddy2012-arch kernel: ata1.00: configured for UDMA/100
+Dec 08 00:00:48 teddy2012-arch kernel: scsi 0:0:0:0: CD-ROM            TSSTcorp CDDVDW SN-208FB  TM00 PQ: 0 ANSI: 5
+Dec 08 00:00:48 teddy2012-arch kernel: usb 2-1: new high-speed USB device number 2 using ehci-pci
+Dec 08 00:00:48 teddy2012-arch kernel: scsi 4:0:0:0: Direct-Access     ATA      HGST HTS721010A9 A3J0 PQ: 0 ANSI: 5
+Dec 08 00:00:48 teddy2012-arch kernel: sd 4:0:0:0: [sda] 1953525168 512-byte logical blocks: (1.00 TB/932 GiB)
+Dec 08 00:00:48 teddy2012-arch kernel: sd 4:0:0:0: [sda] 4096-byte physical blocks
+Dec 08 00:00:48 teddy2012-arch kernel: sd 4:0:0:0: [sda] Write Protect is off
+Dec 08 00:00:48 teddy2012-arch kernel: sd 4:0:0:0: [sda] Mode Sense: 00 3a 00 00
+Dec 08 00:00:48 teddy2012-arch kernel: sd 4:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Dec 08 00:00:48 teddy2012-arch kernel: usb 1-1: New USB device found, idVendor=8087, idProduct=8008, bcdDevice= 0.05
+Dec 08 00:00:48 teddy2012-arch kernel: usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Dec 08 00:00:48 teddy2012-arch kernel: hub 1-1:1.0: USB hub found
+Dec 08 00:00:48 teddy2012-arch kernel: hub 1-1:1.0: 6 ports detected
+Dec 08 00:00:48 teddy2012-arch kernel: usb 2-1: New USB device found, idVendor=8087, idProduct=8000, bcdDevice= 0.05
+Dec 08 00:00:48 teddy2012-arch kernel: usb 2-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Dec 08 00:00:48 teddy2012-arch kernel: hub 2-1:1.0: USB hub found
+Dec 08 00:00:48 teddy2012-arch kernel: hub 2-1:1.0: 8 ports detected
+Dec 08 00:00:48 teddy2012-arch kernel:  sda: sda1 sda2 sda3 sda4 sda5 sda6
+Dec 08 00:00:48 teddy2012-arch kernel: sd 4:0:0:0: [sda] Attached SCSI disk
+Dec 08 00:00:48 teddy2012-arch kernel: Freeing unused decrypted memory: 2036K
+Dec 08 00:00:48 teddy2012-arch kernel: Freeing unused kernel image (initmem) memory: 2148K
+Dec 08 00:00:48 teddy2012-arch kernel: Write protecting the kernel read-only data: 28672k
+Dec 08 00:00:48 teddy2012-arch kernel: Freeing unused kernel image (text/rodata gap) memory: 2036K
+Dec 08 00:00:48 teddy2012-arch kernel: Freeing unused kernel image (rodata/data gap) memory: 1432K
+Dec 08 00:00:48 teddy2012-arch kernel: usb 1-1.2: new high-speed USB device number 3 using ehci-pci
+Dec 08 00:00:48 teddy2012-arch kernel: usb 2-1.4: new full-speed USB device number 3 using ehci-pci
+Dec 08 00:00:48 teddy2012-arch kernel: x86/mm: Checked W+X mappings: passed, no W+X pages found.
+Dec 08 00:00:48 teddy2012-arch kernel: rodata_test: all tests were successful
+Dec 08 00:00:48 teddy2012-arch kernel: x86/mm: Checking user space page tables
+Dec 08 00:00:48 teddy2012-arch kernel: x86/mm: Checked W+X mappings: passed, no W+X pages found.
+Dec 08 00:00:48 teddy2012-arch kernel: Run /init as init process
+Dec 08 00:00:48 teddy2012-arch kernel:   with arguments:
+Dec 08 00:00:48 teddy2012-arch kernel:     /init
+Dec 08 00:00:48 teddy2012-arch kernel:   with environment:
+Dec 08 00:00:48 teddy2012-arch kernel:     HOME=/
+Dec 08 00:00:48 teddy2012-arch kernel:     TERM=linux
+Dec 08 00:00:48 teddy2012-arch kernel:     BOOT_IMAGE=/vmlinuz-linux-lts
+Dec 08 00:00:48 teddy2012-arch kernel: fbcon: Taking over console
+Dec 08 00:00:48 teddy2012-arch kernel: Console: switching to colour frame buffer device 240x67
+Dec 08 00:00:48 teddy2012-arch kernel: tsc: Refined TSC clocksource calibration: 2593.993 MHz
+Dec 08 00:00:48 teddy2012-arch kernel: clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x256411d258c, max_idle_ns: 440795337342 ns
+Dec 08 00:00:48 teddy2012-arch kernel: clocksource: Switched to clocksource tsc
+Dec 08 00:00:48 teddy2012-arch kernel: rtsx_pci 0000:03:00.0: enabling device (0000 -> 0002)
+Dec 08 00:00:48 teddy2012-arch kernel: xhci_hcd 0000:00:14.0: xHCI Host Controller
+Dec 08 00:00:48 teddy2012-arch kernel: xhci_hcd 0000:00:14.0: new USB bus registered, assigned bus number 3
+Dec 08 00:00:48 teddy2012-arch kernel: i8042: PNP: PS/2 Controller [PNP030b:PS2K,PNP0f13:PS2M] at 0x60,0x64 irq 1,12
+Dec 08 00:00:48 teddy2012-arch kernel: xhci_hcd 0000:00:14.0: hcc params 0x200077c1 hci version 0x100 quirks 0x0000000000009810
+Dec 08 00:00:48 teddy2012-arch kernel: xhci_hcd 0000:00:14.0: xHCI Host Controller
+Dec 08 00:00:48 teddy2012-arch kernel: xhci_hcd 0000:00:14.0: new USB bus registered, assigned bus number 4
+Dec 08 00:00:48 teddy2012-arch kernel: xhci_hcd 0000:00:14.0: Host supports USB 3.0 SuperSpeed
+Dec 08 00:00:48 teddy2012-arch kernel: usb usb3: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.15
+Dec 08 00:00:48 teddy2012-arch kernel: usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Dec 08 00:00:48 teddy2012-arch kernel: usb usb3: Product: xHCI Host Controller
+Dec 08 00:00:48 teddy2012-arch kernel: usb usb3: Manufacturer: Linux 5.15.81-1-lts xhci-hcd
+Dec 08 00:00:48 teddy2012-arch kernel: usb usb3: SerialNumber: 0000:00:14.0
+Dec 08 00:00:48 teddy2012-arch kernel: usb 2-1.4: New USB device found, idVendor=1770, idProduct=ff00, bcdDevice= 1.10
+Dec 08 00:00:48 teddy2012-arch kernel: usb 2-1.4: New USB device strings: Mfr=1, Product=1, SerialNumber=1
+Dec 08 00:00:48 teddy2012-arch kernel: usb 2-1.4: Product: MSI EPF USB
+Dec 08 00:00:48 teddy2012-arch kernel: usb 2-1.4: Manufacturer: MSI EPF USB
+Dec 08 00:00:48 teddy2012-arch kernel: usb 2-1.4: SerialNumber: MSI EPF USB
+Dec 08 00:00:48 teddy2012-arch kernel: serio: i8042 KBD port at 0x60,0x64 irq 1
+Dec 08 00:00:48 teddy2012-arch kernel: serio: i8042 AUX port at 0x60,0x64 irq 12
+Dec 08 00:00:48 teddy2012-arch kernel: hub 3-0:1.0: USB hub found
+Dec 08 00:00:48 teddy2012-arch kernel: hub 3-0:1.0: 14 ports detected
+Dec 08 00:00:48 teddy2012-arch kernel: usb usb4: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 5.15
+Dec 08 00:00:48 teddy2012-arch kernel: usb usb4: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Dec 08 00:00:48 teddy2012-arch kernel: usb usb4: Product: xHCI Host Controller
+Dec 08 00:00:48 teddy2012-arch kernel: usb usb4: Manufacturer: Linux 5.15.81-1-lts xhci-hcd
+Dec 08 00:00:48 teddy2012-arch kernel: usb usb4: SerialNumber: 0000:00:14.0
+Dec 08 00:00:48 teddy2012-arch kernel: hub 4-0:1.0: USB hub found
+Dec 08 00:00:48 teddy2012-arch kernel: hub 4-0:1.0: 4 ports detected
+Dec 08 00:00:48 teddy2012-arch kernel: usb 1-1.2: New USB device found, idVendor=152d, idProduct=0578, bcdDevice= 4.01
+Dec 08 00:00:48 teddy2012-arch kernel: usb 1-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Dec 08 00:00:48 teddy2012-arch kernel: usb 1-1.2: Product: Sabrent Disk Device
+Dec 08 00:00:48 teddy2012-arch kernel: usb 1-1.2: Manufacturer: Sabrent Disk Device
+Dec 08 00:00:48 teddy2012-arch kernel: usb 1-1.2: SerialNumber: 00000000458C
+Dec 08 00:00:48 teddy2012-arch kernel: usbcore: registered new interface driver usbhid
+Dec 08 00:00:48 teddy2012-arch kernel: usbhid: USB HID core driver
+Dec 08 00:00:48 teddy2012-arch kernel: input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input3
+Dec 08 00:00:48 teddy2012-arch kernel: gt683r_led 0003:1770:FF00.0001: hidraw0: USB HID v1.10 Device [MSI EPF USB MSI EPF USB] on usb-0000:00:1d.0-1.4/input0
+Dec 08 00:00:48 teddy2012-arch kernel: Console: switching to colour dummy device 80x25
+Dec 08 00:00:48 teddy2012-arch kernel: i915 0000:00:02.0: vgaarb: deactivate vga console
+Dec 08 00:00:48 teddy2012-arch kernel: i915 0000:00:02.0: vgaarb: changed VGA decodes: olddecodes=io+mem,decodes=io+mem:owns=io+mem
+Dec 08 00:00:48 teddy2012-arch kernel: [drm] Initialized i915 1.6.0 20201103 for 0000:00:02.0 on minor 0
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: video: [Firmware Bug]: ACPI(PEGP) defines _DOD but not _DOS
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: video: Video Device [PEGP] (multi-head: yes  rom: yes  post: no)
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI BIOS Error (bug): Could not resolve symbol [\_SB.PCI0.GFX0.DD02._BCL], AE_NOT_FOUND (20210730/psargs-330)
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI Error: Aborting method \_SB.PCI0.PEG0.PEGP.DD02._BCL due to previous error (AE_NOT_FOUND) (20210730/psparse-529)
+Dec 08 00:00:48 teddy2012-arch kernel: input: Video Bus as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:44/LNXVIDEO:00/input/input5
+Dec 08 00:00:48 teddy2012-arch kernel: ACPI: video: Video Device [GFX0] (multi-head: yes  rom: no  post: no)
+Dec 08 00:00:48 teddy2012-arch kernel: input: Video Bus as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:01/input/input6
+Dec 08 00:00:48 teddy2012-arch kernel: usb 1-1.3: new full-speed USB device number 4 using ehci-pci
+Dec 08 00:00:48 teddy2012-arch kernel: fbcon: i915drmfb (fb0) is primary device
+Dec 08 00:00:48 teddy2012-arch kernel: sr 0:0:0:0: [sr0] scsi3-mmc drive: 24x/24x writer dvd-ram cd/rw xa/form2 cdda tray
+Dec 08 00:00:48 teddy2012-arch kernel: cdrom: Uniform CD-ROM driver Revision: 3.20
+Dec 08 00:00:48 teddy2012-arch kernel: sr 0:0:0:0: Attached scsi CD-ROM sr0
+Dec 08 00:00:48 teddy2012-arch kernel: usb 1-1.3: New USB device found, idVendor=8087, idProduct=07dc, bcdDevice= 0.01
+Dec 08 00:00:48 teddy2012-arch kernel: usb 1-1.3: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Dec 08 00:00:48 teddy2012-arch kernel: usb 3-1: new high-speed USB device number 2 using xhci_hcd
+Dec 08 00:00:48 teddy2012-arch kernel: usb 1-1.5: new full-speed USB device number 5 using ehci-pci
+Dec 08 00:00:48 teddy2012-arch kernel: usb 1-1.5: device descriptor read/64, error -32
+Dec 08 00:00:48 teddy2012-arch kernel: usb 3-1: New USB device found, idVendor=05e3, idProduct=0610, bcdDevice= 6.55
+Dec 08 00:00:48 teddy2012-arch kernel: usb 3-1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Dec 08 00:00:48 teddy2012-arch kernel: usb 3-1: Product: USB2.1 Hub
+Dec 08 00:00:48 teddy2012-arch kernel: usb 3-1: Manufacturer: GenesysLogic
+Dec 08 00:00:48 teddy2012-arch kernel: hub 3-1:1.0: USB hub found
+Dec 08 00:00:48 teddy2012-arch kernel: hub 3-1:1.0: 4 ports detected
+Dec 08 00:00:48 teddy2012-arch kernel: usb 4-1: new SuperSpeed USB device number 2 using xhci_hcd
+Dec 08 00:00:48 teddy2012-arch kernel: usb 4-1: New USB device found, idVendor=05e3, idProduct=0626, bcdDevice= 6.55
+Dec 08 00:00:48 teddy2012-arch kernel: usb 4-1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Dec 08 00:00:48 teddy2012-arch kernel: usb 4-1: Product: USB3.1 Hub
+Dec 08 00:00:48 teddy2012-arch kernel: usb 4-1: Manufacturer: GenesysLogic
+Dec 08 00:00:48 teddy2012-arch kernel: hub 4-1:1.0: USB hub found
+Dec 08 00:00:48 teddy2012-arch kernel: hub 4-1:1.0: 4 ports detected
+Dec 08 00:00:48 teddy2012-arch kernel: usb 1-1.5: device descriptor read/64, error -32
+Dec 08 00:00:48 teddy2012-arch kernel: usb 3-1.1: new full-speed USB device number 3 using xhci_hcd
+Dec 08 00:00:48 teddy2012-arch kernel: usb 1-1.5: new full-speed USB device number 6 using ehci-pci
+Dec 08 00:00:48 teddy2012-arch kernel: usb 3-1.1: New USB device found, idVendor=0951, idProduct=16e5, bcdDevice=21.13
+Dec 08 00:00:48 teddy2012-arch kernel: usb 3-1.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Dec 08 00:00:48 teddy2012-arch kernel: usb 3-1.1: Product: HyperX Alloy Origins
+Dec 08 00:00:48 teddy2012-arch kernel: usb 3-1.1: Manufacturer: Kingston
+Dec 08 00:00:48 teddy2012-arch kernel: input: Kingston HyperX Alloy Origins as /devices/pci0000:00/0000:00:14.0/usb3/3-1/3-1.1/3-1.1:1.0/0003:0951:16E5.0002/input/input7
+Dec 08 00:00:48 teddy2012-arch kernel: usb 1-1.5: device descriptor read/64, error -32
+Dec 08 00:00:48 teddy2012-arch kernel: hid-generic 0003:0951:16E5.0002: input,hidraw1: USB HID v1.11 Keyboard [Kingston HyperX Alloy Origins] on usb-0000:00:14.0-1.1/input0
+Dec 08 00:00:48 teddy2012-arch kernel: input: Kingston HyperX Alloy Origins Mouse as /devices/pci0000:00/0000:00:14.0/usb3/3-1/3-1.1/3-1.1:1.1/0003:0951:16E5.0003/input/input8
+Dec 08 00:00:48 teddy2012-arch kernel: input: Kingston HyperX Alloy Origins System Control as /devices/pci0000:00/0000:00:14.0/usb3/3-1/3-1.1/3-1.1:1.1/0003:0951:16E5.0003/input/input9
+Dec 08 00:00:48 teddy2012-arch kernel: input: Kingston HyperX Alloy Origins Consumer Control as /devices/pci0000:00/0000:00:14.0/usb3/3-1/3-1.1/3-1.1:1.1/0003:0951:16E5.0003/input/input10
+Dec 08 00:00:48 teddy2012-arch kernel: input: Kingston HyperX Alloy Origins as /devices/pci0000:00/0000:00:14.0/usb3/3-1/3-1.1/3-1.1:1.1/0003:0951:16E5.0003/input/input11
+Dec 08 00:00:48 teddy2012-arch kernel: hid-generic 0003:0951:16E5.0003: input,hiddev96,hidraw2: USB HID v1.11 Mouse [Kingston HyperX Alloy Origins] on usb-0000:00:14.0-1.1/input1
+Dec 08 00:00:48 teddy2012-arch kernel: input: Kingston HyperX Alloy Origins as /devices/pci0000:00/0000:00:14.0/usb3/3-1/3-1.1/3-1.1:1.2/0003:0951:16E5.0004/input/input12
+Dec 08 00:00:48 teddy2012-arch kernel: hid-generic 0003:0951:16E5.0004: input,hidraw3: USB HID v1.11 Keyboard [Kingston HyperX Alloy Origins] on usb-0000:00:14.0-1.1/input2
+Dec 08 00:00:48 teddy2012-arch kernel: usbhid 3-1.1:1.3: couldn't find an input interrupt endpoint
+Dec 08 00:00:48 teddy2012-arch kernel: usb 1-1.5: device descriptor read/64, error -32
+Dec 08 00:00:48 teddy2012-arch kernel: usb 3-1.2: new full-speed USB device number 4 using xhci_hcd
+Dec 08 00:00:48 teddy2012-arch kernel: usb 1-1-port5: attempt power cycle
+Dec 08 00:00:48 teddy2012-arch kernel: Console: switching to colour frame buffer device 240x67
+Dec 08 00:00:48 teddy2012-arch kernel: i915 0000:00:02.0: [drm] fb0: i915drmfb frame buffer device
+Dec 08 00:00:48 teddy2012-arch kernel: usb 3-1.2: New USB device found, idVendor=06a3, idProduct=0cd5, bcdDevice= 2.14
+Dec 08 00:00:48 teddy2012-arch kernel: usb 3-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Dec 08 00:00:48 teddy2012-arch kernel: usb 3-1.2: Product: Cyborg R.A.T.5 Mouse
+Dec 08 00:00:48 teddy2012-arch kernel: usb 3-1.2: Manufacturer: Saitek
+Dec 08 00:00:48 teddy2012-arch kernel: input: Saitek Cyborg R.A.T.5 Mouse as /devices/pci0000:00/0000:00:14.0/usb3/3-1/3-1.2/3-1.2:1.0/0003:06A3:0CD5.0005/input/input13
+Dec 08 00:00:48 teddy2012-arch kernel: hid-generic 0003:06A3:0CD5.0005: input,hidraw4: USB HID v1.11 Mouse [Saitek Cyborg R.A.T.5 Mouse] on usb-0000:00:14.0-1.2/input0
+Dec 08 00:00:48 teddy2012-arch kernel: usb 1-1.5: new full-speed USB device number 7 using ehci-pci
+Dec 08 00:00:48 teddy2012-arch kernel: usb 1-1.5: device not accepting address 7, error -32
+Dec 08 00:00:48 teddy2012-arch kernel: usb 1-1.5: new full-speed USB device number 8 using ehci-pci
+Dec 08 00:00:48 teddy2012-arch kernel: usb 1-1.5: device not accepting address 8, error -32
+Dec 08 00:00:48 teddy2012-arch kernel: usb 1-1-port5: unable to enumerate USB device
+Dec 08 00:00:48 teddy2012-arch kernel: usbcore: registered new interface driver usb-storage
+Dec 08 00:00:48 teddy2012-arch kernel: scsi host5: uas
+Dec 08 00:00:48 teddy2012-arch kernel: usbcore: registered new interface driver uas
+Dec 08 00:00:48 teddy2012-arch kernel: scsi 5:0:0:0: Direct-Access     Sabrent  Disk Device      0401 PQ: 0 ANSI: 6
+Dec 08 00:00:48 teddy2012-arch kernel: sd 5:0:0:0: [sdb] 1953525168 512-byte logical blocks: (1.00 TB/932 GiB)
+Dec 08 00:00:48 teddy2012-arch kernel: sd 5:0:0:0: [sdb] 4096-byte physical blocks
+Dec 08 00:00:48 teddy2012-arch kernel: sd 5:0:0:0: [sdb] Write Protect is off
+Dec 08 00:00:48 teddy2012-arch kernel: sd 5:0:0:0: [sdb] Mode Sense: 5f 00 00 08
+Dec 08 00:00:48 teddy2012-arch kernel: sd 5:0:0:0: [sdb] Disabling FUA
+Dec 08 00:00:48 teddy2012-arch kernel: sd 5:0:0:0: [sdb] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Dec 08 00:00:48 teddy2012-arch kernel: sd 5:0:0:0: [sdb] Optimal transfer size 33553920 bytes not a multiple of physical block size (4096 bytes)
+Dec 08 00:00:48 teddy2012-arch kernel:  sdb: sdb1 sdb2 sdb3
+Dec 08 00:00:48 teddy2012-arch kernel: sd 5:0:0:0: [sdb] Attached SCSI disk
+Dec 08 00:00:48 teddy2012-arch kernel: EXT4-fs (sdb3): mounted filesystem with ordered data mode. Opts: (null). Quota mode: none.
+Dec 08 00:00:48 teddy2012-arch systemd[1]: systemd 252.2-3-arch running in system mode (+PAM +AUDIT -SELINUX -APPARMOR -IMA +SMACK +SECCOMP +GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY +P11KIT -QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -BPF_FRAMEWORK +XKBCOMMON +UTMP -SYSVINIT default-hierarchy=unified)
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Detected architecture x86-64.
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Hostname set to <teddy2012-arch>.
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Queued start job for default target Graphical Interface.
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Created slice Slice /system/getty.
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Created slice Slice /system/modprobe.
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Created slice User and Session Slice.
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Reached target Local Encrypted Volumes.
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Reached target Local Integrity Protected Volumes.
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Reached target Path Units.
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Reached target Remote File Systems.
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Reached target Slice Units.
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Reached target Local Verity Protected Volumes.
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Listening on Device-mapper event daemon FIFOs.
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Listening on Process Core Dump Socket.
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Listening on Journal Audit Socket.
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Listening on Journal Socket (/dev/log).
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Listening on Journal Socket.
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Listening on udev Control Socket.
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Listening on udev Kernel Socket.
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Mounting Huge Pages File System...
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Mounting POSIX Message Queue File System...
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Mounting Kernel Debug File System...
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Mounting Kernel Trace File System...
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Starting Create List of Static Device Nodes...
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Starting Load Kernel Module configfs...
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Starting Load Kernel Module drm...
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Starting Load Kernel Module fuse...
+Dec 08 00:00:48 teddy2012-arch systemd[1]: File System Check on Root Device was skipped because of an unmet condition check (ConditionPathIsReadWrite=!/).
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Starting Journal Service...
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Starting Load Kernel Modules...
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Starting Remount Root and Kernel File Systems...
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Repartition Root Disk was skipped because no trigger condition checks were met.
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Starting Coldplug All udev Devices...
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Mounted Huge Pages File System.
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Mounted POSIX Message Queue File System.
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Mounted Kernel Debug File System.
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Mounted Kernel Trace File System.
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Finished Create List of Static Device Nodes.
+Dec 08 00:00:48 teddy2012-arch systemd[1]: modprobe@configfs.service: Deactivated successfully.
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Finished Load Kernel Module configfs.
+Dec 08 00:00:48 teddy2012-arch systemd[1]: modprobe@drm.service: Deactivated successfully.
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Finished Load Kernel Module drm.
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Mounting Kernel Configuration File System...
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Mounted Kernel Configuration File System.
+Dec 08 00:00:48 teddy2012-arch kernel: EXT4-fs (sdb3): re-mounted. Opts: (null). Quota mode: none.
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Finished Remount Root and Kernel File Systems.
+Dec 08 00:00:48 teddy2012-arch systemd[1]: First Boot Wizard was skipped because of an unmet condition check (ConditionFirstBoot=yes).
+Dec 08 00:00:48 teddy2012-arch kernel: fuse: init (API version 7.34)
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Rebuild Hardware Database was skipped because no trigger condition checks were met.
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Starting Load/Save Random Seed...
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Starting Create System Users...
+Dec 08 00:00:48 teddy2012-arch systemd[1]: modprobe@fuse.service: Deactivated successfully.
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Finished Load Kernel Module fuse.
+Dec 08 00:00:48 teddy2012-arch kernel: audit: type=1130 audit(1670475648.129:2): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=modprobe@fuse comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:00:48 teddy2012-arch kernel: audit: type=1131 audit(1670475648.129:3): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=modprobe@fuse comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Mounting FUSE Control File System...
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Mounted FUSE Control File System.
+Dec 08 00:00:48 teddy2012-arch systemd-journald[283]: Journal started
+Dec 08 00:00:48 teddy2012-arch systemd-journald[283]: Runtime Journal (/run/log/journal/aafba7bded004a5485c95687a837c117) is 8.0M, max 594.3M, 586.3M free.
+Dec 08 00:00:48 teddy2012-arch audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=modprobe@fuse comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:00:48 teddy2012-arch audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=modprobe@fuse comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:00:48 teddy2012-arch audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-journald comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Starting Flush Journal to Persistent Storage...
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Started Journal Service.
+Dec 08 00:00:48 teddy2012-arch kernel: audit: type=1130 audit(1670475648.169:4): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-journald comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:00:48 teddy2012-arch systemd-journald[283]: Time spent on flushing to /var/log/journal/aafba7bded004a5485c95687a837c117 is 5.386ms for 916 entries.
+Dec 08 00:00:48 teddy2012-arch systemd-journald[283]: System Journal (/var/log/journal/aafba7bded004a5485c95687a837c117) is 64.0M, max 4.0G, 3.9G free.
+Dec 08 00:00:48 teddy2012-arch systemd-journald[283]: Received client request to flush runtime journal.
+Dec 08 00:00:48 teddy2012-arch kernel: audit: type=1130 audit(1670475648.189:5): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-random-seed comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:00:48 teddy2012-arch systemd-journald[283]: File /var/log/journal/aafba7bded004a5485c95687a837c117/system.journal corrupted or uncleanly shut down, renaming and replacing.
+Dec 08 00:00:48 teddy2012-arch kernel: audit: type=1130 audit(1670475648.339:6): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-udev-trigger comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:00:48 teddy2012-arch kernel: audit: type=1130 audit(1670475648.489:7): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-sysusers comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:00:48 teddy2012-arch audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-random-seed comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:00:48 teddy2012-arch audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-udev-trigger comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:00:48 teddy2012-arch audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-sysusers comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Finished Load/Save Random Seed.
+Dec 08 00:00:48 teddy2012-arch systemd[1]: First Boot Complete was skipped because of an unmet condition check (ConditionFirstBoot=yes).
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Finished Coldplug All udev Devices.
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Finished Create System Users.
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Starting Create Static Device Nodes in /dev...
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Finished Flush Journal to Persistent Storage.
+Dec 08 00:00:48 teddy2012-arch audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-journal-flush comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:00:48 teddy2012-arch kernel: audit: type=1130 audit(1670475648.519:8): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-journal-flush comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Finished Create Static Device Nodes in /dev.
+Dec 08 00:00:48 teddy2012-arch audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-tmpfiles-setup-dev comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Reached target Preparation for Local File Systems.
+Dec 08 00:00:48 teddy2012-arch audit: BPF prog-id=14 op=LOAD
+Dec 08 00:00:48 teddy2012-arch audit: BPF prog-id=15 op=LOAD
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Starting Rule-based Manager for Device Events and Files...
+Dec 08 00:00:48 teddy2012-arch kernel: audit: type=1130 audit(1670475648.689:9): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-tmpfiles-setup-dev comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:00:48 teddy2012-arch kernel: audit: type=1334 audit(1670475648.689:10): prog-id=14 op=LOAD
+Dec 08 00:00:48 teddy2012-arch kernel: audit: type=1334 audit(1670475648.689:11): prog-id=15 op=LOAD
+Dec 08 00:00:48 teddy2012-arch systemd-udevd[297]: Using default interface naming scheme 'v252'.
+Dec 08 00:00:48 teddy2012-arch systemd[1]: Started Rule-based Manager for Device Events and Files.
+Dec 08 00:00:48 teddy2012-arch audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-udevd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:00:48 teddy2012-arch kernel: input: PC Speaker as /devices/platform/pcspkr/input/input14
+Dec 08 00:00:49 teddy2012-arch systemd[1]: Created slice Slice /system/systemd-backlight.
+Dec 08 00:00:49 teddy2012-arch systemd[1]: Starting Load/Save Screen Backlight Brightness of backlight:intel_backlight...
+Dec 08 00:00:49 teddy2012-arch kernel: ACPI Warning: SystemIO range 0x0000000000001828-0x000000000000182F conflicts with OpRegion 0x0000000000001800-0x000000000000187F (\PMIO) (20210730/utaddress-204)
+Dec 08 00:00:49 teddy2012-arch kernel: ACPI: OSL: Resource conflict; ACPI support missing from driver?
+Dec 08 00:00:49 teddy2012-arch kernel: ACPI Warning: SystemIO range 0x0000000000001C40-0x0000000000001C4F conflicts with OpRegion 0x0000000000001C00-0x0000000000001C5F (\_SB.PCI0.PEG0.PEGP.GPR) (20210730/utaddress-204)
+Dec 08 00:00:49 teddy2012-arch kernel: ACPI Warning: SystemIO range 0x0000000000001C40-0x0000000000001C4F conflicts with OpRegion 0x0000000000001C00-0x0000000000001FFF (\GPR) (20210730/utaddress-204)
+Dec 08 00:00:49 teddy2012-arch kernel: ACPI: OSL: Resource conflict; ACPI support missing from driver?
+Dec 08 00:00:49 teddy2012-arch kernel: ACPI Warning: SystemIO range 0x0000000000001C30-0x0000000000001C3F conflicts with OpRegion 0x0000000000001C00-0x0000000000001C5F (\_SB.PCI0.PEG0.PEGP.GPR) (20210730/utaddress-204)
+Dec 08 00:00:49 teddy2012-arch kernel: ACPI Warning: SystemIO range 0x0000000000001C30-0x0000000000001C3F conflicts with OpRegion 0x0000000000001C00-0x0000000000001C3F (\GPRL) (20210730/utaddress-204)
+Dec 08 00:00:49 teddy2012-arch kernel: ACPI Warning: SystemIO range 0x0000000000001C30-0x0000000000001C3F conflicts with OpRegion 0x0000000000001C00-0x0000000000001FFF (\GPR) (20210730/utaddress-204)
+Dec 08 00:00:49 teddy2012-arch kernel: ACPI: OSL: Resource conflict; ACPI support missing from driver?
+Dec 08 00:00:49 teddy2012-arch kernel: ACPI Warning: SystemIO range 0x0000000000001C00-0x0000000000001C2F conflicts with OpRegion 0x0000000000001C00-0x0000000000001C5F (\_SB.PCI0.PEG0.PEGP.GPR) (20210730/utaddress-204)
+Dec 08 00:00:49 teddy2012-arch kernel: ACPI Warning: SystemIO range 0x0000000000001C00-0x0000000000001C2F conflicts with OpRegion 0x0000000000001C00-0x0000000000001C3F (\GPRL) (20210730/utaddress-204)
+Dec 08 00:00:49 teddy2012-arch kernel: ACPI Warning: SystemIO range 0x0000000000001C00-0x0000000000001C2F conflicts with OpRegion 0x0000000000001C00-0x0000000000001FFF (\GPR) (20210730/utaddress-204)
+Dec 08 00:00:49 teddy2012-arch kernel: ACPI: OSL: Resource conflict; ACPI support missing from driver?
+Dec 08 00:00:49 teddy2012-arch kernel: lpc_ich: Resource conflict(s) found affecting gpio_ich
+Dec 08 00:00:49 teddy2012-arch systemd[1]: Virtual Machine and Container Storage (Compatibility) was skipped because of an unmet condition check (ConditionPathExists=/var/lib/machines.raw).
+Dec 08 00:00:49 teddy2012-arch kernel: EDAC ie31200: No ECC support
+Dec 08 00:00:49 teddy2012-arch kernel: EDAC ie31200: No ECC support
+Dec 08 00:00:49 teddy2012-arch systemd[1]: Finished Load/Save Screen Backlight Brightness of backlight:intel_backlight.
+Dec 08 00:00:49 teddy2012-arch audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-backlight@backlight:intel_backlight comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:00:49 teddy2012-arch kernel: i801_smbus 0000:00:1f.3: SPD Write Disable is set
+Dec 08 00:00:49 teddy2012-arch kernel: i801_smbus 0000:00:1f.3: SMBus using PCI interrupt
+Dec 08 00:00:49 teddy2012-arch kernel: i2c i2c-7: 2/2 memory slots populated (from DMI)
+Dec 08 00:00:49 teddy2012-arch kernel: i2c i2c-7: Successfully instantiated SPD at 0x50
+Dec 08 00:00:49 teddy2012-arch kernel: mousedev: PS/2 mouse device common for all mice
+Dec 08 00:00:49 teddy2012-arch systemd[1]: Found device Disk_Device 2.
+Dec 08 00:00:49 teddy2012-arch systemd[1]: Activating swap /dev/disk/by-uuid/cf2618dc-4bb9-434d-b783-4b0d82f7766f...
+Dec 08 00:00:49 teddy2012-arch systemd[1]: Found device Disk_Device 1.
+Dec 08 00:00:49 teddy2012-arch systemd[1]: Mounting /boot...
+Dec 08 00:00:49 teddy2012-arch systemd[1]: Listening on Load/Save RF Kill Switch Status /dev/rfkill Watch.
+Dec 08 00:00:49 teddy2012-arch kernel: Adding 10485756k swap on /dev/sdb2.  Priority:-2 extents:1 across:10485756k FS
+Dec 08 00:00:49 teddy2012-arch systemd[1]: Activated swap /dev/disk/by-uuid/cf2618dc-4bb9-434d-b783-4b0d82f7766f.
+Dec 08 00:00:49 teddy2012-arch systemd[1]: Reached target Swaps.
+Dec 08 00:00:49 teddy2012-arch kernel: Bluetooth: Core ver 2.22
+Dec 08 00:00:49 teddy2012-arch kernel: NET: Registered PF_BLUETOOTH protocol family
+Dec 08 00:00:49 teddy2012-arch kernel: Bluetooth: HCI device and connection manager initialized
+Dec 08 00:00:49 teddy2012-arch kernel: Bluetooth: HCI socket layer initialized
+Dec 08 00:00:49 teddy2012-arch kernel: Bluetooth: L2CAP socket layer initialized
+Dec 08 00:00:49 teddy2012-arch kernel: Bluetooth: SCO socket layer initialized
+Dec 08 00:00:49 teddy2012-arch kernel: iTCO_vendor_support: vendor-support=0
+Dec 08 00:00:49 teddy2012-arch kernel: at24 7-0050: supply vcc not found, using dummy regulator
+Dec 08 00:00:49 teddy2012-arch kernel: at24 7-0050: 256 byte spd EEPROM, read-only
+Dec 08 00:00:49 teddy2012-arch kernel: cfg80211: Loading compiled-in X.509 certificates for regulatory database
+Dec 08 00:00:49 teddy2012-arch kernel: cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+Dec 08 00:00:49 teddy2012-arch kernel: input: MSI WMI hotkeys as /devices/virtual/input/input16
+Dec 08 00:00:49 teddy2012-arch kernel: alx 0000:04:00.0 eth0: Qualcomm Atheros AR816x/AR817x Ethernet [44:8a:5b:f1:95:c6]
+Dec 08 00:00:49 teddy2012-arch systemd[1]: Mounting Temporary Directory /tmp...
+Dec 08 00:00:49 teddy2012-arch systemd[1]: Mounted Temporary Directory /tmp.
+Dec 08 00:00:49 teddy2012-arch kernel: iTCO_wdt iTCO_wdt.1.auto: Found a Lynx Point TCO device (Version=2, TCOBASE=0x1860)
+Dec 08 00:00:49 teddy2012-arch kernel: iTCO_wdt iTCO_wdt.1.auto: initialized. heartbeat=30 sec (nowayout=0)
+Dec 08 00:00:49 teddy2012-arch kernel: alx 0000:04:00.0 enp4s0: renamed from eth0
+Dec 08 00:00:49 teddy2012-arch kernel: platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+Dec 08 00:00:49 teddy2012-arch kernel: cfg80211: failed to load regulatory.db
+Dec 08 00:00:49 teddy2012-arch systemd[1]: Mounted /boot.
+Dec 08 00:00:49 teddy2012-arch systemd[1]: Reached target Local File Systems.
+Dec 08 00:00:49 teddy2012-arch systemd[1]: Starting Rebuild Dynamic Linker Cache...
+Dec 08 00:00:49 teddy2012-arch kernel: FAT-fs (sdb1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+Dec 08 00:00:49 teddy2012-arch systemd[1]: Set Up Additional Binary Formats was skipped because no trigger condition checks were met.
+Dec 08 00:00:49 teddy2012-arch systemd[1]: Store a System Token in an EFI Variable was skipped because of an unmet condition check (ConditionPathExists=/sys/firmware/efi/efivars/LoaderFeatures-4a67b082-0a4c-41cf-b6c7-440b29bb8c4f).
+Dec 08 00:00:49 teddy2012-arch systemd[1]: Commit a transient machine-id on disk was skipped because of an unmet condition check (ConditionPathIsMountPoint=/etc/machine-id).
+Dec 08 00:00:49 teddy2012-arch systemd[1]: Starting Create Volatile Files and Directories...
+Dec 08 00:00:49 teddy2012-arch kernel: intel-spi intel-spi: en25q64 (8192 Kbytes)
+Dec 08 00:00:49 teddy2012-arch kernel: RAPL PMU: API unit is 2^-32 Joules, 4 fixed counters, 655360 ms ovfl timer
+Dec 08 00:00:49 teddy2012-arch kernel: RAPL PMU: hw unit of domain pp0-core 2^-14 Joules
+Dec 08 00:00:49 teddy2012-arch kernel: RAPL PMU: hw unit of domain package 2^-14 Joules
+Dec 08 00:00:49 teddy2012-arch kernel: RAPL PMU: hw unit of domain dram 2^-14 Joules
+Dec 08 00:00:49 teddy2012-arch kernel: RAPL PMU: hw unit of domain pp1-gpu 2^-14 Joules
+Dec 08 00:00:49 teddy2012-arch kernel: Creating 1 MTD partitions on "intel-spi":
+Dec 08 00:00:49 teddy2012-arch kernel: 0x000000000000-0x000000800000 : "BIOS"
+Dec 08 00:00:49 teddy2012-arch systemd[1]: Finished Create Volatile Files and Directories.
+Dec 08 00:00:49 teddy2012-arch audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-tmpfiles-setup comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:00:49 teddy2012-arch systemd[1]: Starting Rebuild Journal Catalog...
+Dec 08 00:00:49 teddy2012-arch systemd[1]: Starting Record System Boot/Shutdown in UTMP...
+Dec 08 00:00:50 teddy2012-arch kernel: Intel(R) Wireless WiFi driver for Linux
+Dec 08 00:00:50 teddy2012-arch kernel: iwlwifi 0000:05:00.0: enabling device (0000 -> 0002)
+Dec 08 00:00:50 teddy2012-arch audit[383]: SYSTEM_BOOT pid=383 uid=0 auid=4294967295 ses=4294967295 msg=' comm="systemd-update-utmp" exe="/usr/lib/systemd/systemd-update-utmp" hostname=? addr=? terminal=? res=success'
+Dec 08 00:00:50 teddy2012-arch kernel: cryptd: max_cpu_qlen set to 1000
+Dec 08 00:00:50 teddy2012-arch systemd[1]: Finished Record System Boot/Shutdown in UTMP.
+Dec 08 00:00:50 teddy2012-arch audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-update-utmp comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:00:50 teddy2012-arch kernel: iwlwifi 0000:05:00.0: loaded firmware version 17.3216344376.0 3160-17.ucode op_mode iwlmvm
+Dec 08 00:00:50 teddy2012-arch kernel: AVX2 version of gcm_enc/dec engaged.
+Dec 08 00:00:50 teddy2012-arch kernel: AES CTR mode by8 optimization enabled
+Dec 08 00:00:50 teddy2012-arch kernel: snd_hda_intel 0000:00:03.0: enabling device (0000 -> 0002)
+Dec 08 00:00:50 teddy2012-arch kernel: snd_hda_intel 0000:00:1b.0: enabling device (0000 -> 0002)
+Dec 08 00:00:50 teddy2012-arch kernel: snd_hda_intel 0000:00:03.0: bound 0000:00:02.0 (ops i915_audio_component_bind_ops [i915])
+Dec 08 00:00:50 teddy2012-arch systemd[1]: Starting Load/Save RF Kill Switch Status...
+Dec 08 00:00:50 teddy2012-arch kernel: usbcore: registered new interface driver btusb
+Dec 08 00:00:50 teddy2012-arch kernel: Bluetooth: hci0: Legacy ROM 2.5 revision 0.0 build 1 week 45 2013
+Dec 08 00:00:50 teddy2012-arch kernel: Bluetooth: hci0: Intel Bluetooth firmware file: intel/ibt-hw-37.7.10-fw-1.0.1.2d.d.bseq
+Dec 08 00:00:50 teddy2012-arch systemd[1]: Finished Rebuild Journal Catalog.
+Dec 08 00:00:50 teddy2012-arch audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-journal-catalog-update comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:00:50 teddy2012-arch systemd[1]: Started Load/Save RF Kill Switch Status.
+Dec 08 00:00:50 teddy2012-arch audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-rfkill comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:00:50 teddy2012-arch systemd[1]: Reached target Bluetooth Support.
+Dec 08 00:00:50 teddy2012-arch systemd[1]: Finished Rebuild Dynamic Linker Cache.
+Dec 08 00:00:50 teddy2012-arch audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=ldconfig comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:00:50 teddy2012-arch systemd[1]: Starting Update is Completed...
+Dec 08 00:00:50 teddy2012-arch systemd[1]: Finished Update is Completed.
+Dec 08 00:00:50 teddy2012-arch audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-update-done comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:00:50 teddy2012-arch kernel: input: HDA Intel HDMI HDMI/DP,pcm=3 as /devices/pci0000:00/0000:00:03.0/sound/card0/input17
+Dec 08 00:00:50 teddy2012-arch kernel: input: HDA Intel HDMI HDMI/DP,pcm=7 as /devices/pci0000:00/0000:00:03.0/sound/card0/input18
+Dec 08 00:00:50 teddy2012-arch kernel: input: HDA Intel HDMI HDMI/DP,pcm=8 as /devices/pci0000:00/0000:00:03.0/sound/card0/input19
+Dec 08 00:00:50 teddy2012-arch kernel: input: HDA Intel HDMI HDMI/DP,pcm=9 as /devices/pci0000:00/0000:00:03.0/sound/card0/input20
+Dec 08 00:00:50 teddy2012-arch kernel: input: HDA Intel HDMI HDMI/DP,pcm=10 as /devices/pci0000:00/0000:00:03.0/sound/card0/input21
+Dec 08 00:00:50 teddy2012-arch systemd[1]: Reached target Sound Card.
+Dec 08 00:00:50 teddy2012-arch kernel: snd_hda_codec_realtek hdaudioC1D0: autoconfig for ALC892: line_outs=2 (0x1b/0x16/0x0/0x0/0x0) type:speaker
+Dec 08 00:00:50 teddy2012-arch kernel: snd_hda_codec_realtek hdaudioC1D0:    speaker_outs=0 (0x0/0x0/0x0/0x0/0x0)
+Dec 08 00:00:50 teddy2012-arch kernel: snd_hda_codec_realtek hdaudioC1D0:    hp_outs=1 (0x14/0x0/0x0/0x0/0x0)
+Dec 08 00:00:50 teddy2012-arch kernel: snd_hda_codec_realtek hdaudioC1D0:    mono: mono_out=0x0
+Dec 08 00:00:50 teddy2012-arch kernel: snd_hda_codec_realtek hdaudioC1D0:    dig-out=0x1e/0x0
+Dec 08 00:00:50 teddy2012-arch kernel: snd_hda_codec_realtek hdaudioC1D0:    inputs:
+Dec 08 00:00:50 teddy2012-arch kernel: snd_hda_codec_realtek hdaudioC1D0:      Mic=0x18
+Dec 08 00:00:50 teddy2012-arch kernel: snd_hda_codec_realtek hdaudioC1D0:      Internal Mic=0x12
+Dec 08 00:00:50 teddy2012-arch kernel: input: HDA Intel PCH Mic as /devices/pci0000:00/0000:00:1b.0/sound/card1/input22
+Dec 08 00:00:50 teddy2012-arch kernel: input: HDA Intel PCH Headphone as /devices/pci0000:00/0000:00:1b.0/sound/card1/input23
+Dec 08 00:00:50 teddy2012-arch kernel: iwlwifi 0000:05:00.0: Detected Intel(R) Dual Band Wireless AC 3160, REV=0x164
+Dec 08 00:00:50 teddy2012-arch kernel: Bluetooth: hci0: unexpected event for opcode 0xfc2f
+Dec 08 00:00:50 teddy2012-arch kernel: Bluetooth: hci0: Intel BT fw patch 0x27 completed & activated
+Dec 08 00:00:50 teddy2012-arch kernel: psmouse serio1: elantech: assuming hardware version 4 (with firmware version 0x361f00)
+Dec 08 00:00:50 teddy2012-arch kernel: iwlwifi 0000:05:00.0: base HW address: d0:7e:35:94:d4:c8
+Dec 08 00:00:50 teddy2012-arch kernel: psmouse serio1: elantech: Synaptics capabilities query result 0x00, 0x15, 0x0e.
+Dec 08 00:00:50 teddy2012-arch kernel: psmouse serio1: elantech: Elan sample query result 00, 7d, 64
+Dec 08 00:00:50 teddy2012-arch kernel: ieee80211 phy0: Selected rate control algorithm 'iwl-mvm-rs'
+Dec 08 00:00:50 teddy2012-arch kernel: input: ETPS/2 Elantech Touchpad as /devices/platform/i8042/serio1/input/input15
+Dec 08 00:00:50 teddy2012-arch kernel: iwlwifi 0000:05:00.0 wlp5s0: renamed from wlan0
+Dec 08 00:00:50 teddy2012-arch kernel: nvidia: loading out-of-tree module taints kernel.
+Dec 08 00:00:50 teddy2012-arch kernel: nvidia: module license 'NVIDIA' taints kernel.
+Dec 08 00:00:50 teddy2012-arch kernel: Disabling lock debugging due to kernel taint
+Dec 08 00:00:51 teddy2012-arch kernel: nvidia: module verification failed: signature and/or required key missing - tainting kernel
+Dec 08 00:00:51 teddy2012-arch kernel: intel_rapl_common: Found RAPL domain package
+Dec 08 00:00:51 teddy2012-arch kernel: intel_rapl_common: Found RAPL domain core
+Dec 08 00:00:51 teddy2012-arch kernel: intel_rapl_common: Found RAPL domain uncore
+Dec 08 00:00:51 teddy2012-arch kernel: intel_rapl_common: Found RAPL domain dram
+Dec 08 00:00:51 teddy2012-arch kernel: intel_rapl_common: RAPL package-0 domain package locked by BIOS
+Dec 08 00:00:51 teddy2012-arch kernel: intel_rapl_common: RAPL package-0 domain dram locked by BIOS
+Dec 08 00:00:51 teddy2012-arch kernel: nvidia-nvlink: Nvlink Core is being initialized, major device number 511
+Dec 08 00:00:51 teddy2012-arch kernel: 
+Dec 08 00:00:51 teddy2012-arch kernel: nvidia 0000:01:00.0: enabling device (0006 -> 0007)
+Dec 08 00:00:51 teddy2012-arch kernel: NVRM: loading NVIDIA UNIX x86_64 Kernel Module  525.60.11  Wed Nov 23 23:04:03 UTC 2022
+Dec 08 00:00:51 teddy2012-arch systemd-udevd[323]: nvidia: Process '/usr/bin/bash -c '/usr/bin/mknod -Z -m 666 /dev/nvidiactl c $(grep nvidia-frontend /proc/devices | cut -d \  -f 1) 255'' failed with exit code 1.
+Dec 08 00:00:51 teddy2012-arch systemd-udevd[323]: nvidia: Process '/usr/bin/bash -c 'for i in $(cat /proc/driver/nvidia/gpus/*/information | grep Minor | cut -d \  -f 4); do /usr/bin/mknod -Z -m 666 /dev/nvidia${i} c $(grep nvidia-frontend /proc/devices | cut -d \  -f 1) ${i}; done'' failed with exit code 1.
+Dec 08 00:00:51 teddy2012-arch kernel: nvidia_uvm: module uses symbols from proprietary module nvidia, inheriting taint.
+Dec 08 00:00:51 teddy2012-arch kernel: nvidia-modeset: Loading NVIDIA Kernel Mode Setting Driver for UNIX platforms  525.60.11  Wed Nov 23 22:49:17 UTC 2022
+Dec 08 00:00:51 teddy2012-arch systemd-modules-load[284]: Inserted module 'nvidia_uvm'
+Dec 08 00:00:51 teddy2012-arch systemd[1]: Finished Load Kernel Modules.
+Dec 08 00:00:51 teddy2012-arch audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-modules-load comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:00:51 teddy2012-arch systemd[1]: Starting Apply Kernel Variables...
+Dec 08 00:00:51 teddy2012-arch kernel: [drm] [nvidia-drm] [GPU ID 0x00000100] Loading driver
+Dec 08 00:00:51 teddy2012-arch kernel: [drm] Initialized nvidia-drm 0.0.0 20160202 for 0000:01:00.0 on minor 1
+Dec 08 00:00:51 teddy2012-arch kernel: nvidia-uvm: Loaded the UVM driver, major device number 509.
+Dec 08 00:00:51 teddy2012-arch systemd[1]: Finished Apply Kernel Variables.
+Dec 08 00:00:51 teddy2012-arch audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-sysctl comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:00:51 teddy2012-arch systemd[1]: Reached target System Initialization.
+Dec 08 00:00:51 teddy2012-arch systemd[1]: Started Refresh existing PGP keys of archlinux-keyring regularly.
+Dec 08 00:00:51 teddy2012-arch systemd[1]: Started Daily man-db regeneration.
+Dec 08 00:00:51 teddy2012-arch systemd[1]: Started Daily verification of password and group files.
+Dec 08 00:00:51 teddy2012-arch systemd[1]: Started Daily Cleanup of Temporary Directories.
+Dec 08 00:00:51 teddy2012-arch systemd[1]: Reached target Timer Units.
+Dec 08 00:00:51 teddy2012-arch systemd[1]: Listening on D-Bus System Message Bus Socket.
+Dec 08 00:00:51 teddy2012-arch systemd[1]: Reached target Socket Units.
+Dec 08 00:00:51 teddy2012-arch systemd[1]: TPM2 PCR Barrier (Initialization) was skipped because of an unmet condition check (ConditionPathExists=/sys/firmware/efi/efivars/StubPcrKernelImage-4a67b082-0a4c-41cf-b6c7-440b29bb8c4f).
+Dec 08 00:00:51 teddy2012-arch systemd[1]: Reached target Basic System.
+Dec 08 00:00:51 teddy2012-arch systemd[1]: Starting D-Bus System Message Bus...
+Dec 08 00:00:51 teddy2012-arch audit: BPF prog-id=16 op=LOAD
+Dec 08 00:00:51 teddy2012-arch audit: BPF prog-id=17 op=LOAD
+Dec 08 00:00:51 teddy2012-arch audit: BPF prog-id=18 op=LOAD
+Dec 08 00:00:51 teddy2012-arch systemd[1]: Starting User Login Management...
+Dec 08 00:00:51 teddy2012-arch systemd[1]: TPM2 PCR Barrier (User) was skipped because of an unmet condition check (ConditionPathExists=/sys/firmware/efi/efivars/StubPcrKernelImage-4a67b082-0a4c-41cf-b6c7-440b29bb8c4f).
+Dec 08 00:00:51 teddy2012-arch audit: BPF prog-id=19 op=LOAD
+Dec 08 00:00:51 teddy2012-arch audit: BPF prog-id=20 op=LOAD
+Dec 08 00:00:51 teddy2012-arch audit: BPF prog-id=21 op=LOAD
+Dec 08 00:00:51 teddy2012-arch systemd[1]: Started Verify integrity of password and group files.
+Dec 08 00:00:51 teddy2012-arch audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=shadow comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:00:51 teddy2012-arch systemd-logind[478]: New seat seat0.
+Dec 08 00:00:51 teddy2012-arch systemd-logind[478]: Watching system buttons on /dev/input/event2 (Power Button)
+Dec 08 00:00:51 teddy2012-arch systemd-logind[478]: Watching system buttons on /dev/input/event0 (Lid Switch)
+Dec 08 00:00:51 teddy2012-arch systemd-logind[478]: Watching system buttons on /dev/input/event1 (Power Button)
+Dec 08 00:00:51 teddy2012-arch systemd-logind[478]: Watching system buttons on /dev/input/event6 (Kingston HyperX Alloy Origins)
+Dec 08 00:00:51 teddy2012-arch systemd-logind[478]: Watching system buttons on /dev/input/event9 (Kingston HyperX Alloy Origins Consumer Control)
+Dec 08 00:00:51 teddy2012-arch systemd-logind[478]: Watching system buttons on /dev/input/event8 (Kingston HyperX Alloy Origins System Control)
+Dec 08 00:00:51 teddy2012-arch systemd-logind[478]: Watching system buttons on /dev/input/event11 (Kingston HyperX Alloy Origins)
+Dec 08 00:00:51 teddy2012-arch systemd-logind[478]: Watching system buttons on /dev/input/event3 (AT Translated Set 2 keyboard)
+Dec 08 00:00:51 teddy2012-arch sh[480]: user 'wheel': directory '/home/wheel' does not exist
+Dec 08 00:00:51 teddy2012-arch sh[480]: pwck: no changes
+Dec 08 00:00:51 teddy2012-arch systemd[1]: shadow.service: Main process exited, code=exited, status=1/FAILURE
+Dec 08 00:00:51 teddy2012-arch systemd[1]: shadow.service: Failed with result 'exit-code'.
+Dec 08 00:00:51 teddy2012-arch audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=shadow comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=failed'
+Dec 08 00:00:51 teddy2012-arch systemd[1]: Started D-Bus System Message Bus.
+Dec 08 00:00:51 teddy2012-arch audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=dbus comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:00:51 teddy2012-arch dbus-daemon[477]: [system] Successfully activated service 'org.freedesktop.systemd1'
+Dec 08 00:00:51 teddy2012-arch systemd[1]: Starting Network Manager...
+Dec 08 00:00:51 teddy2012-arch systemd[1]: Started User Login Management.
+Dec 08 00:00:51 teddy2012-arch audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-logind comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:00:51 teddy2012-arch audit: BPF prog-id=0 op=UNLOAD
+Dec 08 00:00:51 teddy2012-arch NetworkManager[494]: <info>  [1670475651.9723] NetworkManager (version 1.40.6-1) is starting... (boot:6cf58437-e38a-4d7c-8733-688eb4c65f24)
+Dec 08 00:00:51 teddy2012-arch NetworkManager[494]: <info>  [1670475651.9723] Read config: /etc/NetworkManager/NetworkManager.conf (lib: 20-connectivity.conf)
+Dec 08 00:00:51 teddy2012-arch systemd[1]: Started Network Manager.
+Dec 08 00:00:51 teddy2012-arch NetworkManager[494]: <info>  [1670475651.9822] bus-manager: acquired D-Bus service "org.freedesktop.NetworkManager"
+Dec 08 00:00:51 teddy2012-arch audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=NetworkManager comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:00:51 teddy2012-arch systemd[1]: Reached target Network.
+Dec 08 00:00:51 teddy2012-arch systemd[1]: Starting Permit User Sessions...
+Dec 08 00:00:51 teddy2012-arch systemd[1]: Finished Permit User Sessions.
+Dec 08 00:00:51 teddy2012-arch audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-user-sessions comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:00:51 teddy2012-arch systemd[1]: Started Getty on tty1.
+Dec 08 00:00:51 teddy2012-arch audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=getty@tty1 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:00:51 teddy2012-arch systemd[1]: Reached target Login Prompts.
+Dec 08 00:00:51 teddy2012-arch systemd[1]: Reached target Multi-User System.
+Dec 08 00:00:51 teddy2012-arch systemd[1]: Reached target Graphical Interface.
+Dec 08 00:00:51 teddy2012-arch systemd[1]: Startup finished in 5.897s (firmware) + 7.924s (loader) + 7.426s (kernel) + 4.522s (userspace) = 25.771s.
+Dec 08 00:00:52 teddy2012-arch NetworkManager[494]: <info>  [1670475652.0101] manager[0x563ea7fd8030]: monitoring kernel firmware directory '/lib/firmware'.
+Dec 08 00:00:52 teddy2012-arch dbus-daemon[477]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.2' (uid=0 pid=494 comm="/usr/bin/NetworkManager --no-daemon")
+Dec 08 00:00:51 teddy2012-arch audit: BPF prog-id=22 op=LOAD
+Dec 08 00:00:51 teddy2012-arch audit: BPF prog-id=23 op=LOAD
+Dec 08 00:00:51 teddy2012-arch audit: BPF prog-id=24 op=LOAD
+Dec 08 00:00:52 teddy2012-arch systemd[1]: Starting Hostname Service...
+Dec 08 00:00:52 teddy2012-arch dbus-daemon[477]: [system] Successfully activated service 'org.freedesktop.hostname1'
+Dec 08 00:00:52 teddy2012-arch systemd[1]: Started Hostname Service.
+Dec 08 00:00:52 teddy2012-arch audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-hostnamed comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:00:52 teddy2012-arch NetworkManager[494]: <info>  [1670475652.0807] hostname: hostname: using hostnamed
+Dec 08 00:00:52 teddy2012-arch NetworkManager[494]: <info>  [1670475652.0807] hostname: static hostname changed from (none) to "teddy2012-arch"
+Dec 08 00:00:52 teddy2012-arch NetworkManager[494]: <info>  [1670475652.0827] dns-mgr: init: dns=default,systemd-resolved rc-manager=symlink
+Dec 08 00:00:52 teddy2012-arch NetworkManager[494]: <info>  [1670475652.0838] rfkill1: found Wi-Fi radio killswitch (at /sys/devices/pci0000:00/0000:00:1c.5/0000:05:00.0/ieee80211/phy0/rfkill1) (driver iwlwifi)
+Dec 08 00:00:52 teddy2012-arch NetworkManager[494]: <info>  [1670475652.0839] manager[0x563ea7fd8030]: rfkill: Wi-Fi hardware radio set enabled
+Dec 08 00:00:52 teddy2012-arch NetworkManager[494]: <info>  [1670475652.0839] manager[0x563ea7fd8030]: rfkill: WWAN hardware radio set enabled
+Dec 08 00:00:52 teddy2012-arch NetworkManager[494]: <info>  [1670475652.1702] Loaded device plugin: NMWifiFactory (/usr/lib/NetworkManager/1.40.6-1/libnm-device-plugin-wifi.so)
+Dec 08 00:00:52 teddy2012-arch NetworkManager[494]: <info>  [1670475652.1986] Loaded device plugin: NMWwanFactory (/usr/lib/NetworkManager/1.40.6-1/libnm-device-plugin-wwan.so)
+Dec 08 00:00:52 teddy2012-arch NetworkManager[494]: <info>  [1670475652.2012] Loaded device plugin: NMAtmManager (/usr/lib/NetworkManager/1.40.6-1/libnm-device-plugin-adsl.so)
+Dec 08 00:00:52 teddy2012-arch NetworkManager[494]: <info>  [1670475652.2869] Loaded device plugin: NMTeamFactory (/usr/lib/NetworkManager/1.40.6-1/libnm-device-plugin-team.so)
+Dec 08 00:00:52 teddy2012-arch NetworkManager[494]: <info>  [1670475652.3011] Loaded device plugin: NMBluezManager (/usr/lib/NetworkManager/1.40.6-1/libnm-device-plugin-bluetooth.so)
+Dec 08 00:00:52 teddy2012-arch NetworkManager[494]: <info>  [1670475652.3074] Loaded device plugin: NMOvsFactory (/usr/lib/NetworkManager/1.40.6-1/libnm-device-plugin-ovs.so)
+Dec 08 00:00:52 teddy2012-arch NetworkManager[494]: <info>  [1670475652.3078] manager: rfkill: Wi-Fi enabled by radio killswitch; enabled by state file
+Dec 08 00:00:52 teddy2012-arch NetworkManager[494]: <info>  [1670475652.3078] manager: rfkill: WWAN enabled by radio killswitch; enabled by state file
+Dec 08 00:00:52 teddy2012-arch NetworkManager[494]: <info>  [1670475652.3079] manager: Networking is enabled by state file
+Dec 08 00:00:52 teddy2012-arch dbus-daemon[477]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.2' (uid=0 pid=494 comm="/usr/bin/NetworkManager --no-daemon")
+Dec 08 00:00:52 teddy2012-arch NetworkManager[494]: <info>  [1670475652.3093] settings: Loaded settings plugin: keyfile (internal)
+Dec 08 00:00:52 teddy2012-arch systemd[1]: Starting Network Manager Script Dispatcher Service...
+Dec 08 00:00:52 teddy2012-arch NetworkManager[494]: <info>  [1670475652.3155] dhcp: init: Using DHCP client 'internal'
+Dec 08 00:00:52 teddy2012-arch NetworkManager[494]: <info>  [1670475652.3155] device (lo): carrier: link connected
+Dec 08 00:00:52 teddy2012-arch NetworkManager[494]: <info>  [1670475652.3200] manager: (lo): new Generic device (/org/freedesktop/NetworkManager/Devices/1)
+Dec 08 00:00:52 teddy2012-arch NetworkManager[494]: <info>  [1670475652.3209] manager: (enp4s0): new Ethernet device (/org/freedesktop/NetworkManager/Devices/2)
+Dec 08 00:00:52 teddy2012-arch NetworkManager[494]: <info>  [1670475652.3218] settings: (enp4s0): created default wired connection 'Wired connection 1'
+Dec 08 00:00:52 teddy2012-arch NetworkManager[494]: <info>  [1670475652.3218] device (enp4s0): state change: unmanaged -> unavailable (reason 'managed', sys-iface-state: 'external')
+Dec 08 00:00:52 teddy2012-arch NetworkManager[494]: <info>  [1670475652.3242] device (wlp5s0): driver supports Access Point (AP) mode
+Dec 08 00:00:52 teddy2012-arch NetworkManager[494]: <info>  [1670475652.3247] manager: (wlp5s0): new 802.11 Wi-Fi device (/org/freedesktop/NetworkManager/Devices/3)
+Dec 08 00:00:52 teddy2012-arch NetworkManager[494]: <info>  [1670475652.3249] device (wlp5s0): state change: unmanaged -> unavailable (reason 'managed', sys-iface-state: 'external')
+Dec 08 00:00:52 teddy2012-arch dbus-daemon[477]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Dec 08 00:00:52 teddy2012-arch systemd[1]: Started Network Manager Script Dispatcher Service.
+Dec 08 00:00:52 teddy2012-arch audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=NetworkManager-dispatcher comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:00:52 teddy2012-arch NetworkManager[494]: <info>  [1670475652.4945] device (wlp5s0): set-hw-addr: set MAC address to 82:91:D9:C5:A1:42 (scanning)
+Dec 08 00:00:52 teddy2012-arch dbus-daemon[477]: [system] Activating via systemd: service name='fi.w1.wpa_supplicant1' unit='wpa_supplicant.service' requested by ':1.2' (uid=0 pid=494 comm="/usr/bin/NetworkManager --no-daemon")
+Dec 08 00:00:52 teddy2012-arch systemd[1]: Starting WPA supplicant...
+Dec 08 00:00:52 teddy2012-arch NetworkManager[494]: <info>  [1670475652.6948] ovsdb: disconnected from ovsdb
+Dec 08 00:00:52 teddy2012-arch dbus-daemon[477]: [system] Successfully activated service 'fi.w1.wpa_supplicant1'
+Dec 08 00:00:52 teddy2012-arch systemd[1]: Started WPA supplicant.
+Dec 08 00:00:52 teddy2012-arch audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=wpa_supplicant comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:00:52 teddy2012-arch wpa_supplicant[505]: Successfully initialized wpa_supplicant
+Dec 08 00:00:52 teddy2012-arch NetworkManager[494]: <info>  [1670475652.9226] device (wlp5s0): supplicant interface state: internal-starting -> disconnected
+Dec 08 00:00:52 teddy2012-arch NetworkManager[494]: <info>  [1670475652.9227] Wi-Fi P2P device controlled by interface wlp5s0 created
+Dec 08 00:00:52 teddy2012-arch NetworkManager[494]: <info>  [1670475652.9229] manager: (p2p-dev-wlp5s0): new 802.11 Wi-Fi P2P device (/org/freedesktop/NetworkManager/Devices/4)
+Dec 08 00:00:52 teddy2012-arch NetworkManager[494]: <info>  [1670475652.9231] device (p2p-dev-wlp5s0): state change: unmanaged -> unavailable (reason 'managed', sys-iface-state: 'external')
+Dec 08 00:00:52 teddy2012-arch NetworkManager[494]: <info>  [1670475652.9236] device (wlp5s0): state change: unavailable -> disconnected (reason 'supplicant-available', sys-iface-state: 'managed')
+Dec 08 00:00:52 teddy2012-arch NetworkManager[494]: <info>  [1670475652.9240] device (p2p-dev-wlp5s0): state change: unavailable -> disconnected (reason 'none', sys-iface-state: 'managed')
+Dec 08 00:00:55 teddy2012-arch systemd[1]: systemd-rfkill.service: Deactivated successfully.
+Dec 08 00:00:55 teddy2012-arch audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-rfkill comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:00:55 teddy2012-arch kernel: kauditd_printk_skb: 31 callbacks suppressed
+Dec 08 00:00:55 teddy2012-arch kernel: audit: type=1131 audit(1670475655.499:43): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-rfkill comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:00:55 teddy2012-arch NetworkManager[494]: <info>  [1670475655.9272] policy: auto-activating connection 'StarSector' (8142e75e-0f3b-48bf-a12d-69bb8ee8a10e)
+Dec 08 00:00:55 teddy2012-arch NetworkManager[494]: <info>  [1670475655.9283] device (wlp5s0): Activation: starting connection 'StarSector' (8142e75e-0f3b-48bf-a12d-69bb8ee8a10e)
+Dec 08 00:00:55 teddy2012-arch NetworkManager[494]: <info>  [1670475655.9285] device (wlp5s0): state change: disconnected -> prepare (reason 'none', sys-iface-state: 'managed')
+Dec 08 00:00:55 teddy2012-arch NetworkManager[494]: <info>  [1670475655.9291] manager: NetworkManager state is now CONNECTING
+Dec 08 00:00:55 teddy2012-arch NetworkManager[494]: <info>  [1670475655.9308] device (wlp5s0): set-hw-addr: reset MAC address to D0:7E:35:94:D4:C8 (preserve)
+Dec 08 00:00:55 teddy2012-arch NetworkManager[494]: <info>  [1670475655.9321] device (wlp5s0): state change: prepare -> config (reason 'none', sys-iface-state: 'managed')
+Dec 08 00:00:55 teddy2012-arch NetworkManager[494]: <info>  [1670475655.9323] device (wlp5s0): Activation: (wifi) access point 'StarSector' has security, but secrets are required.
+Dec 08 00:00:55 teddy2012-arch NetworkManager[494]: <info>  [1670475655.9324] device (wlp5s0): state change: config -> need-auth (reason 'none', sys-iface-state: 'managed')
+Dec 08 00:00:55 teddy2012-arch NetworkManager[494]: <info>  [1670475655.9330] device (wlp5s0): state change: need-auth -> prepare (reason 'none', sys-iface-state: 'managed')
+Dec 08 00:00:55 teddy2012-arch NetworkManager[494]: <info>  [1670475655.9331] device (wlp5s0): state change: prepare -> config (reason 'none', sys-iface-state: 'managed')
+Dec 08 00:00:55 teddy2012-arch NetworkManager[494]: <info>  [1670475655.9332] device (wlp5s0): Activation: (wifi) connection 'StarSector' has security, and secrets exist.  No new secrets needed.
+Dec 08 00:00:55 teddy2012-arch NetworkManager[494]: <info>  [1670475655.9333] Config: added 'ssid' value 'StarSector'
+Dec 08 00:00:55 teddy2012-arch NetworkManager[494]: <info>  [1670475655.9333] Config: added 'scan_ssid' value '1'
+Dec 08 00:00:55 teddy2012-arch NetworkManager[494]: <info>  [1670475655.9333] Config: added 'bgscan' value 'simple:30:-70:86400'
+Dec 08 00:00:55 teddy2012-arch NetworkManager[494]: <info>  [1670475655.9333] Config: added 'key_mgmt' value 'WPA-PSK WPA-PSK-SHA256 FT-PSK SAE FT-SAE'
+Dec 08 00:00:55 teddy2012-arch NetworkManager[494]: <info>  [1670475655.9333] Config: added 'auth_alg' value 'OPEN'
+Dec 08 00:00:55 teddy2012-arch NetworkManager[494]: <info>  [1670475655.9333] Config: added 'psk' value '<hidden>'
+Dec 08 00:00:56 teddy2012-arch NetworkManager[494]: <info>  [1670475656.0244] device (wlp5s0): supplicant interface state: disconnected -> inactive
+Dec 08 00:00:56 teddy2012-arch NetworkManager[494]: <info>  [1670475656.0244] device (p2p-dev-wlp5s0): supplicant management interface state: disconnected -> inactive
+Dec 08 00:00:56 teddy2012-arch wpa_supplicant[505]: wlp5s0: SME: Trying to authenticate with f0:21:e0:af:24:05 (SSID='StarSector' freq=5560 MHz)
+Dec 08 00:00:56 teddy2012-arch NetworkManager[494]: <info>  [1670475656.0377] device (wlp5s0): supplicant interface state: inactive -> authenticating
+Dec 08 00:00:56 teddy2012-arch NetworkManager[494]: <info>  [1670475656.0377] device (p2p-dev-wlp5s0): supplicant management interface state: inactive -> authenticating
+Dec 08 00:00:56 teddy2012-arch kernel: wlp5s0: authenticate with f0:21:e0:af:24:05
+Dec 08 00:00:56 teddy2012-arch kernel: wlp5s0: send auth to f0:21:e0:af:24:05 (try 1/3)
+Dec 08 00:00:56 teddy2012-arch wpa_supplicant[505]: wlp5s0: Trying to associate with f0:21:e0:af:24:05 (SSID='StarSector' freq=5560 MHz)
+Dec 08 00:00:56 teddy2012-arch NetworkManager[494]: <info>  [1670475656.0413] device (wlp5s0): supplicant interface state: authenticating -> associating
+Dec 08 00:00:56 teddy2012-arch NetworkManager[494]: <info>  [1670475656.0413] device (p2p-dev-wlp5s0): supplicant management interface state: authenticating -> associating
+Dec 08 00:00:56 teddy2012-arch kernel: wlp5s0: authenticated
+Dec 08 00:00:56 teddy2012-arch kernel: wlp5s0: associate with f0:21:e0:af:24:05 (try 1/3)
+Dec 08 00:00:56 teddy2012-arch wpa_supplicant[505]: wlp5s0: Associated with f0:21:e0:af:24:05
+Dec 08 00:00:56 teddy2012-arch wpa_supplicant[505]: wlp5s0: CTRL-EVENT-SUBNET-STATUS-UPDATE status=0
+Dec 08 00:00:56 teddy2012-arch kernel: wlp5s0: RX AssocResp from f0:21:e0:af:24:05 (capab=0x1111 status=0 aid=1)
+Dec 08 00:00:56 teddy2012-arch kernel: wlp5s0: associated
+Dec 08 00:00:56 teddy2012-arch NetworkManager[494]: <info>  [1670475656.0612] device (wlp5s0): supplicant interface state: associating -> 4way_handshake
+Dec 08 00:00:56 teddy2012-arch NetworkManager[494]: <info>  [1670475656.0612] device (p2p-dev-wlp5s0): supplicant management interface state: associating -> 4way_handshake
+Dec 08 00:00:56 teddy2012-arch kernel: wlp5s0: Limiting TX power to 21 (24 - 3) dBm as advertised by f0:21:e0:af:24:05
+Dec 08 00:00:56 teddy2012-arch wpa_supplicant[505]: wlp5s0: WPA: Key negotiation completed with f0:21:e0:af:24:05 [PTK=CCMP GTK=CCMP]
+Dec 08 00:00:56 teddy2012-arch wpa_supplicant[505]: wlp5s0: CTRL-EVENT-CONNECTED - Connection to f0:21:e0:af:24:05 completed [id=0 id_str=]
+Dec 08 00:00:56 teddy2012-arch NetworkManager[494]: <info>  [1670475656.2515] device (wlp5s0): supplicant interface state: 4way_handshake -> completed
+Dec 08 00:00:56 teddy2012-arch NetworkManager[494]: <info>  [1670475656.2515] device (wlp5s0): Activation: (wifi) Stage 2 of 5 (Device Configure) successful. Connected to wireless network "StarSector"
+Dec 08 00:00:56 teddy2012-arch NetworkManager[494]: <info>  [1670475656.2515] device (p2p-dev-wlp5s0): supplicant management interface state: 4way_handshake -> completed
+Dec 08 00:00:56 teddy2012-arch NetworkManager[494]: <info>  [1670475656.2516] device (wlp5s0): state change: config -> ip-config (reason 'none', sys-iface-state: 'managed')
+Dec 08 00:00:56 teddy2012-arch NetworkManager[494]: <info>  [1670475656.2520] dhcp4 (wlp5s0): activation: beginning transaction (timeout in 45 seconds)
+Dec 08 00:00:56 teddy2012-arch kernel: IPv6: ADDRCONF(NETDEV_CHANGE): wlp5s0: link becomes ready
+Dec 08 00:00:56 teddy2012-arch wpa_supplicant[505]: wlp5s0: CTRL-EVENT-SIGNAL-CHANGE above=1 signal=-44 noise=9999 txrate=6000
+Dec 08 00:00:56 teddy2012-arch NetworkManager[494]: <info>  [1670475656.2817] dhcp4 (wlp5s0): state changed new lease, address=192.168.4.77
+Dec 08 00:00:56 teddy2012-arch NetworkManager[494]: <info>  [1670475656.2820] policy: set 'StarSector' (wlp5s0) as default for IPv4 routing and DNS
+Dec 08 00:00:56 teddy2012-arch dbus-daemon[477]: [system] Activating via systemd: service name='org.freedesktop.resolve1' unit='dbus-org.freedesktop.resolve1.service' requested by ':1.2' (uid=0 pid=494 comm="/usr/bin/NetworkManager --no-daemon")
+Dec 08 00:00:56 teddy2012-arch dbus-daemon[477]: [system] Activation via systemd failed for unit 'dbus-org.freedesktop.resolve1.service': Unit dbus-org.freedesktop.resolve1.service not found.
+Dec 08 00:00:56 teddy2012-arch NetworkManager[494]: <info>  [1670475656.3204] device (wlp5s0): state change: ip-config -> ip-check (reason 'none', sys-iface-state: 'managed')
+Dec 08 00:00:56 teddy2012-arch NetworkManager[494]: <info>  [1670475656.3226] device (wlp5s0): state change: ip-check -> secondaries (reason 'none', sys-iface-state: 'managed')
+Dec 08 00:00:56 teddy2012-arch NetworkManager[494]: <info>  [1670475656.3227] device (wlp5s0): state change: secondaries -> activated (reason 'none', sys-iface-state: 'managed')
+Dec 08 00:00:56 teddy2012-arch NetworkManager[494]: <info>  [1670475656.3230] manager: NetworkManager state is now CONNECTED_SITE
+Dec 08 00:00:56 teddy2012-arch NetworkManager[494]: <info>  [1670475656.3236] device (wlp5s0): Activation: successful, device activated.
+Dec 08 00:00:56 teddy2012-arch NetworkManager[494]: <info>  [1670475656.8380] manager: NetworkManager state is now CONNECTED_GLOBAL
+Dec 08 00:00:58 teddy2012-arch NetworkManager[494]: <info>  [1670475658.3244] manager: startup complete
+Dec 08 00:00:58 teddy2012-arch NetworkManager[494]: <info>  [1670475658.3890] policy: set 'StarSector' (wlp5s0) as default for IPv6 routing and DNS
+Dec 08 00:01:02 teddy2012-arch systemd[1]: NetworkManager-dispatcher.service: Deactivated successfully.
+Dec 08 00:01:02 teddy2012-arch audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=NetworkManager-dispatcher comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:01:02 teddy2012-arch kernel: audit: type=1131 audit(1670475662.349:44): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=NetworkManager-dispatcher comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:01:22 teddy2012-arch systemd[1]: systemd-hostnamed.service: Deactivated successfully.
+Dec 08 00:01:22 teddy2012-arch audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-hostnamed comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:01:22 teddy2012-arch kernel: audit: type=1131 audit(1670475682.099:45): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-hostnamed comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:01:22 teddy2012-arch audit: BPF prog-id=0 op=UNLOAD
+Dec 08 00:01:22 teddy2012-arch audit: BPF prog-id=0 op=UNLOAD
+Dec 08 00:01:22 teddy2012-arch audit: BPF prog-id=0 op=UNLOAD
+Dec 08 00:01:22 teddy2012-arch kernel: audit: type=1334 audit(1670475682.299:46): prog-id=0 op=UNLOAD
+Dec 08 00:01:22 teddy2012-arch kernel: audit: type=1334 audit(1670475682.299:47): prog-id=0 op=UNLOAD
+Dec 08 00:01:22 teddy2012-arch kernel: audit: type=1334 audit(1670475682.299:48): prog-id=0 op=UNLOAD
+Dec 08 00:01:55 teddy2012-arch dbus-daemon[477]: [system] Activating via systemd: service name='org.freedesktop.home1' unit='dbus-org.freedesktop.home1.service' requested by ':1.6' (uid=0 pid=498 comm="/bin/login -p --     ")
+Dec 08 00:01:55 teddy2012-arch dbus-daemon[477]: [system] Activation via systemd failed for unit 'dbus-org.freedesktop.home1.service': Unit dbus-org.freedesktop.home1.service not found.
+Dec 08 00:01:55 teddy2012-arch login[498]: pam_systemd_home(login:auth): systemd-homed is not available: Unit dbus-org.freedesktop.home1.service not found.
+Dec 08 00:01:56 teddy2012-arch audit[498]: USER_AUTH pid=498 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:authentication grantors=pam_securetty,pam_shells,pam_faillock,pam_permit,pam_faillock acct="kody" exe="/usr/bin/login" hostname=teddy2012-arch addr=? terminal=/dev/tty1 res=success'
+Dec 08 00:01:56 teddy2012-arch kernel: audit: type=1100 audit(1670475716.469:49): pid=498 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:authentication grantors=pam_securetty,pam_shells,pam_faillock,pam_permit,pam_faillock acct="kody" exe="/usr/bin/login" hostname=teddy2012-arch addr=? terminal=/dev/tty1 res=success'
+Dec 08 00:01:56 teddy2012-arch audit[498]: USER_ACCT pid=498 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting grantors=pam_access,pam_unix,pam_permit,pam_time acct="kody" exe="/usr/bin/login" hostname=teddy2012-arch addr=? terminal=/dev/tty1 res=success'
+Dec 08 00:01:56 teddy2012-arch audit[498]: CRED_ACQ pid=498 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred grantors=pam_securetty,pam_shells,pam_faillock,pam_permit,pam_faillock acct="kody" exe="/usr/bin/login" hostname=teddy2012-arch addr=? terminal=/dev/tty1 res=success'
+Dec 08 00:01:56 teddy2012-arch audit[498]: SYSCALL arch=c000003e syscall=1 success=yes exit=4 a0=5 a1=7ffdf30abdc0 a2=4 a3=7ffdf30abad4 items=0 ppid=1 pid=498 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=1000 fsgid=0 tty=tty1 ses=1 comm="login" exe="/usr/bin/login" key=(null)
+Dec 08 00:01:56 teddy2012-arch audit: PROCTITLE proctitle=2F62696E2F6C6F67696E002D70002D2D
+Dec 08 00:01:56 teddy2012-arch login[498]: pam_unix(login:session): session opened for user kody(uid=1000) by LOGIN(uid=0)
+Dec 08 00:01:56 teddy2012-arch kernel: audit: type=1101 audit(1670475716.479:50): pid=498 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting grantors=pam_access,pam_unix,pam_permit,pam_time acct="kody" exe="/usr/bin/login" hostname=teddy2012-arch addr=? terminal=/dev/tty1 res=success'
+Dec 08 00:01:56 teddy2012-arch kernel: audit: type=1103 audit(1670475716.479:51): pid=498 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred grantors=pam_securetty,pam_shells,pam_faillock,pam_permit,pam_faillock acct="kody" exe="/usr/bin/login" hostname=teddy2012-arch addr=? terminal=/dev/tty1 res=success'
+Dec 08 00:01:56 teddy2012-arch kernel: audit: type=1006 audit(1670475716.479:52): pid=498 uid=0 old-auid=4294967295 auid=1000 tty=tty1 old-ses=4294967295 ses=1 res=1
+Dec 08 00:01:56 teddy2012-arch kernel: audit: type=1300 audit(1670475716.479:52): arch=c000003e syscall=1 success=yes exit=4 a0=5 a1=7ffdf30abdc0 a2=4 a3=7ffdf30abad4 items=0 ppid=1 pid=498 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=1000 fsgid=0 tty=tty1 ses=1 comm="login" exe="/usr/bin/login" key=(null)
+Dec 08 00:01:56 teddy2012-arch kernel: audit: type=1327 audit(1670475716.479:52): proctitle=2F62696E2F6C6F67696E002D70002D2D
+Dec 08 00:01:56 teddy2012-arch systemd[1]: Created slice User Slice of UID 1000.
+Dec 08 00:01:56 teddy2012-arch systemd[1]: Starting User Runtime Directory /run/user/1000...
+Dec 08 00:01:56 teddy2012-arch systemd-logind[478]: New session 1 of user kody.
+Dec 08 00:01:56 teddy2012-arch systemd[1]: Finished User Runtime Directory /run/user/1000.
+Dec 08 00:01:56 teddy2012-arch audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=user-runtime-dir@1000 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:01:56 teddy2012-arch systemd[1]: Starting User Manager for UID 1000...
+Dec 08 00:01:56 teddy2012-arch dbus-daemon[477]: [system] Activating via systemd: service name='org.freedesktop.home1' unit='dbus-org.freedesktop.home1.service' requested by ':1.8' (uid=0 pid=535 comm="(systemd)")
+Dec 08 00:01:56 teddy2012-arch dbus-daemon[477]: [system] Activation via systemd failed for unit 'dbus-org.freedesktop.home1.service': Unit dbus-org.freedesktop.home1.service not found.
+Dec 08 00:01:56 teddy2012-arch systemd[535]: pam_systemd_home(systemd-user:account): systemd-homed is not available: Unit dbus-org.freedesktop.home1.service not found.
+Dec 08 00:01:56 teddy2012-arch audit[535]: USER_ACCT pid=535 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting grantors=pam_access,pam_unix,pam_permit,pam_time acct="kody" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:01:56 teddy2012-arch audit[535]: CRED_ACQ pid=535 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred grantors=? acct="kody" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=failed'
+Dec 08 00:01:56 teddy2012-arch audit[535]: SYSCALL arch=c000003e syscall=1 success=yes exit=4 a0=9 a1=7fffa792df80 a2=4 a3=7fffa792dc94 items=0 ppid=1 pid=535 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=2 comm="(systemd)" exe="/usr/lib/systemd/systemd" key=(null)
+Dec 08 00:01:56 teddy2012-arch audit: PROCTITLE proctitle="(systemd)"
+Dec 08 00:01:56 teddy2012-arch systemd[535]: pam_warn(systemd-user:setcred): function=[pam_sm_setcred] flags=0x8002 service=[systemd-user] terminal=[] user=[kody] ruser=[<unknown>] rhost=[<unknown>]
+Dec 08 00:01:56 teddy2012-arch systemd[535]: pam_unix(systemd-user:session): session opened for user kody(uid=1000) by (uid=0)
+Dec 08 00:01:56 teddy2012-arch audit[535]: USER_START pid=535 uid=0 auid=1000 ses=2 msg='op=PAM:session_open grantors=pam_loginuid,pam_loginuid,pam_keyinit,pam_systemd_home,pam_limits,pam_unix,pam_permit,pam_mail,pam_systemd,pam_env acct="kody" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:01:56 teddy2012-arch kernel: audit: type=1130 audit(1670475716.509:53): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=user-runtime-dir@1000 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:01:56 teddy2012-arch kernel: audit: type=1101 audit(1670475716.509:54): pid=535 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting grantors=pam_access,pam_unix,pam_permit,pam_time acct="kody" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:01:56 teddy2012-arch kernel: audit: type=1103 audit(1670475716.509:55): pid=535 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred grantors=? acct="kody" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=failed'
+Dec 08 00:01:56 teddy2012-arch kernel: audit: type=1006 audit(1670475716.509:56): pid=535 uid=0 old-auid=4294967295 auid=1000 tty=(none) old-ses=4294967295 ses=2 res=1
+Dec 08 00:01:56 teddy2012-arch systemd[535]: Queued start job for default target Main User Target.
+Dec 08 00:01:57 teddy2012-arch systemd-journald[283]: File /var/log/journal/aafba7bded004a5485c95687a837c117/user-1000.journal corrupted or uncleanly shut down, renaming and replacing.
+Dec 08 00:01:56 teddy2012-arch audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=user@1000 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:01:56 teddy2012-arch systemd[535]: Created slice User Application Slice.
+Dec 08 00:01:56 teddy2012-arch systemd[535]: Reached target Paths.
+Dec 08 00:01:56 teddy2012-arch systemd[535]: Reached target Timers.
+Dec 08 00:01:56 teddy2012-arch audit[498]: USER_START pid=498 uid=0 auid=1000 ses=1 msg='op=PAM:session_open grantors=pam_loginuid,pam_keyinit,pam_systemd_home,pam_limits,pam_unix,pam_permit,pam_mail,pam_systemd,pam_env acct="kody" exe="/usr/bin/login" hostname=teddy2012-arch addr=? terminal=/dev/tty1 res=success'
+Dec 08 00:01:56 teddy2012-arch audit[498]: CRED_REFR pid=498 uid=0 auid=1000 ses=1 msg='op=PAM:setcred grantors=pam_securetty,pam_shells,pam_faillock,pam_permit,pam_faillock acct="kody" exe="/usr/bin/login" hostname=teddy2012-arch addr=? terminal=/dev/tty1 res=success'
+Dec 08 00:01:56 teddy2012-arch systemd[535]: Starting D-Bus User Message Bus Socket...
+Dec 08 00:01:56 teddy2012-arch systemd[535]: Listening on GnuPG network certificate management daemon.
+Dec 08 00:01:56 teddy2012-arch systemd[535]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Dec 08 00:01:56 teddy2012-arch systemd[535]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+Dec 08 00:01:56 teddy2012-arch systemd[535]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Dec 08 00:01:56 teddy2012-arch systemd[535]: Listening on GnuPG cryptographic agent and passphrase cache.
+Dec 08 00:01:56 teddy2012-arch systemd[535]: Listening on p11-kit server.
+Dec 08 00:01:56 teddy2012-arch systemd[535]: Listening on D-Bus User Message Bus Socket.
+Dec 08 00:01:56 teddy2012-arch systemd[535]: Reached target Sockets.
+Dec 08 00:01:56 teddy2012-arch systemd[535]: Reached target Basic System.
+Dec 08 00:01:56 teddy2012-arch systemd[535]: Reached target Main User Target.
+Dec 08 00:01:56 teddy2012-arch systemd[535]: Startup finished in 462ms.
+Dec 08 00:01:56 teddy2012-arch systemd[1]: Started User Manager for UID 1000.
+Dec 08 00:01:56 teddy2012-arch systemd[1]: Started Session 1 of User kody.
+Dec 08 00:01:57 teddy2012-arch login[498]: LOGIN ON tty1 BY kody
+Dec 08 00:02:03 teddy2012-arch kernel: ACPI Warning: \_SB.PCI0.PEG0.PEGP._DSM: Argument #4 type mismatch - Found [Buffer], ACPI requires [Package] (20210730/nsarguments-61)
+Dec 08 00:02:05 teddy2012-arch systemd[535]: Created slice User Core Session Slice.
+Dec 08 00:02:05 teddy2012-arch systemd[535]: Starting D-Bus User Message Bus...
+Dec 08 00:02:05 teddy2012-arch systemd[535]: Started D-Bus User Message Bus.
+Dec 08 00:02:05 teddy2012-arch dbus-daemon[604]: [session uid=1000 pid=604] Successfully activated service 'org.freedesktop.systemd1'
+Dec 08 00:06:00 teddy2012-arch dbus-daemon[477]: [system] Activating via systemd: service name='org.freedesktop.PolicyKit1' unit='polkit.service' requested by ':1.0' (uid=0 pid=478 comm="/usr/lib/systemd/systemd-logind")
+Dec 08 00:06:00 teddy2012-arch systemd[1]: Starting Authorization Manager...
+Dec 08 00:06:00 teddy2012-arch polkitd[686]: Started polkitd version 122
+Dec 08 00:06:00 teddy2012-arch polkitd[686]: Loading rules from directory /etc/polkit-1/rules.d
+Dec 08 00:06:00 teddy2012-arch polkitd[686]: Loading rules from directory /usr/share/polkit-1/rules.d
+Dec 08 00:06:00 teddy2012-arch polkitd[686]: Finished loading, compiling and executing 2 rules
+Dec 08 00:06:00 teddy2012-arch dbus-daemon[477]: [system] Successfully activated service 'org.freedesktop.PolicyKit1'
+Dec 08 00:06:00 teddy2012-arch systemd[1]: Started Authorization Manager.
+Dec 08 00:06:00 teddy2012-arch polkitd[686]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Dec 08 00:06:00 teddy2012-arch audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=polkit comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:06:00 teddy2012-arch kernel: kauditd_printk_skb: 6 callbacks suppressed
+Dec 08 00:06:00 teddy2012-arch kernel: audit: type=1130 audit(1670475960.529:61): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=polkit comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:06:00 teddy2012-arch systemd-logind[478]: The system will power off at Thu 2022-12-08 00:07:00 EST!
+Dec 08 00:06:00 teddy2012-arch systemd-logind[478]: Creating /run/nologin, blocking further logins...
+Dec 08 00:07:00 teddy2012-arch systemd-logind[478]: System is powering down.
+Dec 08 00:07:00 teddy2012-arch systemd-logind[478]: The system will power off now!
+Dec 08 00:07:00 teddy2012-arch audit[498]: CRED_DISP pid=498 uid=0 auid=1000 ses=1 msg='op=PAM:setcred grantors=pam_securetty,pam_shells,pam_faillock,pam_permit,pam_faillock acct="kody" exe="/usr/bin/login" hostname=teddy2012-arch addr=? terminal=/dev/tty1 res=success'
+Dec 08 00:07:00 teddy2012-arch login[498]: pam_unix(login:session): session closed for user kody
+Dec 08 00:07:00 teddy2012-arch systemd[1]: Stopping Session 1 of User kody...
+Dec 08 00:07:00 teddy2012-arch systemd[1]: Removed slice Slice /system/modprobe.
+Dec 08 00:07:00 teddy2012-arch systemd[1]: Stopped target Bluetooth Support.
+Dec 08 00:07:00 teddy2012-arch systemd[1]: Stopped target Graphical Interface.
+Dec 08 00:07:00 teddy2012-arch systemd[1]: Stopped target Multi-User System.
+Dec 08 00:07:00 teddy2012-arch systemd[1]: Stopped target Login Prompts.
+Dec 08 00:07:00 teddy2012-arch systemd[1]: Stopped target Sound Card.
+Dec 08 00:07:00 teddy2012-arch systemd[1]: Stopped target Timer Units.
+Dec 08 00:07:00 teddy2012-arch systemd[1]: archlinux-keyring-wkd-sync.timer: Deactivated successfully.
+Dec 08 00:07:00 teddy2012-arch systemd[1]: Stopped Refresh existing PGP keys of archlinux-keyring regularly.
+Dec 08 00:07:00 teddy2012-arch systemd[1]: man-db.timer: Deactivated successfully.
+Dec 08 00:07:00 teddy2012-arch systemd[1]: Stopped Daily man-db regeneration.
+Dec 08 00:07:00 teddy2012-arch systemd[1]: shadow.timer: Deactivated successfully.
+Dec 08 00:07:00 teddy2012-arch systemd[1]: Stopped Daily verification of password and group files.
+Dec 08 00:07:00 teddy2012-arch systemd[1]: systemd-tmpfiles-clean.timer: Deactivated successfully.
+Dec 08 00:07:00 teddy2012-arch systemd[1]: Stopped Daily Cleanup of Temporary Directories.
+Dec 08 00:07:00 teddy2012-arch systemd[1]: systemd-coredump.socket: Deactivated successfully.
+Dec 08 00:07:00 teddy2012-arch systemd[1]: Closed Process Core Dump Socket.
+Dec 08 00:07:00 teddy2012-arch systemd[1]: systemd-rfkill.socket: Deactivated successfully.
+Dec 08 00:07:00 teddy2012-arch systemd[1]: Closed Load/Save RF Kill Switch Status /dev/rfkill Watch.
+Dec 08 00:07:00 teddy2012-arch login[498]: pam_systemd(login:session): Failed to release session: Interrupted system call
+Dec 08 00:07:00 teddy2012-arch audit[498]: USER_END pid=498 uid=0 auid=1000 ses=1 msg='op=PAM:session_close grantors=? acct="kody" exe="/usr/bin/login" hostname=teddy2012-arch addr=? terminal=/dev/tty1 res=failed'
+Dec 08 00:07:00 teddy2012-arch systemd[1]: Stopping Getty on tty1...
+Dec 08 00:07:00 teddy2012-arch systemd[1]: Starting Generate shutdown-ramfs...
+Dec 08 00:07:00 teddy2012-arch systemd[1]: Stopping Authorization Manager...
+Dec 08 00:07:00 teddy2012-arch systemd[1]: Stopping Load/Save Random Seed...
+Dec 08 00:07:00 teddy2012-arch systemd[1]: getty@tty1.service: Deactivated successfully.
+Dec 08 00:07:00 teddy2012-arch systemd[1]: Stopped Getty on tty1.
+Dec 08 00:07:00 teddy2012-arch audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=getty@tty1 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:07:00 teddy2012-arch kernel: audit: type=1104 audit(1670476020.609:62): pid=498 uid=0 auid=1000 ses=1 msg='op=PAM:setcred grantors=pam_securetty,pam_shells,pam_faillock,pam_permit,pam_faillock acct="kody" exe="/usr/bin/login" hostname=teddy2012-arch addr=? terminal=/dev/tty1 res=success'
+Dec 08 00:07:00 teddy2012-arch kernel: audit: type=1106 audit(1670476020.619:63): pid=498 uid=0 auid=1000 ses=1 msg='op=PAM:session_close grantors=? acct="kody" exe="/usr/bin/login" hostname=teddy2012-arch addr=? terminal=/dev/tty1 res=failed'
+Dec 08 00:07:00 teddy2012-arch kernel: audit: type=1131 audit(1670476020.619:64): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=getty@tty1 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:07:00 teddy2012-arch systemd-logind[478]: Session 1 logged out. Waiting for processes to exit.
+Dec 08 00:07:00 teddy2012-arch systemd[1]: Removed slice Slice /system/getty.
+Dec 08 00:07:00 teddy2012-arch systemd[1]: polkit.service: Deactivated successfully.
+Dec 08 00:07:00 teddy2012-arch systemd[1]: Stopped Authorization Manager.
+Dec 08 00:07:00 teddy2012-arch audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=polkit comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:07:00 teddy2012-arch kernel: audit: type=1131 audit(1670476020.679:65): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=polkit comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:07:00 teddy2012-arch systemd[1]: systemd-random-seed.service: Deactivated successfully.
+Dec 08 00:07:00 teddy2012-arch systemd[1]: Stopped Load/Save Random Seed.
+Dec 08 00:07:00 teddy2012-arch audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-random-seed comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:07:00 teddy2012-arch kernel: audit: type=1131 audit(1670476020.689:66): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-random-seed comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:07:00 teddy2012-arch mkinitcpio[696]: ==> Starting build: none
+Dec 08 00:07:00 teddy2012-arch mkinitcpio[696]:   -> Running build hook: [sd-shutdown]
+Dec 08 00:07:01 teddy2012-arch mkinitcpio[696]: ==> Build complete.
+Dec 08 00:07:01 teddy2012-arch systemd[1]: mkinitcpio-generate-shutdown-ramfs.service: Deactivated successfully.
+Dec 08 00:07:01 teddy2012-arch systemd[1]: Finished Generate shutdown-ramfs.
+Dec 08 00:07:01 teddy2012-arch audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=mkinitcpio-generate-shutdown-ramfs comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:07:01 teddy2012-arch audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=mkinitcpio-generate-shutdown-ramfs comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:07:01 teddy2012-arch kernel: audit: type=1130 audit(1670476021.259:67): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=mkinitcpio-generate-shutdown-ramfs comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:07:01 teddy2012-arch kernel: audit: type=1131 audit(1670476021.259:68): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=mkinitcpio-generate-shutdown-ramfs comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:07:02 teddy2012-arch systemd[1]: session-1.scope: Deactivated successfully.
+Dec 08 00:07:02 teddy2012-arch systemd[1]: Stopped Session 1 of User kody.
+Dec 08 00:07:02 teddy2012-arch systemd[1]: session-1.scope: Consumed 6.657s CPU time.
+Dec 08 00:07:02 teddy2012-arch systemd[1]: Stopping User Login Management...
+Dec 08 00:07:02 teddy2012-arch systemd[1]: Stopping User Manager for UID 1000...
+Dec 08 00:07:02 teddy2012-arch systemd-logind[478]: Removed session 1.
+Dec 08 00:07:02 teddy2012-arch systemd[535]: Activating special unit Exit the Session...
+Dec 08 00:07:02 teddy2012-arch systemd[535]: Stopped target Main User Target.
+Dec 08 00:07:02 teddy2012-arch systemd[535]: Stopping D-Bus User Message Bus...
+Dec 08 00:07:02 teddy2012-arch systemd[535]: Stopped D-Bus User Message Bus.
+Dec 08 00:07:02 teddy2012-arch systemd[535]: Removed slice User Core Session Slice.
+Dec 08 00:07:02 teddy2012-arch systemd[535]: Stopped target Basic System.
+Dec 08 00:07:02 teddy2012-arch systemd[535]: Stopped target Paths.
+Dec 08 00:07:02 teddy2012-arch systemd[535]: Stopped target Sockets.
+Dec 08 00:07:02 teddy2012-arch systemd[535]: Stopped target Timers.
+Dec 08 00:07:02 teddy2012-arch systemd[535]: Closed D-Bus User Message Bus Socket.
+Dec 08 00:07:02 teddy2012-arch systemd[535]: Closed GnuPG network certificate management daemon.
+Dec 08 00:07:02 teddy2012-arch systemd[535]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Dec 08 00:07:02 teddy2012-arch systemd[535]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+Dec 08 00:07:02 teddy2012-arch systemd[535]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+Dec 08 00:07:02 teddy2012-arch systemd[535]: Closed GnuPG cryptographic agent and passphrase cache.
+Dec 08 00:07:02 teddy2012-arch systemd[535]: Closed p11-kit server.
+Dec 08 00:07:02 teddy2012-arch systemd[535]: Removed slice User Application Slice.
+Dec 08 00:07:02 teddy2012-arch systemd[535]: Reached target Shutdown.
+Dec 08 00:07:02 teddy2012-arch systemd[535]: Finished Exit the Session.
+Dec 08 00:07:02 teddy2012-arch systemd[535]: Reached target Exit the Session.
+Dec 08 00:07:02 teddy2012-arch systemd[1]: user@1000.service: Deactivated successfully.
+Dec 08 00:07:02 teddy2012-arch systemd[1]: Stopped User Manager for UID 1000.
+Dec 08 00:07:02 teddy2012-arch audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=user@1000 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:07:02 teddy2012-arch systemd[1]: Stopping Permit User Sessions...
+Dec 08 00:07:02 teddy2012-arch systemd[1]: Stopping User Runtime Directory /run/user/1000...
+Dec 08 00:07:02 teddy2012-arch kernel: audit: type=1131 audit(1670476022.259:69): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=user@1000 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:07:02 teddy2012-arch systemd[1]: run-user-1000.mount: Deactivated successfully.
+Dec 08 00:07:02 teddy2012-arch systemd[1]: Unmounted /run/user/1000.
+Dec 08 00:07:02 teddy2012-arch systemd[1]: systemd-logind.service: Deactivated successfully.
+Dec 08 00:07:02 teddy2012-arch systemd[1]: Stopped User Login Management.
+Dec 08 00:07:02 teddy2012-arch audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-logind comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:07:02 teddy2012-arch systemd[1]: systemd-user-sessions.service: Deactivated successfully.
+Dec 08 00:07:02 teddy2012-arch systemd[1]: Stopped Permit User Sessions.
+Dec 08 00:07:02 teddy2012-arch audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-user-sessions comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:07:02 teddy2012-arch systemd[1]: user-runtime-dir@1000.service: Deactivated successfully.
+Dec 08 00:07:02 teddy2012-arch systemd[1]: Stopped User Runtime Directory /run/user/1000.
+Dec 08 00:07:02 teddy2012-arch audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=user-runtime-dir@1000 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:07:02 teddy2012-arch systemd[1]: Removed slice User Slice of UID 1000.
+Dec 08 00:07:02 teddy2012-arch systemd[1]: user-1000.slice: Consumed 6.788s CPU time.
+Dec 08 00:07:02 teddy2012-arch systemd[1]: Stopped target Network.
+Dec 08 00:07:02 teddy2012-arch systemd[1]: Stopped target Remote File Systems.
+Dec 08 00:07:02 teddy2012-arch systemd[1]: Stopping Network Manager...
+Dec 08 00:07:02 teddy2012-arch systemd[1]: Stopping WPA supplicant...
+Dec 08 00:07:02 teddy2012-arch NetworkManager[494]: <info>  [1670476022.5325] caught SIGTERM, shutting down normally.
+Dec 08 00:07:02 teddy2012-arch wpa_supplicant[505]: p2p-dev-wlp5s0: CTRL-EVENT-DSCP-POLICY clear_all
+Dec 08 00:07:02 teddy2012-arch wpa_supplicant[505]: p2p-dev-wlp5s0: CTRL-EVENT-DSCP-POLICY clear_all
+Dec 08 00:07:02 teddy2012-arch wpa_supplicant[505]: nl80211: deinit ifname=p2p-dev-wlp5s0 disabled_11b_rates=0
+Dec 08 00:07:02 teddy2012-arch kernel: audit: type=1131 audit(1670476022.519:70): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-logind comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:07:02 teddy2012-arch kernel: audit: type=1131 audit(1670476022.519:71): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-user-sessions comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:07:02 teddy2012-arch audit: BPF prog-id=0 op=UNLOAD
+Dec 08 00:07:02 teddy2012-arch audit: BPF prog-id=0 op=UNLOAD
+Dec 08 00:07:02 teddy2012-arch audit: BPF prog-id=0 op=UNLOAD
+Dec 08 00:07:02 teddy2012-arch wpa_supplicant[505]: p2p-dev-wlp5s0: CTRL-EVENT-TERMINATING
+Dec 08 00:07:02 teddy2012-arch NetworkManager[494]: <info>  [1670476022.5997] device (wlp5s0): state change: activated -> deactivating (reason 'unmanaged', sys-iface-state: 'managed')
+Dec 08 00:07:02 teddy2012-arch NetworkManager[494]: <info>  [1670476022.5999] manager: NetworkManager state is now DISCONNECTING
+Dec 08 00:07:02 teddy2012-arch dbus-daemon[477]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.2' (uid=0 pid=494 comm="/usr/bin/NetworkManager --no-daemon")
+Dec 08 00:07:02 teddy2012-arch dbus-daemon[477]: [system] Activation via systemd failed for unit 'dbus-org.freedesktop.nm-dispatcher.service': Refusing activation, D-Bus is shutting down.
+Dec 08 00:07:02 teddy2012-arch NetworkManager[494]: <warn>  [1670476022.6010] dispatcher: (8) failed (after 0.000 sec): Refusing activation, D-Bus is shutting down.
+Dec 08 00:07:02 teddy2012-arch NetworkManager[494]: <info>  [1670476022.6011] device (wlp5s0): state change: deactivating -> unmanaged (reason 'removed', sys-iface-state: 'managed')
+Dec 08 00:07:02 teddy2012-arch NetworkManager[494]: <info>  [1670476022.6012] dhcp4 (wlp5s0): canceled DHCP transaction
+Dec 08 00:07:02 teddy2012-arch NetworkManager[494]: <info>  [1670476022.6012] dhcp4 (wlp5s0): activation: beginning transaction (timeout in 45 seconds)
+Dec 08 00:07:02 teddy2012-arch NetworkManager[494]: <info>  [1670476022.6012] dhcp4 (wlp5s0): state changed no lease
+Dec 08 00:07:02 teddy2012-arch kernel: wlp5s0: deauthenticating from f0:21:e0:af:24:05 by local choice (Reason: 3=DEAUTH_LEAVING)
+Dec 08 00:07:02 teddy2012-arch wpa_supplicant[505]: wlp5s0: CTRL-EVENT-DISCONNECTED bssid=f0:21:e0:af:24:05 reason=3 locally_generated=1
+Dec 08 00:07:02 teddy2012-arch wpa_supplicant[505]: wlp5s0: CTRL-EVENT-DSCP-POLICY clear_all
+Dec 08 00:07:02 teddy2012-arch wpa_supplicant[505]: wlp5s0: CTRL-EVENT-DSCP-POLICY clear_all
+Dec 08 00:07:02 teddy2012-arch wpa_supplicant[505]: nl80211: deinit ifname=wlp5s0 disabled_11b_rates=0
+Dec 08 00:07:02 teddy2012-arch wpa_supplicant[505]: wlp5s0: CTRL-EVENT-TERMINATING
+Dec 08 00:07:02 teddy2012-arch NetworkManager[494]: <info>  [1670476022.8042] manager: NetworkManager state is now DISCONNECTED
+Dec 08 00:07:02 teddy2012-arch systemd[1]: wpa_supplicant.service: Deactivated successfully.
+Dec 08 00:07:02 teddy2012-arch dbus-daemon[477]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.2' (uid=0 pid=494 comm="/usr/bin/NetworkManager --no-daemon")
+Dec 08 00:07:02 teddy2012-arch systemd[1]: Stopped WPA supplicant.
+Dec 08 00:07:02 teddy2012-arch audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=wpa_supplicant comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:07:02 teddy2012-arch NetworkManager[494]: <info>  [1670476022.8053] device (p2p-dev-wlp5s0): state change: disconnected -> unmanaged (reason 'removed', sys-iface-state: 'removed')
+Dec 08 00:07:02 teddy2012-arch dbus-daemon[477]: [system] Activation via systemd failed for unit 'dbus-org.freedesktop.nm-dispatcher.service': Refusing activation, D-Bus is shutting down.
+Dec 08 00:07:02 teddy2012-arch dbus-daemon[477]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.2' (uid=0 pid=494 comm="/usr/bin/NetworkManager --no-daemon")
+Dec 08 00:07:02 teddy2012-arch dbus-daemon[477]: [system] Activation via systemd failed for unit 'dbus-org.freedesktop.nm-dispatcher.service': Refusing activation, D-Bus is shutting down.
+Dec 08 00:07:02 teddy2012-arch NetworkManager[494]: <info>  [1670476022.8562] exiting (success)
+Dec 08 00:07:02 teddy2012-arch systemd[1]: NetworkManager.service: Deactivated successfully.
+Dec 08 00:07:02 teddy2012-arch systemd[1]: Stopped Network Manager.
+Dec 08 00:07:02 teddy2012-arch audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=NetworkManager comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:07:02 teddy2012-arch systemd[1]: Stopping D-Bus System Message Bus...
+Dec 08 00:07:02 teddy2012-arch systemd[1]: dbus.service: Deactivated successfully.
+Dec 08 00:07:02 teddy2012-arch systemd[1]: Stopped D-Bus System Message Bus.
+Dec 08 00:07:02 teddy2012-arch audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=dbus comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:07:02 teddy2012-arch systemd[1]: Stopped target Basic System.
+Dec 08 00:07:02 teddy2012-arch systemd[1]: Stopped target Path Units.
+Dec 08 00:07:02 teddy2012-arch systemd[1]: Stopped target Slice Units.
+Dec 08 00:07:02 teddy2012-arch systemd[1]: Removed slice User and Session Slice.
+Dec 08 00:07:02 teddy2012-arch systemd[1]: user.slice: Consumed 6.788s CPU time.
+Dec 08 00:07:02 teddy2012-arch systemd[1]: Stopped target Socket Units.
+Dec 08 00:07:02 teddy2012-arch systemd[1]: dbus.socket: Deactivated successfully.
+Dec 08 00:07:02 teddy2012-arch systemd[1]: Closed D-Bus System Message Bus Socket.
+Dec 08 00:07:02 teddy2012-arch systemd[1]: Stopped target System Initialization.
+Dec 08 00:07:02 teddy2012-arch systemd[1]: proc-sys-fs-binfmt_misc.automount: Deactivated successfully.
+Dec 08 00:07:02 teddy2012-arch systemd[1]: Unset automount Arbitrary Executable File Formats File System Automount Point.
+Dec 08 00:07:02 teddy2012-arch systemd[1]: Stopped target Local Encrypted Volumes.
+Dec 08 00:07:02 teddy2012-arch systemd[1]: systemd-ask-password-console.path: Deactivated successfully.
+Dec 08 00:07:02 teddy2012-arch systemd[1]: Stopped Dispatch Password Requests to Console Directory Watch.
+Dec 08 00:07:02 teddy2012-arch systemd[1]: systemd-ask-password-wall.path: Deactivated successfully.
+Dec 08 00:07:02 teddy2012-arch systemd[1]: Stopped Forward Password Requests to Wall Directory Watch.
+Dec 08 00:07:02 teddy2012-arch systemd[1]: Stopped target Local Integrity Protected Volumes.
+Dec 08 00:07:02 teddy2012-arch systemd[1]: Stopped target Local Verity Protected Volumes.
+Dec 08 00:07:02 teddy2012-arch systemd[1]: Stopping Load/Save Screen Backlight Brightness of backlight:intel_backlight...
+Dec 08 00:07:02 teddy2012-arch systemd[1]: systemd-sysctl.service: Deactivated successfully.
+Dec 08 00:07:02 teddy2012-arch systemd[1]: Stopped Apply Kernel Variables.
+Dec 08 00:07:02 teddy2012-arch audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-sysctl comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:07:02 teddy2012-arch systemd[1]: systemd-modules-load.service: Deactivated successfully.
+Dec 08 00:07:02 teddy2012-arch audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-modules-load comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:07:02 teddy2012-arch systemd[1]: Stopped Load Kernel Modules.
+Dec 08 00:07:02 teddy2012-arch systemd[1]: systemd-modules-load.service: Consumed 1.367s CPU time.
+Dec 08 00:07:02 teddy2012-arch audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-update-done comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:07:02 teddy2012-arch systemd[1]: systemd-update-done.service: Deactivated successfully.
+Dec 08 00:07:02 teddy2012-arch systemd[1]: Stopped Update is Completed.
+Dec 08 00:07:02 teddy2012-arch audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=ldconfig comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:07:02 teddy2012-arch systemd[1]: ldconfig.service: Deactivated successfully.
+Dec 08 00:07:02 teddy2012-arch systemd[1]: Stopped Rebuild Dynamic Linker Cache.
+Dec 08 00:07:02 teddy2012-arch audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-journal-catalog-update comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:07:02 teddy2012-arch systemd[1]: systemd-journal-catalog-update.service: Deactivated successfully.
+Dec 08 00:07:02 teddy2012-arch systemd[1]: Stopped Rebuild Journal Catalog.
+Dec 08 00:07:02 teddy2012-arch systemd[1]: Stopping Record System Boot/Shutdown in UTMP...
+Dec 08 00:07:02 teddy2012-arch systemd[1]: run-credentials-systemd\x2dsysctl.service.mount: Deactivated successfully.
+Dec 08 00:07:02 teddy2012-arch systemd[1]: Unmounted /run/credentials/systemd-sysctl.service.
+Dec 08 00:07:02 teddy2012-arch audit[960]: SYSTEM_SHUTDOWN pid=960 uid=0 auid=4294967295 ses=4294967295 msg=' comm="systemd-update-utmp" exe="/usr/lib/systemd/systemd-update-utmp" hostname=? addr=? terminal=? res=success'
+Dec 08 00:07:02 teddy2012-arch systemd[1]: systemd-update-utmp.service: Deactivated successfully.
+Dec 08 00:07:02 teddy2012-arch systemd[1]: Stopped Record System Boot/Shutdown in UTMP.
+Dec 08 00:07:02 teddy2012-arch audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-update-utmp comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:07:02 teddy2012-arch systemd[1]: systemd-tmpfiles-setup.service: Deactivated successfully.
+Dec 08 00:07:02 teddy2012-arch systemd[1]: Stopped Create Volatile Files and Directories.
+Dec 08 00:07:02 teddy2012-arch audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-tmpfiles-setup comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:07:02 teddy2012-arch systemd[1]: Stopped target Local File Systems.
+Dec 08 00:07:02 teddy2012-arch systemd[1]: Unmounting /boot...
+Dec 08 00:07:02 teddy2012-arch systemd[1]: Unmounting /run/credentials/systemd-sysusers.service...
+Dec 08 00:07:02 teddy2012-arch systemd[1]: Unmounting /run/credentials/systemd-tmpfiles-setup.service...
+Dec 08 00:07:02 teddy2012-arch systemd[1]: Unmounting /run/credentials/systemd-tmpfiles-setup-dev.service...
+Dec 08 00:07:02 teddy2012-arch systemd[1]: Unmounting Temporary Directory /tmp...
+Dec 08 00:07:03 teddy2012-arch systemd[1]: systemd-backlight@backlight:intel_backlight.service: Deactivated successfully.
+Dec 08 00:07:03 teddy2012-arch systemd[1]: Stopped Load/Save Screen Backlight Brightness of backlight:intel_backlight.
+Dec 08 00:07:02 teddy2012-arch audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-backlight@backlight:intel_backlight comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:07:03 teddy2012-arch systemd[1]: Removed slice Slice /system/systemd-backlight.
+Dec 08 00:07:03 teddy2012-arch umount[963]: umount: /run/credentials/systemd-tmpfiles-setup.service: no mount point specified.
+Dec 08 00:07:03 teddy2012-arch systemd[1]: boot.mount: Deactivated successfully.
+Dec 08 00:07:03 teddy2012-arch systemd[1]: Unmounted /boot.
+Dec 08 00:07:03 teddy2012-arch systemd[1]: run-credentials-systemd\x2dsysusers.service.mount: Deactivated successfully.
+Dec 08 00:07:03 teddy2012-arch systemd[1]: Unmounted /run/credentials/systemd-sysusers.service.
+Dec 08 00:07:03 teddy2012-arch systemd[1]: run-credentials-systemd\x2dtmpfiles\x2dsetup.service.mount: Mount process exited, code=exited, status=32/n/a
+Dec 08 00:07:03 teddy2012-arch systemd[1]: run-credentials-systemd\x2dtmpfiles\x2dsetup.service.mount: Failed with result 'exit-code'.
+Dec 08 00:07:03 teddy2012-arch systemd[1]: Unmounted /run/credentials/systemd-tmpfiles-setup.service.
+Dec 08 00:07:03 teddy2012-arch systemd[1]: run-credentials-systemd\x2dtmpfiles\x2dsetup\x2ddev.service.mount: Deactivated successfully.
+Dec 08 00:07:03 teddy2012-arch systemd[1]: Unmounted /run/credentials/systemd-tmpfiles-setup-dev.service.
+Dec 08 00:07:03 teddy2012-arch systemd[1]: tmp.mount: Deactivated successfully.
+Dec 08 00:07:03 teddy2012-arch systemd[1]: Unmounted Temporary Directory /tmp.
+Dec 08 00:07:03 teddy2012-arch systemd[1]: Stopped target Preparation for Local File Systems.
+Dec 08 00:07:03 teddy2012-arch systemd[1]: Stopped target Swaps.
+Dec 08 00:07:03 teddy2012-arch systemd[1]: Deactivating swap /dev/disk/by-id/usb-Sabrent_Disk_Device_00000000458C-0:0-part2...
+Dec 08 00:07:03 teddy2012-arch systemd[1]: systemd-tmpfiles-setup-dev.service: Deactivated successfully.
+Dec 08 00:07:03 teddy2012-arch systemd[1]: Stopped Create Static Device Nodes in /dev.
+Dec 08 00:07:02 teddy2012-arch audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-tmpfiles-setup-dev comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:07:03 teddy2012-arch systemd[1]: systemd-sysusers.service: Deactivated successfully.
+Dec 08 00:07:03 teddy2012-arch systemd[1]: Stopped Create System Users.
+Dec 08 00:07:02 teddy2012-arch audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-sysusers comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:07:03 teddy2012-arch systemd[1]: systemd-remount-fs.service: Deactivated successfully.
+Dec 08 00:07:03 teddy2012-arch systemd[1]: Stopped Remount Root and Kernel File Systems.
+Dec 08 00:07:02 teddy2012-arch audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-remount-fs comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:07:03 teddy2012-arch systemd[1]: Reached target System Shutdown.
+Dec 08 00:07:03 teddy2012-arch systemd[1]: dev-disk-by\x2dpartuuid-1e378b86\x2d9e0b\x2d1745\x2d8f38\x2de07f76b0669e.swap: Deactivated successfully.
+Dec 08 00:07:03 teddy2012-arch systemd[1]: Deactivated swap /dev/disk/by-partuuid/1e378b86-9e0b-1745-8f38-e07f76b0669e.
+Dec 08 00:07:03 teddy2012-arch systemd[1]: dev-disk-by\x2did-usb\x2dSabrent_Disk_Device_00000000458C\x2d0:0\x2dpart2.swap: Deactivated successfully.
+Dec 08 00:07:03 teddy2012-arch systemd[1]: Deactivated swap /dev/disk/by-id/usb-Sabrent_Disk_Device_00000000458C-0:0-part2.
+Dec 08 00:07:03 teddy2012-arch systemd[1]: dev-disk-by\x2dpath-pci\x2d0000:00:1a.0\x2dusb\x2d0:1.2:1.0\x2dscsi\x2d0:0:0:0\x2dpart2.swap: Deactivated successfully.
+Dec 08 00:07:03 teddy2012-arch systemd[1]: Deactivated swap /dev/disk/by-path/pci-0000:00:1a.0-usb-0:1.2:1.0-scsi-0:0:0:0-part2.
+Dec 08 00:07:03 teddy2012-arch systemd[1]: dev-sdb2.swap: Deactivated successfully.
+Dec 08 00:07:03 teddy2012-arch systemd[1]: Deactivated swap /dev/sdb2.
+Dec 08 00:07:03 teddy2012-arch systemd[1]: dev-disk-by\x2duuid-cf2618dc\x2d4bb9\x2d434d\x2db783\x2d4b0d82f7766f.swap: Deactivated successfully.
+Dec 08 00:07:03 teddy2012-arch systemd[1]: Deactivated swap /dev/disk/by-uuid/cf2618dc-4bb9-434d-b783-4b0d82f7766f.
+Dec 08 00:07:03 teddy2012-arch systemd[1]: Reached target Unmount All Filesystems.
+Dec 08 00:07:03 teddy2012-arch systemd[1]: Reached target Late Shutdown Services.
+Dec 08 00:07:03 teddy2012-arch systemd[1]: systemd-poweroff.service: Deactivated successfully.
+Dec 08 00:07:03 teddy2012-arch systemd[1]: Finished System Power Off.
+Dec 08 00:07:03 teddy2012-arch audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-poweroff comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:07:03 teddy2012-arch audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-poweroff comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec 08 00:07:03 teddy2012-arch systemd[1]: Reached target System Power Off.
+Dec 08 00:07:03 teddy2012-arch systemd[1]: Shutting down.
+Dec 08 00:07:03 teddy2012-arch audit: BPF prog-id=0 op=UNLOAD
+Dec 08 00:07:03 teddy2012-arch audit: BPF prog-id=0 op=UNLOAD
+Dec 08 00:07:03 teddy2012-arch audit: BPF prog-id=0 op=UNLOAD
+Dec 08 00:07:03 teddy2012-arch audit: BPF prog-id=0 op=UNLOAD
+Dec 08 00:07:03 teddy2012-arch audit: BPF prog-id=0 op=UNLOAD
+Dec 08 00:07:03 teddy2012-arch audit: BPF prog-id=0 op=UNLOAD
+Dec 08 00:07:03 teddy2012-arch audit: BPF prog-id=0 op=UNLOAD
+Dec 08 00:07:03 teddy2012-arch systemd-shutdown[1]: Syncing filesystems and block devices.
+Dec 08 00:07:03 teddy2012-arch systemd-journald[283]: Journal stopped
